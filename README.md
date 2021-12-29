@@ -27,4 +27,4 @@
 
 # Cmd avant de travailler sur le projet
 
-- run sass : sass --watch stylesheets/main.scss:stylesheets/main.css
+- run sass : sass --watch sass/main.scss:stylesheets/main.css

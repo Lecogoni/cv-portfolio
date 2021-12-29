@@ -1,0 +1,1411 @@
+/* VARIABLE
+---------------------------------------------- */
+/* MIXINS
+---------------------------------------------- */
+/* SET BACKGROUNDS COLOR WITH VARIABLES
+---------------------------------------------- */
+.dark-blue-background {
+  background: #22405b; }
+
+.green-background {
+  background: #10ddb4; }
+
+.white-background {
+  background: white; }
+
+.light-grey-background {
+  background: #f2f2f2; }
+
+/* GENERAL
+---------------------------------------------- */
+html {
+  width: 100%; }
+
+section {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+h2 {
+  margin-bottom: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #22405b; }
+
+a,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+.add {
+  text-align: center; }
+  .add h4 {
+    color: white;
+    font-family: "Titillium Web", sans-serif; }
+
+/* BACKGROUND IMAGES
+---------------------------------------------- */
+.bg-img {
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.padel-back-img {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+  background-blend-mode: hard-light; }
+
+.trek-back-img {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/trek_cox4vy.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
+  background-blend-mode: hard-light; }
+
+/* RESPONSIVE - SET BACKGROUNG IMAGE
+---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .bg-img {
+    height: 300px; }
+
+  .add h4 {
+    font-size: 1.2em; } }
+/*
+
+
+font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+
+*/
+/* HEADER
+---------------------------------------------- */
+.nico-logo {
+  height: 200px;
+  width: 620px;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695397/portfolio/nico-logo-V2_skd77j.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 70%; }
+
+.resume {
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .resume h1 {
+    font-size: 3.4rem;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1.2em; }
+    .resume h1:before {
+      content: "#";
+      font-family: "Lato", sans-serif;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #10ddb4;
+      filter: brightness(95%); }
+  .resume p {
+    font-family: Lato;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 1.2em; }
+
+.gitlab-link {
+  height: 60px;
+  width: 60px;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695355/portfolio/gitlab-icon_s4sfkh.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* RESPONSIVE
+---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .resume p {
+    font-size: 1em; } }
+@media only screen and (min-width: 576px) {
+  .resume p {
+    font-size: 1.2em; } }
+/* OFFER
+---------------------------------------------- */
+.offer__item {
+  text-align: center; }
+.offer .bouncing-row {
+  animation-duration: 1s;
+  animation-name: bounce; }
+.offer h4 {
+  font-size: 1.3rem; }
+.offer__item__title {
+  margin-bottom: 0.6em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #22405b; }
+.offer__description {
+  margin-bottom: 1.6em;
+  padding: 0 0.4em; }
+  .offer__description p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #545454; }
+.offer .api:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f0d0"; }
+.offer .responsive:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f108"; }
+.offer .project:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f0ae"; }
+.offer .code:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f121"; }
+.offer .refering:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f002"; }
+.offer .together:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f0c0"; }
+.offer .language:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f57c"; }
+.offer .versionning:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f126"; }
+
+/* RESPONSIVE
+---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .offer h4 {
+    font-size: 1.1rem; }
+  .offer__description p {
+    font-size: 0.9em; } }
+@media only screen and (min-width: 576px) {
+  .offer h4 {
+    font-size: 1.1rem; }
+  .offer__description p {
+    font-size: 0.9em;
+    line-height: 1.6em; } }
+@media only screen and (min-width: 768px) {
+  .offer h4 {
+    font-size: 1.3rem; }
+  .offer__description p {
+    font-size: 1em;
+    line-height: 1.6em; } }
+/* CODE TECHNO ICON PART
+---------------------------------------------- */
+.main-techno {
+  /* RESPONSIVE
+  ---------------------------------------------- */ }
+  .main-techno .code__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.2rem; }
+  .main-techno .code__item {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 2em; }
+    .main-techno .code__item__icon {
+      height: 65px; }
+    .main-techno .code__item__name {
+      color: #545454;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.8em;
+      margin-top: 0.8em; }
+  .main-techno .js {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/javaScript_zaymwu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .angular {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/angular_udhhva.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .ruby {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/ruby_jsz7od.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .php {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/php_lseqju.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .docker {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/docker_khotlw.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .rails {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/rails_tlnrgk.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .symfony {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/symphony_fjcfnz.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .typescript {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/typescript_dtcmic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .git {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/git_ykzhwv.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-techno .wordpress {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693702/portfolio/logo/wordpress_vj40pp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  @media only screen and (max-width: 575px) {
+    .main-techno .code__wrapper {
+      grid-template-columns: repeat(6, 1fr); }
+    .main-techno .code__item {
+      /* Dealing with single orphan */ }
+      .main-techno .code__item:last-child:nth-child(3n - 1) {
+        grid-column-end: -2; }
+      .main-techno .code__item:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: -4; }
+      .main-techno .code__item:last-child:nth-child(3n - 2) {
+        grid-column-end: 5; } }
+  @media only screen and (min-width: 576px) {
+    .main-techno .code__wrapper {
+      grid-template-columns: repeat(6, 1fr); }
+    .main-techno .code__item {
+      /* Dealing with single orphan */ }
+      .main-techno .code__item:last-child:nth-child(3n - 1) {
+        grid-column-end: 0; }
+      .main-techno .code__item:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 0; }
+      .main-techno .code__item:last-child:nth-child(3n - 2) {
+        grid-column-end: 5; } }
+  @media only screen and (min-width: 768px) {
+    .main-techno .code__wrapper {
+      grid-template-columns: repeat(8, 1fr); }
+    .main-techno .code__item {
+      /* Dealing with single orphan */ }
+      .main-techno .code__item:last-child:nth-child(4n - 1) {
+        grid-column-end: -2; }
+      .main-techno .code__item:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -5; }
+      .main-techno .code__item:last-child:nth-child(4n - 2) {
+        grid-column-end: -3; } }
+  @media only screen and (min-width: 1200px) {
+    .main-techno .code__wrapper {
+      grid-template-columns: repeat(10, 1fr); }
+    .main-techno .code__item {
+      /* Dealing with single orphan */ }
+      .main-techno .code__item:last-child:nth-child(3n - 1) {
+        grid-column-end: 1; }
+      .main-techno .code__item:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -3; }
+      .main-techno .code__item:last-child:nth-child(4n - 2) {
+        grid-column-end: -1; } }
+  @media only screen and (min-width: 1400px) {
+    .main-techno .code__wrapper {
+      grid-template-columns: repeat(10, 1fr); }
+    .main-techno .code__item {
+      /* Dealing with single orphan */ }
+      .main-techno .code__item:last-child:nth-child(5n - 1) {
+        grid-column-end: 1; }
+      .main-techno .code__item:nth-last-child(2):nth-child(5n + 1) {
+        grid-column-end: -3; }
+      .main-techno .code__item:last-child:nth-child(5n - 2) {
+        grid-column-end: -1; } }
+
+/* PORTFOLIO
+---------------------------------------------- */
+.portfolio__container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto; }
+
+.portfolio__item {
+  border-radius: 10px;
+  margin-bottom: 1em;
+  height: 500px;
+  overflow-y: hidden;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.16); }
+  .portfolio__item__image {
+    width: 100%; }
+  .portfolio__item__content {
+    background-color: white;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 450px;
+    transition: all 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between; }
+  .portfolio__item__title {
+    width: 100%;
+    height: 50px;
+    background-color: #10ddb4;
+    color: #22405b;
+    text-align: center;
+    padding: 0.7em; }
+  .portfolio__item__techno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .portfolio__item__techno span {
+      font-size: 1em;
+      margin: 0 0.4em 0.6em 0.4em;
+      font-weight: 300; }
+    .portfolio__item__techno .framework:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f120"; }
+    .portfolio__item__techno .database:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f1c0"; }
+    .portfolio__item__techno .authentification:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f084"; }
+    .portfolio__item__techno .mailing:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f0e0"; }
+    .portfolio__item__techno .server:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f233"; }
+    .portfolio__item__techno .img-server:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f302"; }
+    .portfolio__item__techno .design:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f1fc"; }
+    .portfolio__item__techno .api:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f0c1"; }
+  .portfolio__item__description {
+    font-size: 1em;
+    color: #545454;
+    text-align: center;
+    word-break: keep-all;
+    padding: 0 2.6em; }
+  .portfolio__item__btn {
+    font-size: 1em;
+    padding: 0.2em 1.4em;
+    background-color: #10ddb4;
+    border-radius: 1em;
+    color: white; }
+    .portfolio__item__btn:hover {
+      -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      transition: 0.3s ease;
+      -webkit-transition: all 0.3s; }
+
+.renov-blog {
+  height: 100%;
+  z-index: 2;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/renov-blog-edit_fnwylm.png);
+  background-size: cover; }
+
+.cooking-challenge {
+  height: 100%;
+  z-index: 2;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/cooking-challenge_f6tqhp.png);
+  background-size: cover; }
+
+/* RESPONSIVE
+---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .portfolio__container {
+    padding-right: var(--bs-gutter-x, 2rem);
+    padding-left: var(--bs-gutter-x, 2rem); } }
+@media only screen and (min-width: 576px) {
+  .portfolio__container {
+    max-width: 80%;
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem); } }
+@media only screen and (min-width: 768px) {
+  .portfolio__container {
+    max-width: 100%;
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem); }
+
+  .portfolio__item__techno span {
+    font-size: 0.9em;
+    margin: 0 0.4em 0.6em 0.4em; }
+  .portfolio__item__description {
+    font-size: 0.9em; } }
+@media only screen and (min-width: 992px) {
+  .portfolio__item__description {
+    font-size: 1em; } }
+/* CODE TECHNO ICON PART
+---------------------------------------------- */
+.environment {
+  /* RESPONSIVE
+  ---------------------------------------------- */ }
+  .environment .code-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.2rem; }
+  .environment .code__item {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 2em; }
+    .environment .code__item__icon {
+      height: 65px; }
+    .environment .code__item__name {
+      color: #545454;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.8em;
+      margin-top: 0.8em; }
+  .environment .sass {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/sass_u22y7s.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .bootstrap {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bootstrap_iyvaoi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .tailwind {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/tailwind_uw6szw.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .photoshop {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/photoshop_flu324.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .trello {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/trello_ltgt5y.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .illustrator {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/illustrator_y3ccg7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .bulma {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bulma_cusvx0.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .indesign {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/indesign_u1fchr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .environment .jira {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/jira_qbp4oq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  @media only screen and (max-width: 575px) {
+    .environment .code-wrapper {
+      grid-template-columns: repeat(6, 1fr); }
+    .environment .code-item {
+      /* Dealing with single orphan */ }
+      .environment .code-item:last-child:nth-child(3n - 1) {
+        grid-column-end: -2; }
+      .environment .code-item:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: -4; }
+      .environment .code-item:last-child:nth-child(3n - 2) {
+        grid-column-end: 5; } }
+  @media only screen and (min-width: 576px) {
+    .environment .code-wrapper {
+      grid-template-columns: repeat(6, 1fr); }
+    .environment .code-item {
+      /* Dealing with single orphan */ }
+      .environment .code-item:last-child:nth-child(3n - 1) {
+        grid-column-end: 0; }
+      .environment .code-item:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 0; }
+      .environment .code-item:last-child:nth-child(3n - 2) {
+        grid-column-end: 5; } }
+  @media only screen and (min-width: 768px) {
+    .environment .code-wrapper {
+      grid-template-columns: repeat(8, 1fr); }
+    .environment .code-item {
+      /* Dealing with single orphan */ }
+      .environment .code-item:last-child:nth-child(4n - 1) {
+        grid-column-end: -2; }
+      .environment .code-item:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -5; }
+      .environment .code-item:last-child:nth-child(4n - 2) {
+        grid-column-end: -3; } }
+  @media only screen and (min-width: 1200px) {
+    .environment .code-wrapper {
+      grid-template-columns: repeat(10, 1fr); }
+    .environment .code-item {
+      /* Dealing with single orphan */ }
+      .environment .code-item:last-child:nth-child(3n - 1) {
+        grid-column-end: 1; }
+      .environment .code-item:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -3; }
+      .environment .code-item:last-child:nth-child(4n - 2) {
+        grid-column-end: -1; } }
+  @media only screen and (min-width: 1400px) {
+    .environment .code-wrapper {
+      grid-template-columns: repeat(10, 1fr); }
+    .environment .code-item {
+      /* Dealing with single orphan */ }
+      .environment .code-item:last-child:nth-child(5n - 1) {
+        grid-column-end: 1; }
+      .environment .code-item:nth-last-child(2):nth-child(5n + 1) {
+        grid-column-end: -3; }
+      .environment .code-item:last-child:nth-child(5n - 2) {
+        grid-column-end: -1; } }
+
+/* MOODBOARD
+---------------------------------------------- */
+.moodboard {
+  width: 100vw;
+  overflow-x: scroll;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(18, 10vh);
+  margin-bottom: 0.4em;
+  grid-template-areas: " asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock" " asian asian  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling "; }
+  .moodboard__item {
+    flex: 0 0 auto;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    height: 140px;
+    background-color: #eeeeee; }
+  .moodboard__item-double-hight {
+    flex: 0 0 auto;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    height: 285px; }
+
+.moodboard__profile-picture {
+  grid-area: picture;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/id-picture_brme6a.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-size: cover; }
+
+.moodboard__apple-keyboard {
+  grid-area: keyboard;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/keyboard_mchblv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.moodboard__travel {
+  grid-area: travel;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694165/portfolio/moodboard/travel_i6njib.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover; }
+
+.moodboard__lego {
+  grid-area: lego;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/Lego_u5l4uk.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-size: contain; }
+
+.moodboard__pala {
+  grid-area: pala;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/pala-padel_mtjkdl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 45%; }
+
+.moodboard__emoji {
+  grid-area: emoji;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/emoji_qy5arf.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.moodboard__asian {
+  grid-area: asian;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/asian-food_vlirzh.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.moodboard__monkey {
+  grid-area: monkey;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/monkey-star_oxdu9q.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.moodboard__audio {
+  grid-area: audio;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/headphone_ekjzmz.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 40%; }
+
+.moodboard__tape {
+  grid-area: tape;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/tape_ofmpt3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover; }
+
+.moodboard__school {
+  grid-area: school;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/back-to-school_eyar2x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover; }
+
+.moodboard__rock {
+  grid-area: rock;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/rock_jzqcv4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover; }
+
+.moodboard__louise {
+  grid-area: louise;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/louise_smyktj.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover; }
+
+.moodboard__recycling {
+  grid-area: recycling;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/ecologique_qdiqph.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.moodboard__two-wheels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: two-wheels;
+  padding: 0.4em;
+  height: 100%; }
+  .moodboard__two-wheels__item {
+    height: 70px;
+    width: 100px; }
+  .moodboard__two-wheels .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 70%; }
+  .moodboard__two-wheels .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .moodboard__two-wheels .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%; }
+
+.moodboard__best-app {
+  grid-area: best-app;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .moodboard__best-app .moodboard__medium {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/medium-app_qbbpcf.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50%; }
+  .moodboard__best-app .moodboard__boncoin {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/leboncoin-logo_km7glf.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50%; }
+  .moodboard__best-app .moodboard__mapsme {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/maps-me_v34gjm.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50%; }
+  .moodboard__best-app .moodboard__huffpost {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/huffpost_fx4arc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50%; }
+  .moodboard__best-app .moodboard__wallet {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/wallet_awhlq6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50%; }
+
+/* RESPONSIVE
+---------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+  .moodboard {
+    grid-template-columns: repeat(18, 10vh); }
+    .moodboard__item {
+      height: 160px; }
+    .moodboard__item-double-hight {
+      height: 325px; } }
+.cv__category {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #22405b;
+  margin-bottom: 0; }
+.cv__title {
+  color: #22405b;
+  font-size: 1.1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  padding-top: 0.2em; }
+.cv .fa-info-circle {
+  color: #10ddb4; }
+  .cv .fa-info-circle:hover {
+    cursor: pointer;
+    filter: brightness(90%); }
+.cv__info {
+  font-size: 1em;
+  color: #545454; }
+.cv__date {
+  font-size: 0.9em;
+  color: #545454; }
+  .cv__date:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 200;
+    font-size: 0.8em;
+    color: #545454;
+    display: block;
+    width: 1.4em;
+    float: left;
+    margin: 0.2em 0.1em 0 0.4em;
+    content: "\f073"; }
+.cv__details {
+  background-color: #ececec;
+  transition: height 0.3s ease-in-out;
+  color: #22405b;
+  margin: 0.8em 0; }
+  .cv__details__container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto; }
+  .cv__details .row {
+    padding: 1.2em 0; }
+  .cv__details__img__list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0.8em 0 1.2em 0; }
+    .cv__details__img__list::-webkit-scrollbar {
+      display: none; }
+.cv__details__content {
+  padding: 0 0 0 2.4em;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: -5; }
+  .cv__details__content li {
+    font-size: 0.9em; }
+    .cv__details__content li:before {
+      content: "- "; }
+
+.hide {
+  opacity: 0;
+  transform: translateY(30px); }
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1s; }
+
+.fadeOpacity {
+  opacity: 1;
+  z-index: 0; }
+
+.cv__details__img__events {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  min-height: 40px;
+  min-width: 100px;
+  margin-right: 1em; }
+
+.beweb {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/beWeb_iys65r.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.thp {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/thp_zbfcob.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.kawa {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/Kawa_hec9v6.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.tourman {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/badge_sx22lv.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100px; }
+
+.onprod {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/OnProd_umj3wv.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.followme {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/FollowMe_vh8ccg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* Event Details Expererience Logo
+---------------------------------------------- */
+.pheno {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/pheno_njpaoz.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.capdel {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695279/portfolio/cv-section/capdel_opiral.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.epoka {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/epoka_bvnogg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.loreal {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/LOreal-DPP_fhatl6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.loreal-das {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/loreal-DAS_gwyrhv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.tro {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694746/portfolio/cv-section/tro_pkxo1v.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.snap {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/Logo-Snapchat_urdpaw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.ca {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695176/portfolio/cv-section/credit-agricol_kodtst.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.pma {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695003/portfolio/cv-section/PMA-DAYS_w58snj.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.get27 {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/get27_v3mvft.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.wl {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694614/portfolio/cv-section/william-lawson_idyw8p.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.spectacles {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694614/portfolio/cv-section/Spectacles-logo_bhdokq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.jo {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/Paris-JO_tvnenz.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.loyal {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/monsieur-loyal_nt1ity.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.mondelez {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/mondelezlogo_kqv2eq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.leclerc {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/logo-Leclerc_dmtct3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* RESPONSIVE
+---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .cv__category {
+    margin-bottom: 1em; }
+  .cv__title {
+    font-size: 1em; }
+  .cv__info {
+    font-size: 0.9em; }
+  .cv__date {
+    font-size: 0.8em; }
+  .cv__details {
+    font-size: 1em; }
+  .cv__details {
+    font-size: 0.9em; } }
+@media only screen and (min-width: 576px) {
+  .cv__category {
+    margin-bottom: 1em; }
+  .cv__title {
+    font-size: 1em; }
+  .cv__info {
+    font-size: 0.9em; }
+  .cv__date {
+    font-size: 0.8em; }
+  .cv__details {
+    font-size: 0.9em; } }
+@media only screen and (min-width: 768px) {
+  .cv__category {
+    margin-bottom: 1em; }
+  .cv__title {
+    font-size: 1em; }
+  .cv__info {
+    font-size: 0.9em; }
+  .cv__date {
+    font-size: 0.8em; }
+  .cv__details {
+    font-size: 1em; } }
+@media only screen and (min-width: 992px) {
+  .cv__category {
+    margin-bottom: 0; }
+  .cv__title {
+    font-size: 1.1em; }
+  .cv__info {
+    font-size: 1em; }
+  .cv__date {
+    font-size: 0.9em; } }
+/* SOFT SKILLS SCSS
+---------------------------------------------- */
+.soft__skills {
+  color: #22405b;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 2.4em; }
+  .soft__skills-highlight {
+    color: #10ddb4;
+    filter: brightness(95%); }
+  .soft__skills__container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto; }
+  .soft__skills__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 0.2em;
+    height: 700px;
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego_twxhyc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head h h h " "i i i lego-body k c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+
+.item1 {
+  grid-area: lego-head; }
+
+.item2 {
+  grid-area: lego-body; }
+
+.item3 {
+  grid-area: lego-foot; }
+
+.item4 {
+  grid-area: a;
+  align-self: center;
+  text-align: right; }
+
+.item5 {
+  grid-area: b;
+  align-self: center; }
+
+.item6 {
+  grid-area: c; }
+
+.item7 {
+  grid-area: d; }
+
+.item8 {
+  grid-area: e; }
+
+.item9 {
+  grid-area: f; }
+
+.item10 {
+  grid-area: g; }
+
+.item11 {
+  grid-area: h;
+  align-self: center;
+  text-align: right; }
+
+.item12 {
+  grid-area: i; }
+
+.item13 {
+  grid-area: j;
+  align-self: center;
+  text-align: right; }
+
+.item14 {
+  grid-area: k; }
+
+.item15 {
+  grid-area: l;
+  align-self: center;
+  text-align: right; }
+
+.item16 {
+  grid-area: m;
+  align-self: flex-start;
+  text-align: left; }
+
+/* RESPONSIVE
+---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em; }
+    .soft__skills__container {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: 0;
+      margin-right: auto;
+      margin-left: 0; }
+    .soft__skills__wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-gap: 5px;
+      height: 500px;
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d d l l " "lego-body c c i i i p " "lego-foot e e e h h h  " "lego-foot j g m m m k "; }
+
+  .item4 {
+    padding-right: 1em; }
+
+  .item5 {
+    grid-area: b;
+    align-self: center; }
+
+  .item6 {
+    text-align: left; }
+
+  .item8 {
+    padding-right: 1em;
+    text-align: left; } }
+@media only screen and (min-width: 576px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em; }
+    .soft__skills__container {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: 0;
+      margin-right: auto;
+      margin-left: 0; }
+    .soft__skills__wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-gap: 5px;
+      height: 500px;
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d d l l " "lego-body c c i i i p " "lego-foot e e e h h h  " "lego-foot j g m m m k "; }
+    .soft__skills .item4 {
+      padding-right: 1em; }
+    .soft__skills .item6 {
+      text-align: left; }
+    .soft__skills .item8 {
+      padding-right: 1em; } }
+@media only screen and (min-width: 640px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em; }
+    .soft__skills__container {
+      width: 100%;
+      max-width: 620px;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto; }
+    .soft__skills__wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-gap: 0.2em;
+      height: 700px;
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego_twxhyc.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head h h h " "i i i lego-body k c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+
+  .item5 {
+    grid-area: b;
+    align-self: start;
+    padding-right: 3em; }
+
+  .item6 {
+    text-align: right; }
+
+  .item7 {
+    grid-area: d;
+    align-self: start; } }
+@media only screen and (min-width: 768px) {
+  .soft__skills__container {
+    width: 100%;
+    max-width: 720px; }
+  .soft__skills__wrapper {
+    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head h h h " "i i i lego-body k c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+
+  .item5 {
+    padding-right: 2.8em; }
+
+  .item7 {
+    text-align: center;
+    padding-right: 1em; } }
+@media only screen and (min-width: 820px) {
+  .soft__skills {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.6em; }
+    .soft__skills__container {
+      width: 100%;
+      max-width: 800px; }
+
+  .item5 {
+    padding-right: 1.6em; }
+
+  .item6 {
+    text-align: left; }
+
+  .item7 {
+    text-align: center;
+    padding-right: 0em; } }
+.contact h2 {
+  color: #10ddb4; }
+.contact .my-contact {
+  color: white;
+  height: 100%; }
+.contact .email-state {
+  color: #10ddb4;
+  font-size: 1.2em; }
+.contact button[type="submit"]:hover {
+  filter: brightness(80%); }
+
+.linkedin-contact {
+  height: 35px;
+  width: 35px;
+  margin-right: 3em;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695354/portfolio/LinkedIn_sdbklf.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.gitlab-contact {
+  height: 35px;
+  width: 35px;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695355/portfolio/gitlab-icon_s4sfkh.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/*# sourceMappingURL=main.css.map */

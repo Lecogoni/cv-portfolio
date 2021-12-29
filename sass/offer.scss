@@ -1,0 +1,135 @@
+/* OFFER
+---------------------------------------------- */
+
+@mixin can-do-logo() {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: $green-color;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+}
+
+.offer {
+  &__item {
+    text-align: center;
+  }
+  .bouncing-row {
+    animation-duration: 1s;
+    animation-name: bounce;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  &__item__title {
+    // line-height: 1em;
+    margin-bottom: 0.6em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: $dark-blue-color;
+  }
+  &__description {
+    margin-bottom: 1.6em;
+    padding: 0 0.4em;
+    p {
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 1.6em;
+      color: $darker-grey-color;
+    }
+  }
+  .api:before {
+    @include can-do-logo;
+    content: "\f0d0";
+  }
+  .responsive:before {
+    @include can-do-logo;
+    content: "\f108";
+  }
+  .project:before {
+    @include can-do-logo;
+    content: "\f0ae";
+  }
+  .code:before {
+    @include can-do-logo;
+    content: "\f121";
+  }
+  .refering:before {
+    @include can-do-logo;
+    content: "\f002";
+  }
+  // NOT USE
+  .together:before {
+    @include can-do-logo;
+    content: "\f0c0";
+  }
+  .language:before {
+    @include can-do-logo;
+    content: "\f57c";
+  }
+
+  .versionning:before {
+    @include can-do-logo;
+    content: "\f126";
+  }
+}
+
+/* RESPONSIVE
+---------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+  .offer {
+    h4 {
+      font-size: 1.1rem;
+    }
+    &__description {
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+  .offer {
+    h4 {
+      font-size: 1.1rem;
+    }
+    &__description {
+      p {
+        font-size: 0.9em;
+        line-height: 1.6em;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .offer {
+    h4 {
+      font-size: 1.3rem;
+    }
+    &__description {
+      p {
+        font-size: 1em;
+        line-height: 1.6em;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media only screen and (min-width: 1400px) {
+}
