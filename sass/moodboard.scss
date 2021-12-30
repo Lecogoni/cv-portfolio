@@ -6,11 +6,11 @@
   overflow-x: scroll;
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(18, 10vh);
+  grid-template-columns: repeat(20, 10vh);
   margin-bottom: 0.4em;
   grid-template-areas:
-    " asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock"
-    " asian asian  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling ";
+    "guinness guinness asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock"
+    "tennis-ball tennis-ball backpack backpack  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling";
 
   &__item {
     flex: 0 0 auto;
@@ -72,6 +72,39 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.moodboard__backpack {
+  grid-area: backpack;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858978/portfolio/moodboard/backpack_vy1soq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.moodboard__guinness {
+  grid-area: guinness;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858978/portfolio/moodboard/guinness_juqpp3.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 8px 8px 0;
+}
+//no tuse yet
+.moodboard__travel-plan {
+  grid-area: travel-plan;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858979/portfolio/moodboard/travel-plan_bamtwp.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.moodboard__tennis-ball {
+  grid-area: tennis-ball;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858996/portfolio/moodboard/tennis-balls_orcaf0.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
 }
 
 .moodboard__asian {
@@ -211,7 +244,6 @@
 // X-Large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(18, 10vh);
     &__item {
       height: 160px;
     }

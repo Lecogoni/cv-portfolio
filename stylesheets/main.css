@@ -693,9 +693,9 @@ font-family: 'Titillium Web', sans-serif;
   overflow-x: scroll;
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(18, 10vh);
+  grid-template-columns: repeat(20, 10vh);
   margin-bottom: 0.4em;
-  grid-template-areas: " asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock" " asian asian  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling "; }
+  grid-template-areas: "guinness guinness asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock" "tennis-ball tennis-ball backpack backpack  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling"; }
   .moodboard__item {
     flex: 0 0 auto;
     border: 1px solid #eeeeee;
@@ -756,6 +756,35 @@ font-family: 'Titillium Web', sans-serif;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain; }
+
+.moodboard__backpack {
+  grid-area: backpack;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858978/portfolio/moodboard/backpack_vy1soq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.moodboard__guinness {
+  grid-area: guinness;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858978/portfolio/moodboard/guinness_juqpp3.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 8px 8px 0; }
+
+.moodboard__travel-plan {
+  grid-area: travel-plan;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858979/portfolio/moodboard/travel-plan_bamtwp.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.moodboard__tennis-ball {
+  grid-area: tennis-ball;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858996/portfolio/moodboard/tennis-balls_orcaf0.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%; }
 
 .moodboard__asian {
   grid-area: asian;
@@ -886,12 +915,10 @@ font-family: 'Titillium Web', sans-serif;
 /* RESPONSIVE
 ---------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-  .moodboard {
-    grid-template-columns: repeat(18, 10vh); }
-    .moodboard__item {
-      height: 160px; }
-    .moodboard__item-double-hight {
-      height: 325px; } }
+  .moodboard__item {
+    height: 160px; }
+  .moodboard__item-double-hight {
+    height: 325px; } }
 .cv__category {
   font-family: "Lato", sans-serif;
   font-weight: 700;
