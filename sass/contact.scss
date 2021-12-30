@@ -13,6 +13,18 @@
   button[type="submit"]:hover {
     filter: brightness(80%);
   }
+  .send::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 0.9em;
+    color: $dark-blue-color;
+    display: block;
+    width: 1.4em;
+    float: left;
+    margin-right: 0.6em;
+    padding-top: 0.2em;
+    content: "\f1d8";
+  }
 }
 
 .linkedin-contact {
