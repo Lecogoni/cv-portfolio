@@ -69,9 +69,6 @@ a:visited {
 /* RESPONSIVE - SET BACKGROUNG IMAGE
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
-  .bg-img {
-    height: 300px; }
-
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
     background-blend-mode: hard-light; }
@@ -413,7 +410,7 @@ font-family: 'Titillium Web', sans-serif;
     width: 100%;
     z-index: 5;
     position: absolute;
-    top: 450px;
+    top: 445px;
     transition: all 0.4s ease-out;
     display: flex;
     flex-direction: column;
@@ -422,7 +419,7 @@ font-family: 'Titillium Web', sans-serif;
     justify-content: space-between; }
   .portfolio__item__title {
     width: 100%;
-    height: 50px;
+    height: 55px;
     background-color: #10ddb4;
     color: #22435d;
     text-align: center;
@@ -593,7 +590,7 @@ font-family: 'Titillium Web', sans-serif;
     font-size: 0.8em;
     padding: 0 2.6em; }
   .portfolio__item__btn__wrapper {
-    width: 70%; }
+    width: 80%; }
   .portfolio__item__btn {
     font-size: 0.8em;
     padding: 0.2em 1.4em;
@@ -615,10 +612,17 @@ font-family: 'Titillium Web', sans-serif;
     font-size: 0.9em;
     margin: 0 0.4em 0.6em 0.4em; }
   .portfolio__item__description {
-    font-size: 0.9em; } }
+    font-size: 0.9em; }
+  .portfolio__item__btn__wrapper {
+    width: 90%; } }
 @media only screen and (min-width: 992px) {
   .portfolio__item__description {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .portfolio__item__btn__wrapper {
+    width: 70%; } }
+@media only screen and (min-width: 1200px) {
+  .portfolio__item__btn__wrapper {
+    width: 50%; } }
 /* CODE TECHNO ICON PART
 ---------------------------------------------- */
 .environment {
@@ -1063,16 +1067,18 @@ font-family: 'Titillium Web', sans-serif;
       background-size: 80%; } }
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 13vh); }
+    grid-template-columns: repeat(20, 11vh); }
     .moodboard__item {
       height: 140px; }
     .moodboard__item-double-hight {
       height: 285px; } }
 @media only screen and (min-width: 1200px) {
-  .moodboard__item {
-    height: 160px; }
-  .moodboard__item-double-hight {
-    height: 325px; } }
+  .moodboard {
+    grid-template-columns: repeat(20, 11vh); }
+    .moodboard__item {
+      height: 160px; }
+    .moodboard__item-double-hight {
+      height: 325px; } }
 .cv__category {
   font-family: "Lato", sans-serif;
   font-weight: 700;
