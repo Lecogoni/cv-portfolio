@@ -47,7 +47,7 @@ window.onload = function () {
       let title = item.querySelectorAll(".portfolio__item__title__text")[0];
       title.classList.remove("btn-down");
       let portfolio = item.querySelector(".portfolio__item__content");
-      portfolio.style.top = 450 + "px";
+      portfolio.style.top = 445 + "px";
     });
   });
 
@@ -59,7 +59,7 @@ window.onload = function () {
       let portfolioContent = item.closest("div.portfolio__item__content");
 
       if (portfolioContent.style.top == "0px") {
-        portfolioContent.style.top = 450 + "px";
+        portfolioContent.style.top = 445 + "px";
         item.classList.remove("btn-down");
       } else {
         portfolioContent.style.top = 0 + "px";
