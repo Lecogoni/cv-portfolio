@@ -1285,8 +1285,6 @@ font-family: 'Titillium Web', sans-serif;
     background-repeat: no-repeat;
     background-size: contain;
     grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
-  .soft__skills__items {
-    border: 1px solid #22435d; }
 
 .item1 {
   grid-area: lego-head; }
