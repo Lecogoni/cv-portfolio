@@ -1,0 +1,370 @@
+/* SOFT SKILLS SCSS
+---------------------------------------------- */
+.soft__skills {
+  color: $dark-blue-color;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 2.4em;
+  &-highlight {
+    color: $green-color;
+    filter: brightness(95%);
+  }
+
+  &__container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 0.2em;
+    height: 700px;
+
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego_twxhyc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    grid-template-areas:
+      "f f f lego-head a a a "
+      "b b b lego-head a a a  "
+      "b b b lego-head k h h "
+      "i i i lego-body c c c "
+      "d d g lego-body l l l "
+      "m m g lego-foot e e e "
+      "m m g lego-foot j j j ";
+  }
+  &__items {
+    border: 1px solid $dark-blue-color;
+  }
+}
+
+.item1 {
+  grid-area: lego-head;
+}
+.item2 {
+  grid-area: lego-body;
+}
+.item3 {
+  grid-area: lego-foot;
+}
+.item4 {
+  grid-area: a;
+  align-self: center;
+  text-align: right;
+}
+.item5 {
+  grid-area: b;
+  align-self: center;
+}
+.item6 {
+  grid-area: c;
+}
+.item7 {
+  grid-area: d;
+}
+.item8 {
+  grid-area: e;
+}
+.item9 {
+  grid-area: f;
+}
+.item10 {
+  grid-area: g;
+}
+.item11 {
+  grid-area: h;
+  align-self: center;
+  text-align: right;
+}
+.item12 {
+  grid-area: i;
+}
+.item13 {
+  grid-area: j;
+  align-self: center;
+  text-align: right;
+}
+.item14 {
+  grid-area: k;
+}
+.item15 {
+  grid-area: l;
+  align-self: center;
+  text-align: right;
+}
+.item16 {
+  grid-area: m;
+  align-self: flex-start;
+  text-align: left;
+}
+
+/* RESPONSIVE
+---------------------------------------------- */
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+
+@media only screen and (max-width: 575px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em;
+    &__container {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: 0;
+      margin-right: auto;
+      margin-left: 0;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-gap: 5px;
+      height: 500px;
+
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      grid-template-areas:
+        "lego-head f a a a a a "
+        "lego-head f a a a a a "
+        "lego-head f b b b b b "
+        "lego-body c c d l l l "
+        "lego-body c c k i i i "
+        "lego-foot e e h h h h  "
+        "lego-foot j g m m m m ";
+    }
+  }
+  .item4 {
+    padding-right: 1em;
+  }
+  .item5 {
+    grid-area: b;
+    align-self: center;
+  }
+  .item6 {
+    text-align: left;
+  }
+  .item8 {
+    padding-right: 1em;
+    text-align: left;
+  }
+  .item11 {
+    grid-area: h;
+    align-self: center;
+    text-align: left;
+  }
+  .item12 {
+    grid-area: i;
+    align-self: center;
+    text-align: right;
+  }
+  .item16 {
+    grid-area: m;
+    align-self: flex-start;
+    text-align: right;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em;
+    &__container {
+      // max-width: 540px;
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: 0;
+      margin-right: auto;
+      margin-left: 0;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-gap: 5px;
+      height: 500px;
+
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      grid-template-areas:
+        "lego-head f a a a a a "
+        "lego-head f a a a a a "
+        "lego-head f b b b b b "
+        "lego-body c c d d l l "
+        "lego-body c c p i i i "
+        "lego-foot e e e h h h  "
+        "lego-foot j g m m m k ";
+    }
+    .item4 {
+      padding-right: 1em;
+    }
+    .item6 {
+      text-align: left;
+    }
+    .item8 {
+      padding-right: 1em;
+    }
+  }
+}
+// CUSTOM
+@media only screen and (min-width: 640px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em;
+    &__container {
+      width: 100%;
+      max-width: 620px;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-gap: 0.2em;
+      height: 700px;
+
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego_twxhyc.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      grid-template-areas:
+        "f f f lego-head a a a "
+        "b b b lego-head a a a  "
+        "b b b lego-head k h h "
+        "i i i lego-body c c c "
+        "d d g lego-body l l l "
+        "m m g lego-foot e e e "
+        "m m g lego-foot j j j ";
+    }
+  }
+  .item5 {
+    grid-area: b;
+    align-self: start;
+    padding-right: 3em;
+  }
+
+  .item6 {
+    text-align: right;
+  }
+  .item7 {
+    grid-area: d;
+    align-self: start;
+  }
+  .item11 {
+    grid-area: h;
+    align-self: center;
+    text-align: right;
+  }
+  .item12 {
+    grid-area: i;
+  }
+  .item16 {
+    grid-area: m;
+    align-self: flex-start;
+    text-align: left;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .soft__skills {
+    &__container {
+      width: 100%;
+      max-width: 720px;
+    }
+    &__wrapper {
+      grid-template-areas:
+        "f f f lego-head a a a "
+        "b b b lego-head a a a  "
+        "b b b lego-head k h h "
+        "i i i lego-body c c c "
+        "d d g lego-body l l l "
+        "m m g lego-foot e e e "
+        "m m g lego-foot j j j ";
+    }
+  }
+  .item5 {
+    padding-right: 2.8em;
+  }
+  .item7 {
+    text-align: center;
+    padding-right: 1em;
+  }
+}
+
+// CUSTOM
+@media only screen and (min-width: 820px) {
+  .soft__skills {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.6em;
+    &__container {
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+  .item5 {
+    padding-right: 1.6em;
+  }
+  .item6 {
+    text-align: left;
+  }
+  .item7 {
+    text-align: center;
+    padding-right: 0em;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+  // .soft__skills__container {
+  //   width: 100%;
+  //   max-width: 960px;
+  // }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+  // .soft__skills__container {
+  //   width: 100%;
+  //   max-width: 1140px;
+  // }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media only screen and (min-width: 1400px) {
+  // .soft__skills__container {
+  //   width: 100%;
+  //   max-width: 1320px;
+  // }
+}

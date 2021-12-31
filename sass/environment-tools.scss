@@ -1,0 +1,194 @@
+/* CODE TECHNO ICON PART
+---------------------------------------------- */
+.environment {
+  .code-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.2rem;
+  }
+
+  .code__item {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 2em;
+    &__icon {
+      height: 65px;
+    }
+    &__name {
+      color: $darker-grey-color;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.8em;
+      margin-top: 0.8em;
+    }
+  }
+
+  .sass {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/sass_u22y7s.png);
+    @include background-img-contain;
+  }
+
+  .bootstrap {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bootstrap_iyvaoi.png);
+    @include background-img-contain;
+  }
+
+  .tailwind {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/tailwind_uw6szw.png);
+    @include background-img-contain;
+  }
+
+  .photoshop {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/photoshop_flu324.png);
+    @include background-img-contain;
+  }
+
+  .trello {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/trello_ltgt5y.png);
+    @include background-img-contain;
+  }
+
+  .illustrator {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/illustrator_y3ccg7.png);
+    @include background-img-contain;
+  }
+
+  .bulma {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bulma_cusvx0.png);
+    @include background-img-contain;
+  }
+
+  .indesign {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/indesign_u1fchr.png);
+    @include background-img-contain;
+  }
+
+  .jira {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/jira_qbp4oq.png);
+    @include background-img-contain;
+  }
+
+  /* RESPONSIVE
+  ---------------------------------------------- */
+
+  // X-Small devices (portrait phones, less than 576px)
+  // No media query for `xs` since this is the default in Bootstrap
+
+  // $grid-breakpoints: (
+  //   xs: 0,
+  //   sm: 576px,
+  //   md: 768px,
+  //   lg: 992px,
+  //   xl: 1200px,
+  //   xxl: 1400px
+  // );
+
+  @media only screen and (max-width: 575px) {
+    .code-wrapper {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .code-item {
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: -2;
+      }
+
+      &:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: -4;
+      }
+
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(3n - 2) {
+        grid-column-end: 5;
+      }
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media only screen and (min-width: 576px) {
+    .code-wrapper {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .code-item {
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: 0;
+      }
+
+      &:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 0;
+      }
+
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(3n - 2) {
+        grid-column-end: 5;
+      }
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media only screen and (min-width: 768px) {
+    .code-wrapper {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    .code-item {
+      &:last-child:nth-child(4n - 1) {
+        grid-column-end: -2;
+      }
+
+      &:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -5;
+      }
+
+      /* Dealing with single orphan */
+      &:last-child:nth-child(4n - 2) {
+        grid-column-end: -3;
+      }
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media only screen and (min-width: 992px) {
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media only screen and (min-width: 1200px) {
+    .code-wrapper {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    .code-item {
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: 1;
+      }
+
+      &:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -3;
+      }
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(4n - 2) {
+        grid-column-end: -1;
+      }
+    }
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media only screen and (min-width: 1400px) {
+    .code-wrapper {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    .code-item {
+      &:last-child:nth-child(5n - 1) {
+        grid-column-end: 1;
+      }
+
+      &:nth-last-child(2):nth-child(5n + 1) {
+        grid-column-end: -3;
+      }
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(5n - 2) {
+        grid-column-end: -1;
+      }
+    }
+  }
+}

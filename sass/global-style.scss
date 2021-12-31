@@ -1,0 +1,174 @@
+/* VARIABLE
+---------------------------------------------- */
+
+$dark-blue-color: rgb(34, 67, 93);
+$green-color: rgb(16, 221, 180);
+$light-grey-color: rgb(242, 242, 242);
+$dark-grey-color: rgb(238, 238, 238);
+$darker-grey-color: #545454;
+$white-color: rgb(255, 255, 255);
+
+/* MIXINS
+---------------------------------------------- */
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin background-img-contain() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin background-img-contain-top() {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* SET BACKGROUNDS COLOR WITH VARIABLES
+---------------------------------------------- */
+
+.dark-blue-background {
+  background: $dark-blue-color;
+}
+
+.green-background {
+  background: $green-color;
+}
+
+.white-background {
+  background: $white-color;
+}
+
+.light-grey-background {
+  background: $light-grey-color;
+}
+
+/* GENERAL
+---------------------------------------------- */
+
+html {
+  width: 100%;
+}
+
+section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+h2 {
+  margin-bottom: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: $dark-blue-color;
+}
+
+a,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.add {
+  text-align: center;
+  h4 {
+    color: $white-color;
+    font-family: "Titillium Web", sans-serif;
+  }
+}
+
+/* BACKGROUND IMAGES
+---------------------------------------------- */
+
+.bg-img {
+  height: 70vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.padel-back-img {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg),
+    linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+  background-blend-mode: hard-light;
+}
+
+.trek-back-img {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/trek_cox4vy.jpg),
+    linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
+  background-blend-mode: hard-light;
+}
+
+/* RESPONSIVE - SET BACKGROUNG IMAGE
+---------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+  .bg-img {
+    height: 300px;
+  }
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg),
+      linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light;
+  }
+  .add {
+    h4 {
+      font-size: 1.2em;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg),
+      linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg),
+      linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media only screen and (min-width: 1400px) {
+}
+
+/*
+
+
+font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+
+*/

@@ -1,0 +1,47 @@
+.contact {
+  h2 {
+    color: $green-color;
+  }
+  .my-contact {
+    color: $white-color;
+    height: 100%;
+  }
+  .email-state {
+    color: $green-color;
+    font-size: 1.2em;
+  }
+  button[type="submit"]:hover {
+    filter: brightness(80%);
+  }
+  .send::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 0.9em;
+    color: $dark-blue-color;
+    display: block;
+    width: 1.4em;
+    float: left;
+    margin-right: 0.6em;
+    padding-top: 0.2em;
+    content: "\f1d8";
+  }
+}
+
+.linkedin-contact {
+  height: 35px;
+  width: 35px;
+  margin-right: 3em;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695354/portfolio/LinkedIn_sdbklf.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gitlab-contact {
+  height: 35px;
+  width: 35px;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695355/portfolio/gitlab-icon_s4sfkh.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,191 @@
+/* PORTFOLIO
+---------------------------------------------- */
+
+@mixin portfolio-techno-logo() {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 200;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: $green-color;
+  display: block;
+  width: 1.4em;
+  float: left;
+}
+.portfolio__container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.portfolio__item {
+  border-radius: 10px;
+  margin-bottom: 1em;
+  height: 500px;
+  overflow-y: hidden;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.16);
+
+  &__image {
+    width: 100%;
+  }
+  &__content {
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 450px;
+    transition: all 0.4s ease-out;
+    @include flex-column;
+    justify-content: space-between;
+  }
+  &__title {
+    width: 100%;
+    height: 50px;
+    background-color: $green-color;
+    color: $dark-blue-color;
+    text-align: center;
+    padding: 0.7em;
+  }
+  &__techno {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    span {
+      font-size: 1em;
+      margin: 0 0.4em 0.6em 0.4em;
+      font-weight: 300;
+    }
+    .framework:before {
+      @include portfolio-techno-logo;
+      content: "\f120";
+    }
+    .database:before {
+      @include portfolio-techno-logo;
+      content: "\f1c0";
+    }
+    .authentification:before {
+      @include portfolio-techno-logo;
+      content: "\f084";
+    }
+    .mailing:before {
+      @include portfolio-techno-logo;
+      content: "\f0e0";
+    }
+    .server:before {
+      @include portfolio-techno-logo;
+      content: "\f233";
+    }
+    .img-server:before {
+      @include portfolio-techno-logo;
+      content: "\f302";
+    }
+    .design:before {
+      @include portfolio-techno-logo;
+      content: "\f1fc";
+    }
+    .api:before {
+      @include portfolio-techno-logo;
+      content: "\f0c1";
+    }
+  }
+  &__description {
+    font-size: 1em;
+    color: $darker-grey-color;
+    text-align: center;
+    word-break: keep-all;
+    padding: 0 2.6em;
+  }
+  &__btn {
+    font-size: 1em;
+    padding: 0.2em 1.4em;
+    background-color: $green-color;
+    border-radius: 1em;
+    color: $white-color;
+    // margin-right: 1em;
+    &:hover {
+      -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      transition: 0.3s ease;
+      -webkit-transition: all 0.3s;
+    }
+  }
+}
+
+.renov-blog {
+  height: 100%;
+  z-index: 2;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/renov-blog-edit_fnwylm.png);
+  // background-position: top;
+  // background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cooking-challenge {
+  height: 100%;
+  z-index: 2;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/cooking-challenge_f6tqhp.png);
+  // background-position: top;
+  // background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* RESPONSIVE
+---------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+  .portfolio__container {
+    padding-right: var(--bs-gutter-x, 2rem);
+    padding-left: var(--bs-gutter-x, 2rem);
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+  .portfolio__container {
+    max-width: 80%;
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .portfolio__container {
+    max-width: 100%;
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem);
+  }
+
+  .portfolio__item {
+    &__techno {
+      span {
+        font-size: 0.9em;
+        margin: 0 0.4em 0.6em 0.4em;
+      }
+    }
+    &__description {
+      font-size: 0.9em;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+  .portfolio__item {
+    &__description {
+      font-size: 1em;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media only screen and (min-width: 1400px) {
+}

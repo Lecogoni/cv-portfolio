@@ -1,0 +1,318 @@
+.cv {
+  &__category {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: $dark-blue-color;
+    margin-bottom: 0;
+  }
+  &__title {
+    color: $dark-blue-color;
+    font-size: 1.1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    padding-top: 0.2em;
+  }
+  .fa-info-circle {
+    color: $green-color;
+    &:hover {
+      cursor: pointer;
+      filter: brightness(90%);
+    }
+  }
+  &__info {
+    font-size: 1em;
+    color: $darker-grey-color;
+  }
+  &__date {
+    font-size: 0.9em;
+    color: $darker-grey-color;
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 200;
+      font-size: 0.8em;
+      color: $darker-grey-color;
+      display: block;
+      width: 1.4em;
+      float: left;
+      margin: 0.2em 0.1em 0 0.4em;
+      content: "\f073";
+    }
+  }
+
+  &__details {
+    background-color: rgb(236, 236, 236);
+    transition: height 0.3s ease-in-out;
+    color: $dark-blue-color;
+    margin: 0.8em 0;
+    // -webkit-box-shadow: inset 6px 2px 18px -8px rgba(34, 64, 91, 0.16);
+    // box-shadow: inset 6px 2px 18px -8px rgba(34, 64, 91, 0.16);
+    &__container {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .row {
+      padding: 1.2em 0;
+    }
+    &__img__list {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      margin: 0.8em 0 1.2em 0;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+  &__details__content {
+    padding: 0 0 0 2.4em;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: -5;
+    li {
+      font-size: 0.9em;
+      &:before {
+        content: "- ";
+      }
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1s;
+}
+
+.fadeOpacity {
+  opacity: 1;
+  z-index: 0;
+}
+
+// WIP
+.cv__details__img__events {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  min-height: 40px;
+  min-width: 100px;
+  margin-right: 1em;
+}
+
+.beweb {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/beWeb_iys65r.png);
+  @include background-img-contain-top;
+}
+
+.thp {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/thp_zbfcob.png);
+  @include background-img-contain-top;
+}
+
+.kawa {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/Kawa_hec9v6.png);
+  @include background-img-contain-top;
+}
+
+.tourman {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/badge_sx22lv.png);
+  @include background-img-contain-top;
+  min-height: 100px;
+}
+
+.onprod {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/OnProd_umj3wv.png);
+  @include background-img-contain-top;
+}
+
+.followme {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/FollowMe_vh8ccg.png);
+  @include background-img-contain-top;
+}
+
+/* Event Details Expererience Logo
+---------------------------------------------- */
+
+.pheno {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/pheno_njpaoz.png);
+  @include background-img-contain;
+}
+
+.capdel {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695279/portfolio/cv-section/capdel_opiral.png);
+  @include background-img-contain;
+}
+
+.epoka {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/epoka_bvnogg.png);
+  @include background-img-contain;
+}
+
+.loreal {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/LOreal-DPP_fhatl6.png);
+  @include background-img-contain;
+}
+
+.loreal-das {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/loreal-DAS_gwyrhv.png);
+  @include background-img-contain;
+}
+
+.tro {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694746/portfolio/cv-section/tro_pkxo1v.png);
+  @include background-img-contain;
+}
+
+.snap {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/Logo-Snapchat_urdpaw.png);
+  @include background-img-contain;
+}
+
+.ca {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695176/portfolio/cv-section/credit-agricol_kodtst.png);
+  @include background-img-contain;
+}
+
+.pma {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695003/portfolio/cv-section/PMA-DAYS_w58snj.png);
+  @include background-img-contain;
+}
+
+.get27 {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/get27_v3mvft.png);
+  @include background-img-contain;
+}
+
+.wl {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694614/portfolio/cv-section/william-lawson_idyw8p.png);
+  @include background-img-contain;
+}
+
+.spectacles {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694614/portfolio/cv-section/Spectacles-logo_bhdokq.png);
+  @include background-img-contain;
+}
+
+.jo {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/Paris-JO_tvnenz.png);
+  @include background-img-contain;
+}
+
+.loyal {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/monsieur-loyal_nt1ity.png);
+  @include background-img-contain;
+}
+
+.mondelez {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/mondelezlogo_kqv2eq.png);
+  @include background-img-contain;
+}
+
+.leclerc {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/logo-Leclerc_dmtct3.png);
+  @include background-img-contain;
+}
+
+/* RESPONSIVE
+---------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+  .cv {
+    &__category {
+      margin-bottom: 1em;
+    }
+    &__title {
+      font-size: 1em;
+    }
+    &__info {
+      font-size: 0.9em;
+    }
+    &__date {
+      font-size: 0.8em;
+    }
+    &__details {
+      font-size: 1em;
+    }
+    &__details {
+      font-size: 0.9em;
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+  .cv {
+    &__category {
+      margin-bottom: 1em;
+    }
+    &__title {
+      font-size: 1em;
+    }
+    &__info {
+      font-size: 0.9em;
+    }
+    &__date {
+      font-size: 0.8em;
+    }
+    &__details {
+      font-size: 0.9em;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .cv {
+    &__category {
+      margin-bottom: 1em;
+    }
+    &__title {
+      font-size: 1em;
+    }
+    &__info {
+      font-size: 0.9em;
+    }
+    &__date {
+      font-size: 0.8em;
+    }
+    &__details {
+      font-size: 1em;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+  .cv {
+    &__category {
+      margin-bottom: 0;
+    }
+    &__title {
+      font-size: 1.1em;
+    }
+    &__info {
+      font-size: 1em;
+    }
+    &__date {
+      font-size: 0.9em;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media only screen and (min-width: 1400px) {
+}
