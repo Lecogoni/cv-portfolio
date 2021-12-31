@@ -40,9 +40,9 @@
       "m m g lego-foot e e e "
       "m m g lego-foot j j j ";
   }
-  &__items {
-    border: 1px solid $dark-blue-color;
-  }
+  // &__items {
+  //   border: 1px solid $dark-blue-color;
+  // }
 }
 
 .item1 {
@@ -160,6 +160,7 @@
   .item5 {
     grid-area: b;
     align-self: center;
+    padding-bottom: 1.6em;
   }
   .item6 {
     text-align: left;
@@ -288,6 +289,11 @@
   .item12 {
     grid-area: i;
   }
+  .item15 {
+    grid-area: l;
+    align-self: end;
+    text-align: right;
+  }
   .item16 {
     grid-area: m;
     align-self: flex-start;
@@ -319,6 +325,11 @@
   .item7 {
     text-align: center;
     padding-right: 1em;
+  }
+  .item15 {
+    grid-area: l;
+    align-self: center;
+    text-align: right;
   }
 }
 
