@@ -18,6 +18,10 @@
 
 /* GENERAL
 ---------------------------------------------- */
+body,
+html {
+  overflow-x: hidden; }
+
 html {
   width: 100%; }
 
@@ -994,6 +998,13 @@ font-family: 'Titillium Web', sans-serif;
       background-size: contain;
       background-size: 80%; } }
 @media only screen and (min-width: 576px) {
+  .moodboard {
+    grid-template-columns: repeat(20, 22vh); }
+    .moodboard__item {
+      height: 90px; }
+    .moodboard__item-double-hight {
+      height: 185px; }
+
   .moodboard__two-wheels {
     display: flex;
     flex-direction: column;
@@ -1001,6 +1012,35 @@ font-family: 'Titillium Web', sans-serif;
     align-items: center;
     grid-area: two-wheels;
     padding: 0.4em;
+    height: 100%; }
+    .moodboard__two-wheels__item {
+      height: 45px;
+      width: 100px; }
+    .moodboard__two-wheels .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 60%; }
+    .moodboard__two-wheels .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .moodboard__two-wheels .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 60%; } }
+@media only screen and (min-width: 768px) {
+  .moodboard {
+    grid-template-columns: repeat(20, 10vh); }
+    .moodboard__item {
+      height: 140px; }
+    .moodboard__item-double-hight {
+      height: 285px; }
+
+  .moodboard__two-wheels {
     height: 100%; }
     .moodboard__two-wheels__item {
       height: 70px;
@@ -1021,6 +1061,13 @@ font-family: 'Titillium Web', sans-serif;
       background-repeat: no-repeat;
       background-size: contain;
       background-size: 80%; } }
+@media only screen and (min-width: 992px) {
+  .moodboard {
+    grid-template-columns: repeat(20, 13vh); }
+    .moodboard__item {
+      height: 140px; }
+    .moodboard__item-double-hight {
+      height: 285px; } }
 @media only screen and (min-width: 1200px) {
   .moodboard__item {
     height: 160px; }
