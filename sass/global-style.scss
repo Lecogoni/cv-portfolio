@@ -58,6 +58,10 @@ $white-color: rgb(255, 255, 255);
 
 /* GENERAL
 ---------------------------------------------- */
+body,
+html {
+  overflow-x: hidden;
+}
 
 html {
   width: 100%;
