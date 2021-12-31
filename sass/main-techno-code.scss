@@ -1,0 +1,187 @@
+/* CODE TECHNO ICON PART
+---------------------------------------------- */
+.main-techno {
+  .code__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.2rem;
+  }
+
+  .code__item {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 2em;
+    &__icon {
+      height: 65px;
+    }
+    &__name {
+      color: $darker-grey-color;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.8em;
+      margin-top: 0.8em;
+    }
+  }
+
+  .js {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/javaScript_zaymwu.png);
+    @include background-img-contain;
+  }
+
+  .angular {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/angular_udhhva.png);
+    @include background-img-contain;
+  }
+
+  .ruby {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/ruby_jsz7od.png);
+    @include background-img-contain;
+  }
+
+  .php {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/php_lseqju.png);
+    @include background-img-contain;
+  }
+
+  .docker {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/docker_khotlw.png);
+    @include background-img-contain;
+  }
+
+  .rails {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/rails_tlnrgk.png);
+    @include background-img-contain;
+  }
+
+  .symfony {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/symphony_fjcfnz.png);
+    @include background-img-contain;
+  }
+
+  .typescript {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/typescript_dtcmic.png);
+    @include background-img-contain;
+  }
+
+  .git {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/git_ykzhwv.png);
+    @include background-img-contain;
+  }
+
+  .wordpress {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693702/portfolio/logo/wordpress_vj40pp.png);
+    @include background-img-contain;
+  }
+
+  /* RESPONSIVE
+  ---------------------------------------------- */
+
+  @media only screen and (max-width: 575px) {
+    .code__wrapper {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .code__item {
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: -2;
+      }
+
+      &:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: -4;
+      }
+
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(3n - 2) {
+        grid-column-end: 5;
+      }
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media only screen and (min-width: 576px) {
+    .code__wrapper {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .code__item {
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: 0;
+      }
+
+      &:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 0;
+      }
+
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(3n - 2) {
+        grid-column-end: 5;
+      }
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media only screen and (min-width: 768px) {
+    .code__wrapper {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    .code__item {
+      &:last-child:nth-child(4n - 1) {
+        grid-column-end: -2;
+      }
+
+      &:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -5;
+      }
+
+      /* Dealing with single orphan */
+      &:last-child:nth-child(4n - 2) {
+        grid-column-end: -3;
+      }
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media only screen and (min-width: 992px) {
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media only screen and (min-width: 1200px) {
+    .code__wrapper {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    .code__item {
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: 1;
+      }
+
+      &:nth-last-child(2):nth-child(4n + 1) {
+        grid-column-end: -3;
+      }
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(4n - 2) {
+        grid-column-end: -1;
+      }
+    }
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media only screen and (min-width: 1400px) {
+    .code__wrapper {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    .code__item {
+      &:last-child:nth-child(5n - 1) {
+        grid-column-end: 1;
+      }
+
+      &:nth-last-child(2):nth-child(5n + 1) {
+        grid-column-end: -3;
+      }
+      /* Dealing with single orphan */
+
+      &:last-child:nth-child(5n - 2) {
+        grid-column-end: -1;
+      }
+    }
+  }
+}

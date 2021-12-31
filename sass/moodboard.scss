@@ -1,0 +1,314 @@
+/* MOODBOARD
+---------------------------------------------- */
+
+.moodboard {
+  width: 100vw;
+  overflow-x: scroll;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(20, 10vh);
+  margin-bottom: 0.4em;
+  grid-template-areas:
+    "guinness guinness asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock"
+    "tennis-ball tennis-ball backpack backpack  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling";
+
+  &__item {
+    flex: 0 0 auto;
+    border: 1px solid $dark-grey-color;
+    border-radius: 8px;
+    height: 140px;
+    background-color: $dark-grey-color;
+  }
+  &__item-double-hight {
+    flex: 0 0 auto;
+    border: 1px solid $dark-grey-color;
+    border-radius: 8px;
+    background-color: $dark-grey-color;
+    height: 285px;
+  }
+}
+
+.moodboard__profile-picture {
+  grid-area: picture;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/id-picture_brme6a.jpg);
+  @include background-img-contain;
+  background-position: top;
+  background-size: cover;
+}
+
+.moodboard__apple-keyboard {
+  grid-area: keyboard;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/keyboard_mchblv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.moodboard__travel {
+  grid-area: travel;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694165/portfolio/moodboard/travel_i6njib.jpg);
+  @include background-img-contain;
+  background-size: cover;
+}
+
+.moodboard__lego {
+  grid-area: lego;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/Lego_u5l4uk.png);
+  @include background-img-contain;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.moodboard__pala {
+  grid-area: pala;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/pala-padel_mtjkdl.png);
+  @include background-img-contain;
+  background-size: 45%;
+}
+
+.moodboard__emoji {
+  grid-area: emoji;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/emoji_qy5arf.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.moodboard__backpack {
+  grid-area: backpack;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858978/portfolio/moodboard/backpack_vy1soq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.moodboard__guinness {
+  grid-area: guinness;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858978/portfolio/moodboard/guinness_juqpp3.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 8px 8px 0;
+}
+//no tuse yet
+.moodboard__travel-plan {
+  grid-area: travel-plan;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858979/portfolio/moodboard/travel-plan_bamtwp.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.moodboard__tennis-ball {
+  grid-area: tennis-ball;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858996/portfolio/moodboard/tennis-balls_orcaf0.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.moodboard__asian {
+  grid-area: asian;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/asian-food_vlirzh.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.moodboard__monkey {
+  grid-area: monkey;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/monkey-star_oxdu9q.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.moodboard__audio {
+  grid-area: audio;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/headphone_ekjzmz.png);
+  @include background-img-contain;
+  background-size: 40%;
+}
+
+.moodboard__tape {
+  grid-area: tape;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/tape_ofmpt3.png);
+  @include background-img-contain;
+  background-size: cover;
+}
+
+.moodboard__school {
+  grid-area: school;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/back-to-school_eyar2x.jpg);
+  @include background-img-contain;
+  background-size: cover;
+}
+
+.moodboard__rock {
+  grid-area: rock;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/rock_jzqcv4.png);
+  @include background-img-contain;
+  background-size: cover;
+}
+
+.moodboard__louise {
+  grid-area: louise;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/louise_smyktj.png);
+  @include background-img-contain;
+  background-size: cover;
+}
+
+.moodboard__recycling {
+  grid-area: recycling;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/ecologique_qdiqph.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.moodboard__two-wheels {
+  @include flex-column;
+  grid-area: two-wheels;
+  padding: 0.4em;
+  height: 100%;
+  &__item {
+    height: 70px;
+    width: 100px;
+  }
+  .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    @include background-img-contain;
+  }
+  .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    @include background-img-contain;
+    background-size: 80%;
+  }
+}
+
+.moodboard__best-app {
+  grid-area: best-app;
+  @include flex-row;
+
+  .moodboard__medium {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/medium-app_qbbpcf.png);
+    @include background-img-contain;
+    background-size: 50%;
+  }
+  .moodboard__boncoin {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/leboncoin-logo_km7glf.png);
+    @include background-img-contain;
+    background-size: 50%;
+  }
+  .moodboard__mapsme {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/maps-me_v34gjm.png);
+    @include background-img-contain;
+    background-size: 50%;
+  }
+  .moodboard__huffpost {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/huffpost_fx4arc.png);
+    @include background-img-contain;
+    background-size: 50%;
+  }
+  .moodboard__wallet {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/wallet_awhlq6.png);
+    @include background-img-contain;
+    background-size: 50%;
+  }
+}
+
+/* RESPONSIVE
+---------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+  .moodboard {
+    grid-template-columns: repeat(20, 13vh);
+    &__item {
+      height: 90px;
+    }
+    &__item-double-hight {
+      height: 185px;
+    }
+  }
+  .moodboard__two-wheels {
+    height: 100%;
+    &__item {
+      height: 50px;
+      width: 11vh;
+    }
+    .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+    .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      @include background-img-contain;
+    }
+    .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      @include background-img-contain;
+      background-size: 80%;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+  .moodboard__two-wheels {
+    @include flex-column;
+    grid-area: two-wheels;
+    padding: 0.4em;
+    height: 100%;
+    &__item {
+      height: 70px;
+      width: 100px;
+    }
+    .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+    .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      @include background-img-contain;
+    }
+    .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      @include background-img-contain;
+      background-size: 80%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+  .moodboard {
+    &__item {
+      height: 160px;
+    }
+    &__item-double-hight {
+      height: 325px;
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media only screen and (min-width: 1400px) {
+}
