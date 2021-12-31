@@ -13,6 +13,9 @@ window.onload = function () {
 
   // portfollio card
   const portfoliosInfos = document.querySelectorAll(".card");
+  const portfolioTitles = document.querySelectorAll(
+    ".portfolio__item__title__text"
+  );
   // form send button
   const sendBtn = document.getElementById("send-btn");
   // email input in the form
@@ -31,15 +34,37 @@ window.onload = function () {
 
   /** ANIMATION ON PORTFOLLIO CARD - SET EVEN LISTENER
    * move up and down portfolio card info on mouse enter / leave
+   * change arrow icon by adding / removing class
    */
   portfoliosInfos.forEach((item) => {
     item.addEventListener("mouseenter", (e) => {
+      let title = item.querySelectorAll(".portfolio__item__title__text")[0];
+      title.classList.add("btn-down");
       let portfolio = item.querySelector(".portfolio__item__content");
       portfolio.style.top = 0 + "px";
     });
     item.addEventListener("mouseleave", (e) => {
+      let title = item.querySelectorAll(".portfolio__item__title__text")[0];
+      title.classList.remove("btn-down");
       let portfolio = item.querySelector(".portfolio__item__content");
       portfolio.style.top = 450 + "px";
+    });
+  });
+
+  /** SAME ANIMATION ON PORTFOLLIO CARD AS PREVIOUS
+   *  event listener based on click on title
+   */
+  portfolioTitles.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      let portfolioContent = item.closest("div.portfolio__item__content");
+
+      if (portfolioContent.style.top == "0px") {
+        portfolioContent.style.top = 450 + "px";
+        item.classList.remove("btn-down");
+      } else {
+        portfolioContent.style.top = 0 + "px";
+        item.classList.add("btn-down");
+      }
     });
   });
 
