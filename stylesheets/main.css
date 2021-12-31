@@ -5,7 +5,7 @@
 /* SET BACKGROUNDS COLOR WITH VARIABLES
 ---------------------------------------------- */
 .dark-blue-background {
-  background: #22405b; }
+  background: #22435d; }
 
 .green-background {
   background: #10ddb4; }
@@ -30,7 +30,7 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2em;
   font-weight: 700;
-  color: #22405b; }
+  color: #22435d; }
 
 a,
 a:hover,
@@ -48,7 +48,8 @@ a:visited {
 ---------------------------------------------- */
 .bg-img {
   height: 70vh;
-  background-position: center;
+  width: 100%;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
@@ -67,8 +68,20 @@ a:visited {
   .bg-img {
     height: 300px; }
 
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
   .add h4 {
     font-size: 1.2em; } }
+@media only screen and (min-width: 576px) {
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; } }
+@media only screen and (min-width: 768px) {
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; } }
 /*
 
 
@@ -137,7 +150,7 @@ font-family: 'Titillium Web', sans-serif;
   margin-bottom: 0.6em;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color: #22405b; }
+  color: #22435d; }
 .offer__description {
   margin-bottom: 1.6em;
   padding: 0 0.4em; }
@@ -407,7 +420,7 @@ font-family: 'Titillium Web', sans-serif;
     width: 100%;
     height: 50px;
     background-color: #10ddb4;
-    color: #22405b;
+    color: #22435d;
     text-align: center;
     padding: 0.7em; }
   .portfolio__item__techno {
@@ -914,6 +927,63 @@ font-family: 'Titillium Web', sans-serif;
 
 /* RESPONSIVE
 ---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .moodboard {
+    grid-template-columns: repeat(20, 13vh); }
+    .moodboard__item {
+      height: 90px; }
+    .moodboard__item-double-hight {
+      height: 185px; }
+
+  .moodboard__two-wheels {
+    height: 100%; }
+    .moodboard__two-wheels__item {
+      height: 50px;
+      width: 11vh; }
+    .moodboard__two-wheels .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 70%; }
+    .moodboard__two-wheels .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .moodboard__two-wheels .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 80%; } }
+@media only screen and (min-width: 576px) {
+  .moodboard__two-wheels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: two-wheels;
+    padding: 0.4em;
+    height: 100%; }
+    .moodboard__two-wheels__item {
+      height: 70px;
+      width: 100px; }
+    .moodboard__two-wheels .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 70%; }
+    .moodboard__two-wheels .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .moodboard__two-wheels .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 80%; } }
 @media only screen and (min-width: 1200px) {
   .moodboard__item {
     height: 160px; }
@@ -923,10 +993,10 @@ font-family: 'Titillium Web', sans-serif;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.3em;
-  color: #22405b;
+  color: #22435d;
   margin-bottom: 0; }
 .cv__title {
-  color: #22405b;
+  color: #22435d;
   font-size: 1.1em;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -955,7 +1025,7 @@ font-family: 'Titillium Web', sans-serif;
 .cv__details {
   background-color: #ececec;
   transition: height 0.3s ease-in-out;
-  color: #22405b;
+  color: #22435d;
   margin: 0.8em 0; }
   .cv__details__container {
     width: 100%;
@@ -1190,7 +1260,7 @@ font-family: 'Titillium Web', sans-serif;
 /* SOFT SKILLS SCSS
 ---------------------------------------------- */
 .soft__skills {
-  color: #22405b;
+  color: #22435d;
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   font-weight: 500;
@@ -1214,7 +1284,9 @@ font-family: 'Titillium Web', sans-serif;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head h h h " "i i i lego-body k c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+  .soft__skills__items {
+    border: 1px solid #22435d; }
 
 .item1 {
   grid-area: lego-head; }
@@ -1298,7 +1370,7 @@ font-family: 'Titillium Web', sans-serif;
       background-position: left;
       background-repeat: no-repeat;
       background-size: contain;
-      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d d l l " "lego-body c c i i i p " "lego-foot e e e h h h  " "lego-foot j g m m m k "; }
+      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d l l l " "lego-body c c k i i i " "lego-foot e e h h h h  " "lego-foot j g m m m m "; }
 
   .item4 {
     padding-right: 1em; }
@@ -1312,7 +1384,22 @@ font-family: 'Titillium Web', sans-serif;
 
   .item8 {
     padding-right: 1em;
-    text-align: left; } }
+    text-align: left; }
+
+  .item11 {
+    grid-area: h;
+    align-self: center;
+    text-align: left; }
+
+  .item12 {
+    grid-area: i;
+    align-self: center;
+    text-align: right; }
+
+  .item16 {
+    grid-area: m;
+    align-self: flex-start;
+    text-align: right; } }
 @media only screen and (min-width: 576px) {
   .soft__skills {
     font-size: 1.1em;
@@ -1334,7 +1421,7 @@ font-family: 'Titillium Web', sans-serif;
       background-position: left;
       background-repeat: no-repeat;
       background-size: contain;
-      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d d l l " "lego-body c c i i i p " "lego-foot e e e h h h  " "lego-foot j g m m m k "; }
+      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d d l l " "lego-body c c p i i i " "lego-foot e e e h h h  " "lego-foot j g m m m k "; }
     .soft__skills .item4 {
       padding-right: 1em; }
     .soft__skills .item6 {
@@ -1363,7 +1450,7 @@ font-family: 'Titillium Web', sans-serif;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head h h h " "i i i lego-body k c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+      grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
 
   .item5 {
     grid-area: b;
@@ -1375,13 +1462,26 @@ font-family: 'Titillium Web', sans-serif;
 
   .item7 {
     grid-area: d;
-    align-self: start; } }
+    align-self: start; }
+
+  .item11 {
+    grid-area: h;
+    align-self: center;
+    text-align: right; }
+
+  .item12 {
+    grid-area: i; }
+
+  .item16 {
+    grid-area: m;
+    align-self: flex-start;
+    text-align: left; } }
 @media only screen and (min-width: 768px) {
   .soft__skills__container {
     width: 100%;
     max-width: 720px; }
   .soft__skills__wrapper {
-    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head h h h " "i i i lego-body k c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
 
   .item5 {
     padding-right: 2.8em; }
@@ -1421,7 +1521,7 @@ font-family: 'Titillium Web', sans-serif;
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   font-size: 0.9em;
-  color: #22405b;
+  color: #22435d;
   display: block;
   width: 1.4em;
   float: left;

@@ -1,7 +1,7 @@
 /* VARIABLE
 ---------------------------------------------- */
 
-$dark-blue-color: rgb(34, 64, 91);
+$dark-blue-color: rgb(34, 67, 93);
 $green-color: rgb(16, 221, 180);
 $light-grey-color: rgb(242, 242, 242);
 $dark-grey-color: rgb(238, 238, 238);
@@ -96,7 +96,8 @@ a:visited {
 
 .bg-img {
   height: 70vh;
-  background-position: center;
+  width: 100%;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -121,6 +122,11 @@ a:visited {
   .bg-img {
     height: 300px;
   }
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg),
+      linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light;
+  }
   .add {
     h4 {
       font-size: 1.2em;
@@ -130,10 +136,20 @@ a:visited {
 
 // Small devices (landscape phones, 576px and up)
 @media only screen and (min-width: 576px) {
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg),
+      linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media only screen and (min-width: 768px) {
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg),
+      linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light;
+  }
 }
 
 // Large devices (desktops, 992px and up)

@@ -34,15 +34,15 @@
     grid-template-areas:
       "f f f lego-head a a a "
       "b b b lego-head a a a  "
-      "b b b lego-head h h h "
-      "i i i lego-body k c c "
+      "b b b lego-head k h h "
+      "i i i lego-body c c c "
       "d d g lego-body l l l "
       "m m g lego-foot e e e "
       "m m g lego-foot j j j ";
   }
-  // &__items {
-  //   border: 1px solid $dark-blue-color;
-  // }
+  &__items {
+    border: 1px solid $dark-blue-color;
+  }
 }
 
 .item1 {
@@ -148,10 +148,10 @@
         "lego-head f a a a a a "
         "lego-head f a a a a a "
         "lego-head f b b b b b "
-        "lego-body c c d d l l "
-        "lego-body c c i i i p "
-        "lego-foot e e e h h h  "
-        "lego-foot j g m m m k ";
+        "lego-body c c d l l l "
+        "lego-body c c k i i i "
+        "lego-foot e e h h h h  "
+        "lego-foot j g m m m m ";
     }
   }
   .item4 {
@@ -167,6 +167,21 @@
   .item8 {
     padding-right: 1em;
     text-align: left;
+  }
+  .item11 {
+    grid-area: h;
+    align-self: center;
+    text-align: left;
+  }
+  .item12 {
+    grid-area: i;
+    align-self: center;
+    text-align: right;
+  }
+  .item16 {
+    grid-area: m;
+    align-self: flex-start;
+    text-align: right;
   }
 }
 
@@ -201,7 +216,7 @@
         "lego-head f a a a a a "
         "lego-head f b b b b b "
         "lego-body c c d d l l "
-        "lego-body c c i i i p "
+        "lego-body c c p i i i "
         "lego-foot e e e h h h  "
         "lego-foot j g m m m k ";
     }
@@ -245,8 +260,8 @@
       grid-template-areas:
         "f f f lego-head a a a "
         "b b b lego-head a a a  "
-        "b b b lego-head h h h "
-        "i i i lego-body k c c "
+        "b b b lego-head k h h "
+        "i i i lego-body c c c "
         "d d g lego-body l l l "
         "m m g lego-foot e e e "
         "m m g lego-foot j j j ";
@@ -265,6 +280,19 @@
     grid-area: d;
     align-self: start;
   }
+  .item11 {
+    grid-area: h;
+    align-self: center;
+    text-align: right;
+  }
+  .item12 {
+    grid-area: i;
+  }
+  .item16 {
+    grid-area: m;
+    align-self: flex-start;
+    text-align: left;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -278,8 +306,8 @@
       grid-template-areas:
         "f f f lego-head a a a "
         "b b b lego-head a a a  "
-        "b b b lego-head h h h "
-        "i i i lego-body k c c "
+        "b b b lego-head k h h "
+        "i i i lego-body c c c "
         "d d g lego-body l l l "
         "m m g lego-foot e e e "
         "m m g lego-foot j j j ";
