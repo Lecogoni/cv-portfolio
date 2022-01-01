@@ -1432,7 +1432,7 @@ font-family: 'Titillium Web', sans-serif;
 
 .item16 {
   grid-area: m;
-  align-self: flex-start;
+  align-self: end;
   text-align: left; }
 
 /* RESPONSIVE
@@ -1487,7 +1487,7 @@ font-family: 'Titillium Web', sans-serif;
 
   .item16 {
     grid-area: m;
-    align-self: flex-start;
+    align-self: end;
     text-align: right; } }
 @media only screen and (min-width: 576px) {
   .soft__skills {
@@ -1568,7 +1568,7 @@ font-family: 'Titillium Web', sans-serif;
 
   .item16 {
     grid-area: m;
-    align-self: flex-start;
+    align-self: end;
     text-align: left; } }
 @media only screen and (min-width: 768px) {
   .soft__skills__container {
