@@ -605,7 +605,7 @@ font-family: 'Titillium Web', sans-serif;
     padding: 0.2em 1.4em;
     background-color: #10ddb4;
     border-radius: 1em;
-    color: white; } }
+    color: #22435d; } }
 @media only screen and (min-width: 576px) {
   .portfolio__container {
     max-width: 80%;
