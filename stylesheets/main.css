@@ -1091,6 +1091,10 @@ font-family: 'Titillium Web', sans-serif;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   padding-top: 0.2em; }
+  .cv__title a {
+    color: #10ddb4; }
+  .cv__title a:hover {
+    filter: brightness(80%); }
 .cv .fa-info-circle {
   color: #10ddb4; }
   .cv .fa-info-circle:hover {
