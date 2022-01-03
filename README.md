@@ -14,27 +14,18 @@
 
 # Techno
 
-### HTML, CSS
-
-### SASS
-
-### Bootstrap
-
-### Js
-
-### EmailJs
-
-pour l'envoi d'email : https://www.emailjs.com
-
-### AOS - Animate On Scroll Library
-
-https://michalsnik.github.io/aos/
+- HTML, CSS
+- SASS
+  -Bootstrap
+  -Js
+- EmailJs pour l'envoi d'email : https://www.emailjs.com
+  -AOS - Animate On Scroll Library https://michalsnik.github.io/aos/
 
 # Deploy
 
 - Branch deploy is use for automatic deploy on hostinger webserver
 - images are stored on cloudinary
 
-# Cmd avant de travailler sur le projet
+### Cmd avant de travailler sur le projet
 
 - run sass : `sass --watch sass/main.scss:stylesheets/main.css`
