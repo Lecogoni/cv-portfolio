@@ -59,6 +59,9 @@ a:visited {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
 
 .padel-back-img {
@@ -123,6 +126,7 @@ font-family: 'Titillium Web', sans-serif;
     font-family: Lato;
     font-size: 1.2em;
     line-height: 1.6em;
+    text-align: justify;
     margin-bottom: 1.2em; }
 
 .gitlab-link {
