@@ -13,6 +13,9 @@
 .white-background {
   background: white; }
 
+.red-background {
+  background: #ff4163; }
+
 .light-grey-background {
   background: #f2f2f2; }
 
@@ -1038,11 +1041,11 @@ font-family: 'Titillium Web', sans-serif;
       background-size: 60%; } }
 @media only screen and (min-width: 768px) {
   .moodboard {
-    grid-template-columns: repeat(20, 10vh); }
+    grid-template-columns: repeat(20, 15vh); }
     .moodboard__item {
-      height: 140px; }
+      height: 120px; }
     .moodboard__item-double-hight {
-      height: 285px; }
+      height: 245px; }
 
   .moodboard__two-wheels {
     height: 100%; }
@@ -1067,18 +1070,18 @@ font-family: 'Titillium Web', sans-serif;
       background-size: 80%; } }
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
+    grid-template-columns: repeat(20, 15vh); }
     .moodboard__item {
       height: 140px; }
     .moodboard__item-double-hight {
       height: 285px; } }
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
+    grid-template-columns: repeat(20, 15vh); }
     .moodboard__item {
-      height: 160px; }
+      height: 140px; }
     .moodboard__item-double-hight {
-      height: 325px; } }
+      height: 285px; } }
 .cv__category {
   font-family: "Lato", sans-serif;
   font-weight: 700;

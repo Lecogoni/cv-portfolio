@@ -7,6 +7,7 @@ $light-grey-color: rgb(242, 242, 242);
 $dark-grey-color: rgb(238, 238, 238);
 $darker-grey-color: #545454;
 $white-color: rgb(255, 255, 255);
+$red-color: rgb(255, 65, 99);
 
 /* MIXINS
 ---------------------------------------------- */
@@ -50,6 +51,10 @@ $white-color: rgb(255, 255, 255);
 
 .white-background {
   background: $white-color;
+}
+
+.red-background {
+  background: $red-color;
 }
 
 .light-grey-background {

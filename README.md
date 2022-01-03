@@ -1,7 +1,8 @@
 # Nico Portfolio
 
 - Ce projet est la version online de mon CV
-- Il comporte plusieurs sections principales
+- Il comporte plusieurs sections principales :
+
   • header : présentation
   • offer : présentaion de ce que je peux faire
   • Main Code : logo des technos / language que je connais
