@@ -178,7 +178,7 @@ font-family: 'Titillium Web', sans-serif;
   width: 1.6em;
   float: left;
   margin-right: 0.4em;
-  content: "\f0d0"; }
+  content: "\f5fd"; }
 .offer .responsive:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
@@ -249,6 +249,16 @@ font-family: 'Titillium Web', sans-serif;
   float: left;
   margin-right: 0.4em;
   content: "\f126"; }
+.offer .backend:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em;
+  content: "\f5fc"; }
 
 /* RESPONSIVE
 ---------------------------------------------- */
@@ -1104,6 +1114,9 @@ font-family: 'Titillium Web', sans-serif;
     color: #10ddb4; }
   .cv__title a:hover {
     filter: brightness(80%); }
+  .cv__title .badge {
+    margin-left: 1em;
+    position: absolute; }
 .cv .fa-info-circle {
   color: #10ddb4; }
   .cv .fa-info-circle:hover {

@@ -18,6 +18,10 @@
     a:hover {
       filter: brightness(80%);
     }
+    .badge {
+      margin-left: 1em;
+      position: absolute;
+    }
   }
   .fa-info-circle {
     color: $green-color;
