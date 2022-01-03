@@ -101,7 +101,7 @@
 }
 .item16 {
   grid-area: m;
-  align-self: flex-start;
+  align-self: end;
   text-align: left;
 }
 
@@ -181,7 +181,7 @@
   }
   .item16 {
     grid-area: m;
-    align-self: flex-start;
+    align-self: end;
     text-align: right;
   }
 }
@@ -296,7 +296,7 @@
   }
   .item16 {
     grid-area: m;
-    align-self: flex-start;
+    align-self: end;
     text-align: left;
   }
 }

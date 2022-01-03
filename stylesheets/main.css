@@ -13,6 +13,9 @@
 .white-background {
   background: white; }
 
+.red-background {
+  background: #ff4163; }
+
 .light-grey-background {
   background: #f2f2f2; }
 
@@ -56,6 +59,9 @@ a:visited {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
 
 .padel-back-img {
@@ -120,7 +126,10 @@ font-family: 'Titillium Web', sans-serif;
     font-family: Lato;
     font-size: 1.2em;
     line-height: 1.6em;
+    text-align: justify;
     margin-bottom: 1.2em; }
+  .resume p:last-child {
+    margin-bottom: 0; }
 
 .gitlab-link {
   height: 60px;
@@ -536,7 +545,7 @@ font-family: 'Titillium Web', sans-serif;
     padding: 0.2em 1.4em;
     background-color: #10ddb4;
     border-radius: 1em;
-    color: white; }
+    color: #22435d; }
     .portfolio__item__btn:hover {
       -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
@@ -1038,11 +1047,11 @@ font-family: 'Titillium Web', sans-serif;
       background-size: 60%; } }
 @media only screen and (min-width: 768px) {
   .moodboard {
-    grid-template-columns: repeat(20, 10vh); }
+    grid-template-columns: repeat(20, 15vh); }
     .moodboard__item {
-      height: 140px; }
+      height: 120px; }
     .moodboard__item-double-hight {
-      height: 285px; }
+      height: 245px; }
 
   .moodboard__two-wheels {
     height: 100%; }
@@ -1067,18 +1076,18 @@ font-family: 'Titillium Web', sans-serif;
       background-size: 80%; } }
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
+    grid-template-columns: repeat(20, 15vh); }
     .moodboard__item {
       height: 140px; }
     .moodboard__item-double-hight {
       height: 285px; } }
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
+    grid-template-columns: repeat(20, 15vh); }
     .moodboard__item {
-      height: 160px; }
+      height: 140px; }
     .moodboard__item-double-hight {
-      height: 325px; } }
+      height: 285px; } }
 .cv__category {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -1091,6 +1100,10 @@ font-family: 'Titillium Web', sans-serif;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   padding-top: 0.2em; }
+  .cv__title a {
+    color: #10ddb4; }
+  .cv__title a:hover {
+    filter: brightness(80%); }
 .cv .fa-info-circle {
   color: #10ddb4; }
   .cv .fa-info-circle:hover {
@@ -1432,7 +1445,7 @@ font-family: 'Titillium Web', sans-serif;
 
 .item16 {
   grid-area: m;
-  align-self: flex-start;
+  align-self: end;
   text-align: left; }
 
 /* RESPONSIVE
@@ -1487,7 +1500,7 @@ font-family: 'Titillium Web', sans-serif;
 
   .item16 {
     grid-area: m;
-    align-self: flex-start;
+    align-self: end;
     text-align: right; } }
 @media only screen and (min-width: 576px) {
   .soft__skills {
@@ -1568,7 +1581,7 @@ font-family: 'Titillium Web', sans-serif;
 
   .item16 {
     grid-area: m;
-    align-self: flex-start;
+    align-self: end;
     text-align: left; } }
 @media only screen and (min-width: 768px) {
   .soft__skills__container {

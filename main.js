@@ -106,7 +106,7 @@ window.onload = function () {
     if (checkEmail(email.value)) {
       email.style.color = "inherit";
     } else {
-      email.style.color = "rgb(156, 7, 7)";
+      email.style.color = "rgb(255, 65, 99)";
     }
   });
 
@@ -184,7 +184,7 @@ function sendEmail() {
   };
 
   if (!checkEmail(templateParams.email)) {
-    document.getElementById("email-status").style.color = "red";
+    document.getElementById("email-status").style.color = "rgb(255, 65, 99)";
     document.getElementById("email-status").innerHTML =
       "le format de l'email n'est pas valide";
   } else {

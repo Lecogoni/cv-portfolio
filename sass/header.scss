@@ -32,11 +32,12 @@
   p {
     font-family: Lato;
     font-size: 1.2em;
-    // font-style: normal;
-    // font-weight: 400;
     line-height: 1.6em;
-    // letter-spacing: 0em;
+    text-align: justify;
     margin-bottom: 1.2em;
+  }
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 

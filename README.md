@@ -1,7 +1,8 @@
 # Nico Portfolio
 
 - Ce projet est la version online de mon CV
-- Il comporte plusieurs sections principales
+- Il comporte plusieurs sections principales :
+
   • header : présentation
   • offer : présentaion de ce que je peux faire
   • Main Code : logo des technos / language que je connais
@@ -13,12 +14,21 @@
 
 # Techno
 
-- HTML, CSS
-- SASS
-- Bootstrap
-- Js
-- utilise EmailJs pour l'envoi d'email : https://www.emailjs.com
-- AOS - Animate On Scroll Library : https://michalsnik.github.io/aos/
+### HTML, CSS
+
+### SASS
+
+### Bootstrap
+
+### Js
+
+### EmailJs
+
+pour l'envoi d'email : https://www.emailjs.com
+
+### AOS - Animate On Scroll Library
+
+https://michalsnik.github.io/aos/
 
 # Deploy
 
@@ -27,4 +37,4 @@
 
 # Cmd avant de travailler sur le projet
 
-- run sass : sass --watch sass/main.scss:stylesheets/main.css
+- run sass : `sass --watch sass/main.scss:stylesheets/main.css`
