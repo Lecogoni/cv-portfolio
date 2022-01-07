@@ -74,6 +74,26 @@ a:visited {
 
 /* RESPONSIVE - SET BACKGROUNG IMAGE
 ---------------------------------------------- */
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
 @media only screen and (max-width: 575px) {
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
@@ -557,6 +577,7 @@ font-family: 'Titillium Web', sans-serif;
     border-radius: 1em;
     color: #22435d; }
     .portfolio__item__btn:hover {
+      color: white;
       -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
       box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
@@ -641,7 +662,7 @@ font-family: 'Titillium Web', sans-serif;
     width: 70%; } }
 @media only screen and (min-width: 1200px) {
   .portfolio__item__btn__wrapper {
-    width: 50%; } }
+    width: 60%; } }
 /* CODE TECHNO ICON PART
 ---------------------------------------------- */
 .environment {
@@ -1022,11 +1043,11 @@ font-family: 'Titillium Web', sans-serif;
       background-size: 80%; } }
 @media only screen and (min-width: 576px) {
   .moodboard {
-    grid-template-columns: repeat(20, 22vh); }
+    grid-template-columns: repeat(20, 9vh); }
     .moodboard__item {
-      height: 90px; }
+      height: 110px; }
     .moodboard__item-double-hight {
-      height: 185px; }
+      height: 225px; }
 
   .moodboard__two-wheels {
     display: flex;
@@ -1086,14 +1107,14 @@ font-family: 'Titillium Web', sans-serif;
       background-size: 80%; } }
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 15vh); }
+    grid-template-columns: repeat(20, 11vh); }
     .moodboard__item {
-      height: 140px; }
+      height: 130px; }
     .moodboard__item-double-hight {
-      height: 285px; } }
+      height: 265px; } }
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(20, 15vh); }
+    grid-template-columns: repeat(20, 11vh); }
     .moodboard__item {
       height: 140px; }
     .moodboard__item-double-hight {
@@ -1594,8 +1615,8 @@ font-family: 'Titillium Web', sans-serif;
 
   .item16 {
     grid-area: m;
-    align-self: end;
-    text-align: left; } }
+    align-self: start;
+    text-align: right; } }
 @media only screen and (min-width: 768px) {
   .soft__skills__container {
     width: 100%;
@@ -1613,6 +1634,11 @@ font-family: 'Titillium Web', sans-serif;
   .item15 {
     grid-area: l;
     align-self: center;
+    text-align: right; }
+
+  .item16 {
+    grid-area: m;
+    align-self: start;
     text-align: right; } }
 @media only screen and (min-width: 820px) {
   .soft__skills {
@@ -1631,7 +1657,12 @@ font-family: 'Titillium Web', sans-serif;
 
   .item7 {
     text-align: center;
-    padding-right: 0em; } }
+    padding-right: 0em; }
+
+  .item16 {
+    grid-area: m;
+    align-self: start;
+    text-align: right; } }
 .contact {
   padding-bottom: 2em; }
   .contact h2 {
