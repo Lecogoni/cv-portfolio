@@ -3,10 +3,9 @@
 
 @mixin can-do-logo() {
   font-family: "Font Awesome 5 Free";
-
   font-weight: 900;
-  font-size: 1em;
   font-style: solid;
+  font-size: 1em;
   color: $green-color;
   display: block;
   width: 1.6em;
