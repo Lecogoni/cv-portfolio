@@ -1162,9 +1162,9 @@ font-family: 'Titillium Web', sans-serif;
     color: #10ddb4; }
   .cv__title a:hover {
     filter: brightness(80%); }
-  .cv__title .badge {
-    margin-left: 1em;
-    position: absolute; }
+.cv .badge {
+  margin-left: 1em;
+  position: absolute; }
 .cv .fa-info-circle {
   color: #10ddb4; }
   .cv .fa-info-circle:hover {
@@ -1686,6 +1686,21 @@ font-family: 'Titillium Web', sans-serif;
     text-align: center;
     padding-right: 0em; }
 
+  .item16 {
+    grid-area: m;
+    align-self: start;
+    text-align: right; } }
+@media only screen and (min-width: 992px) {
+  .item16 {
+    grid-area: m;
+    align-self: start;
+    text-align: right; } }
+@media only screen and (min-width: 1200px) {
+  .item16 {
+    grid-area: m;
+    align-self: start;
+    text-align: right; } }
+@media only screen and (min-width: 1400px) {
   .item16 {
     grid-area: m;
     align-self: start;
