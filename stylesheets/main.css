@@ -1,3 +1,5 @@
+/* 
+---------------------------------------------- */
 /* VARIABLE
 ---------------------------------------------- */
 /* MIXINS
@@ -476,6 +478,7 @@ font-family: 'Titillium Web', sans-serif;
       font-weight: 300; }
     .portfolio__item__techno .framework:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
@@ -487,6 +490,7 @@ font-family: 'Titillium Web', sans-serif;
       content: "\f120"; }
     .portfolio__item__techno .database:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
@@ -498,6 +502,7 @@ font-family: 'Titillium Web', sans-serif;
       content: "\f1c0"; }
     .portfolio__item__techno .authentification:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
@@ -509,6 +514,7 @@ font-family: 'Titillium Web', sans-serif;
       content: "\f084"; }
     .portfolio__item__techno .mailing:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
@@ -520,6 +526,7 @@ font-family: 'Titillium Web', sans-serif;
       content: "\f0e0"; }
     .portfolio__item__techno .server:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
@@ -531,6 +538,7 @@ font-family: 'Titillium Web', sans-serif;
       content: "\f233"; }
     .portfolio__item__techno .img-server:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
@@ -542,6 +550,7 @@ font-family: 'Titillium Web', sans-serif;
       content: "\f302"; }
     .portfolio__item__techno .design:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
@@ -553,6 +562,7 @@ font-family: 'Titillium Web', sans-serif;
       content: "\f1fc"; }
     .portfolio__item__techno .api:before {
       font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
       font-weight: 200;
       font-size: 0.8em;
       padding-top: 2px;
