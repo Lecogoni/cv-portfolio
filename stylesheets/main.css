@@ -193,8 +193,9 @@ font-family: 'Titillium Web', sans-serif;
     color: #545454; }
 .offer .api:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -203,8 +204,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f5fd"; }
 .offer .responsive:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -213,8 +215,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f108"; }
 .offer .project:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -223,8 +226,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f0ae"; }
 .offer .code:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -233,8 +237,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f121"; }
 .offer .refering:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -243,8 +248,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f002"; }
 .offer .together:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -253,8 +259,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f0c0"; }
 .offer .language:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -263,8 +270,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f57c"; }
 .offer .versionning:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
@@ -273,8 +281,9 @@ font-family: 'Titillium Web', sans-serif;
   content: "\f126"; }
 .offer .backend:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1em;
+  font-style: solid;
   color: #10ddb4;
   display: block;
   width: 1.6em;
