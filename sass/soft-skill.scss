@@ -296,8 +296,8 @@
   }
   .item16 {
     grid-area: m;
-    align-self: end;
-    text-align: left;
+    align-self: start;
+    text-align: right;
   }
 }
 
@@ -331,6 +331,11 @@
     align-self: center;
     text-align: right;
   }
+  .item16 {
+    grid-area: m;
+    align-self: start;
+    text-align: right;
+  }
 }
 
 // CUSTOM
@@ -353,6 +358,11 @@
   .item7 {
     text-align: center;
     padding-right: 0em;
+  }
+  .item16 {
+    grid-area: m;
+    align-self: start;
+    text-align: right;
   }
 }
 

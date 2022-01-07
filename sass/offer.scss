@@ -42,7 +42,7 @@
   }
   .api:before {
     @include can-do-logo;
-    content: "\f0d0";
+    content: "\f5fd";
   }
   .responsive:before {
     @include can-do-logo;
@@ -73,6 +73,11 @@
   .versionning:before {
     @include can-do-logo;
     content: "\f126";
+  }
+
+  .backend:before {
+    @include can-do-logo;
+    content: "\f5fc";
   }
 }
 
