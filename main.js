@@ -13,9 +13,7 @@ window.onload = function () {
 
   // portfollio card
   const portfoliosInfos = document.querySelectorAll(".card");
-  const portfolioTitles = document.querySelectorAll(
-    ".portfolio__item__title__text"
-  );
+  const portfolioTitles = document.querySelectorAll(".portfolio__item__title");
   // form send button
   const sendBtn = document.getElementById("send-btn");
   // email input in the form
@@ -34,18 +32,20 @@ window.onload = function () {
 
   /** ANIMATION ON PORTFOLLIO CARD - SET EVEN LISTENER
    * move up and down portfolio card info on mouse enter / leave
-   * change arrow icon by adding / removing class
+   * rotate arrow icon by adding / removing class
    */
   portfoliosInfos.forEach((item) => {
     item.addEventListener("mouseenter", (e) => {
-      let title = item.querySelectorAll(".portfolio__item__title__text")[0];
-      title.classList.add("btn-down");
+      let title = item.querySelectorAll(".fa-arrow-circle-up")[0];
+      title.classList.add("rotate");
+
       let portfolio = item.querySelector(".portfolio__item__content");
       portfolio.style.top = 0 + "px";
     });
     item.addEventListener("mouseleave", (e) => {
-      let title = item.querySelectorAll(".portfolio__item__title__text")[0];
-      title.classList.remove("btn-down");
+      let title = item.querySelectorAll(".fa-arrow-circle-up")[0];
+      title.classList.remove("rotate");
+
       let portfolio = item.querySelector(".portfolio__item__content");
       portfolio.style.top = 445 + "px";
     });
@@ -60,10 +60,10 @@ window.onload = function () {
 
       if (portfolioContent.style.top == "0px") {
         portfolioContent.style.top = 445 + "px";
-        item.classList.remove("btn-down");
+        item.classList.remove("rotate");
       } else {
         portfolioContent.style.top = 0 + "px";
-        item.classList.add("btn-down");
+        item.classList.add("rotate");
       }
     });
   });

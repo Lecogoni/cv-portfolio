@@ -385,6 +385,9 @@ font-family: 'Titillium Web', sans-serif;
     color: #22435d;
     text-align: center;
     padding: 0.7em; }
+    .portfolio__item__title .fa-arrow-circle-up {
+      font-size: 0.8em;
+      margin: 0.2em 0.6em 0 0.4em; }
   .portfolio__item__techno {
     display: flex;
     flex-direction: row;
@@ -534,17 +537,8 @@ font-family: 'Titillium Web', sans-serif;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/cooking-challenge_f6tqhp.png);
   background-size: cover; }
 
-.btn-up:before {
-  font-family: "Font Awesome 5 Free";
-  font-size: 0.9em;
-  margin: 0.2em 0.6em 0 0.4em;
-  content: "\f0aa"; }
-
-.btn-down:before {
-  font-family: "Font Awesome 5 Free";
-  font-size: 0.9em;
-  margin: 0.2em 0.6em 0 0.4em;
-  content: "\f0ab"; }
+.rotate {
+  transform: rotate(180deg); }
 
 /* RESPONSIVE
 ---------------------------------------------- */
@@ -701,15 +695,15 @@ font-family: 'Titillium Web', sans-serif;
         grid-column-end: -3; } }
   @media only screen and (min-width: 1200px) {
     .environment .code-wrapper {
-      grid-template-columns: repeat(10, 1fr); }
+      grid-template-columns: repeat(8, 1fr); }
     .environment .code-item {
       /* Dealing with single orphan */ }
       .environment .code-item:last-child:nth-child(3n - 1) {
         grid-column-end: 1; }
       .environment .code-item:nth-last-child(2):nth-child(4n + 1) {
-        grid-column-end: -3; }
+        grid-column-end: -4; }
       .environment .code-item:last-child:nth-child(4n - 2) {
-        grid-column-end: -1; } }
+        grid-column-end: -2; } }
   @media only screen and (min-width: 1400px) {
     .environment .code-wrapper {
       grid-template-columns: repeat(10, 1fr); }
