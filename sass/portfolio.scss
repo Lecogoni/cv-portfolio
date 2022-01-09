@@ -50,6 +50,10 @@
     color: $dark-blue-color;
     text-align: center;
     padding: 0.7em;
+    .fa-arrow-circle-up {
+      font-size: 0.8em;
+      margin: 0.2em 0.6em 0 0.4em;
+    }
   }
   &__techno {
     @include flex-row;
@@ -138,22 +142,8 @@
   background-size: cover;
 }
 
-.btn-up {
-  &:before {
-    font-family: "Font Awesome 5 Free";
-    font-size: 0.9em;
-    margin: 0.2em 0.6em 0 0.4em;
-    content: "\f0aa";
-  }
-}
-
-.btn-down {
-  &:before {
-    font-family: "Font Awesome 5 Free";
-    font-size: 0.9em;
-    margin: 0.2em 0.6em 0 0.4em;
-    content: "\f0ab";
-  }
+.rotate {
+  transform: rotate(180deg);
 }
 
 /* RESPONSIVE
