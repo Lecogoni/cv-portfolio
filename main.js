@@ -99,10 +99,12 @@ window.onload = function () {
    * @param {*} index is the index of button clic
    */
   function displayCvDetails(index) {
+    // close active element and remove class
     if (cvButtonsDetails[index].classList.contains("active")) {
       cvDivDetails[index].style.height = "0px";
       cvDivContents[index].classList.remove("fadeOpacity");
       cvButtonsDetails[index].classList.remove("active");
+      // remove active class to all elements
     } else {
       cvButtonsDetails.forEach((item) => {
         item.classList.remove("active");
@@ -115,7 +117,18 @@ window.onload = function () {
       cvDivContents.forEach((item) => {
         item.classList.remove("fadeOpacity");
       });
-
+      // get position of element cv__title and info icon to display cvDivContens
+      let cvTitlePosition = document
+        .querySelectorAll(".cv__title")[0]
+        .getBoundingClientRect();
+      let cvInfoIconPosition = document
+        .querySelectorAll(".fa-info-circle")[0]
+        .getBoundingClientRect();
+      // define size and margin of cv__details
+      cvDivContents[index].style.width =
+        cvInfoIconPosition.right - cvTitlePosition.left + "px";
+      cvDivContents[index].style.marginLeft = cvTitlePosition.left + "px";
+      // open selected element details
       cvDivDetails[index].style.height = "100%";
       cvButtonsDetails[index].classList.add("active");
       setTimeout(() => {
@@ -123,6 +136,25 @@ window.onload = function () {
       }, 300);
     }
   }
+
+  /** on window resize get dimension, position of CV__title to adjust cv__details
+   * On window resize get the position of the elements cv__title
+   * and aligned left elements cv__details__content
+   */
+  window.addEventListener("resize", (e) => {
+    let cvTitlePosition = document
+      .querySelectorAll(".cv__title")[2]
+      .getBoundingClientRect();
+
+    let cvInfoIconPosition = document
+      .querySelectorAll(".fa-info-circle")[0]
+      .getBoundingClientRect();
+
+    document.querySelectorAll(".cv__details__content").forEach((item) => {
+      item.style.width = cvInfoIconPosition.right - cvTitlePosition.left + "px";
+      item.style.marginLeft = cvTitlePosition.left + "px";
+    });
+  });
 
   /** INTERSECTION OBSERVER
    *
@@ -167,7 +199,9 @@ window.onload = function () {
     }
   });
 };
+
 /* end of onload
+--------------------------------
 -------------------------------- */
 
 /* CONTACT ZONE

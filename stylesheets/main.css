@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 ---------------------------------------------- */
 /* VARIABLE
@@ -1086,29 +1087,17 @@ font-family: 'Titillium Web', sans-serif;
 .cv__date {
   font-size: 0.9em;
   color: #545454; }
-  .cv__date:before {
-    font-family: "Font Awesome 5 Free";
+  .cv__date .fa-calendar-alt {
     font-weight: 200;
     font-size: 0.8em;
     color: #545454;
-    display: block;
     width: 1.4em;
-    float: left;
-    margin: 0.2em 0.1em 0 0.4em;
-    content: "\f073"; }
+    margin: 0em 0.1em 0 0.4em; }
 .cv__details {
   background-color: #ececec;
   transition: height 0.3s ease-in-out;
   color: #22435d;
   margin: 0.8em 0; }
-  .cv__details__container {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto; }
-  .cv__details .row {
-    padding: 1.2em 0; }
   .cv__details__img__list {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -1119,14 +1108,19 @@ font-family: 'Titillium Web', sans-serif;
     .cv__details__img__list::-webkit-scrollbar {
       display: none; }
 .cv__details__content {
-  padding: 0 0 0 2.4em;
+  margin-left: 0;
+  width: 0;
+  padding: 1em 0;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   z-index: -5; }
+  .cv__details__content ul {
+    padding-left: 0; }
   .cv__details__content li {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    line-height: 1.8em; }
     .cv__details__content li:before {
-      content: "- "; }
+      content: "• "; }
 
 .hide {
   opacity: 0;
@@ -1150,141 +1144,95 @@ font-family: 'Titillium Web', sans-serif;
   min-width: 100px;
   margin-right: 1em; }
 
-.beweb {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/beWeb_iys65r.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.thp {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/thp_zbfcob.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.kawa {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/Kawa_hec9v6.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.tourman {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/badge_sx22lv.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 100px; }
-
-.onprod {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/OnProd_umj3wv.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.followme {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/FollowMe_vh8ccg.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain; }
+.background-img-cv-details {
+  height: auto;
+  width: 80px;
+  padding-left: 1em; }
 
 /* Event Details Expererience Logo
----------------------------------------------- */
+
+
 .pheno {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/pheno_njpaoz.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .capdel {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695279/portfolio/cv-section/capdel_opiral.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .epoka {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/epoka_bvnogg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .loreal {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/LOreal-DPP_fhatl6.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .loreal-das {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/loreal-DAS_gwyrhv.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .tro {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694746/portfolio/cv-section/tro_pkxo1v.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .snap {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/Logo-Snapchat_urdpaw.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .ca {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695176/portfolio/cv-section/credit-agricol_kodtst.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .pma {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695003/portfolio/cv-section/PMA-DAYS_w58snj.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .get27 {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694612/portfolio/cv-section/get27_v3mvft.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .wl {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694614/portfolio/cv-section/william-lawson_idyw8p.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .spectacles {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694614/portfolio/cv-section/Spectacles-logo_bhdokq.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .jo {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/Paris-JO_tvnenz.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .loyal {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/monsieur-loyal_nt1ity.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .mondelez {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/mondelezlogo_kqv2eq.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
 .leclerc {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694613/portfolio/cv-section/logo-Leclerc_dmtct3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  @include background-img-contain;
+}
 
+---------------------------------------------- */
 /* RESPONSIVE
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
