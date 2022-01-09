@@ -695,15 +695,15 @@ font-family: 'Titillium Web', sans-serif;
         grid-column-end: -3; } }
   @media only screen and (min-width: 1200px) {
     .environment .code-wrapper {
-      grid-template-columns: repeat(10, 1fr); }
+      grid-template-columns: repeat(8, 1fr); }
     .environment .code-item {
       /* Dealing with single orphan */ }
       .environment .code-item:last-child:nth-child(3n - 1) {
         grid-column-end: 1; }
       .environment .code-item:nth-last-child(2):nth-child(4n + 1) {
-        grid-column-end: -3; }
+        grid-column-end: -4; }
       .environment .code-item:last-child:nth-child(4n - 2) {
-        grid-column-end: -1; } }
+        grid-column-end: -2; } }
   @media only screen and (min-width: 1400px) {
     .environment .code-wrapper {
       grid-template-columns: repeat(10, 1fr); }

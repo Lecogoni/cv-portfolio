@@ -26,42 +26,34 @@
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/sass_u22y7s.png);
     @include background-img-contain;
   }
-
   .bootstrap {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bootstrap_iyvaoi.png);
     @include background-img-contain;
   }
-
   .tailwind {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/tailwind_uw6szw.png);
     @include background-img-contain;
   }
-
   .photoshop {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/photoshop_flu324.png);
     @include background-img-contain;
   }
-
   .trello {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/trello_ltgt5y.png);
     @include background-img-contain;
   }
-
   .illustrator {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/illustrator_y3ccg7.png);
     @include background-img-contain;
   }
-
   .bulma {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bulma_cusvx0.png);
     @include background-img-contain;
   }
-
   .indesign {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/indesign_u1fchr.png);
     @include background-img-contain;
   }
-
   .jira {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/jira_qbp4oq.png);
     @include background-img-contain;
@@ -153,7 +145,7 @@
   // X-Large devices (large desktops, 1200px and up)
   @media only screen and (min-width: 1200px) {
     .code-wrapper {
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(8, 1fr);
     }
     .code-item {
       &:last-child:nth-child(3n - 1) {
@@ -161,12 +153,12 @@
       }
 
       &:nth-last-child(2):nth-child(4n + 1) {
-        grid-column-end: -3;
+        grid-column-end: -4;
       }
       /* Dealing with single orphan */
 
       &:last-child:nth-child(4n - 2) {
-        grid-column-end: -1;
+        grid-column-end: -2;
       }
     }
   }
