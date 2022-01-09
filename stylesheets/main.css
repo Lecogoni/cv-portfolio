@@ -1714,20 +1714,19 @@ font-family: 'Titillium Web', sans-serif;
     height: 100%; }
   .contact .email-state {
     color: #10ddb4;
-    font-size: 1.2em; }
+    font-size: 0.9em;
+    line-height: 1.8em; }
   .contact button[type="submit"]:hover {
     filter: brightness(80%); }
-  .contact .send::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
+  .contact .fa-paper-plane {
     font-size: 0.9em;
+    font-weight: 400;
     color: #22435d;
     display: block;
     width: 1.4em;
     float: left;
     margin-right: 0.6em;
-    padding-top: 0.2em;
-    content: "\f1d8"; }
+    padding-top: 0.4em; }
 
 .linkedin-contact {
   height: 35px;

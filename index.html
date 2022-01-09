@@ -790,9 +790,17 @@
               <div class="mb-3">
                 <textarea id="message" class="form-control" rows="3" placeholder="votre message"></textarea>
               </div>
-              <div class="d-flex justify-content-between"> 
-                <div id="email-status" class="email-state"></div>
-                <button id="send-btn" type="submit" class="btn green-background"><span class="send"></span>Envoyer</button>
+              <div class="row">
+                <div class="col-7">
+                  <!-- use to insert email status message from Js-->
+                  <p id="email-status" class="ps-3 email-state">
+                  </p>
+                </div>
+                <div class="col-5">
+                  <div class="d-flex justify-content-end"> 
+                    <button id="send-btn" type="submit" class="btn green-background"><i class="far fa-paper-plane"></i><span class="send"></span>Envoyer</button>
+                  </div>
+                </div>
               </div>
             </form>
           </div>

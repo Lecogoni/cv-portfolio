@@ -9,22 +9,33 @@
   }
   .email-state {
     color: $green-color;
-    font-size: 1.2em;
+    font-size: 0.9em;
+    line-height: 1.8em;
   }
   button[type="submit"]:hover {
     filter: brightness(80%);
   }
-  .send::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
+  // .send::before {
+  //   font-family: "Font Awesome 5 Free";
+  //   font-weight: 400;
+  //   font-size: 0.9em;
+  //   color: $dark-blue-color;
+  //   display: block;
+  //   width: 1.4em;
+  //   float: left;
+  //   margin-right: 0.6em;
+  //   padding-top: 0.2em;
+  //   content: "\f1d8";
+  // }
+  .fa-paper-plane {
     font-size: 0.9em;
+    font-weight: 400;
     color: $dark-blue-color;
     display: block;
     width: 1.4em;
     float: left;
     margin-right: 0.6em;
-    padding-top: 0.2em;
-    content: "\f1d8";
+    padding-top: 0.4em;
   }
 }
 

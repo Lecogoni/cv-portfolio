@@ -90,26 +90,6 @@ window.onload = function () {
     });
   });
 
-  /* CONTACT SECTION
-  -------------------------------- */
-
-  // Set event Listener on form submit button
-  sendBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    sendEmail();
-  });
-
-  /** Event Listener on email input - check at each input
-   * display content in red while email doesn't match the regex
-   */
-  email.addEventListener("input", (e) => {
-    if (checkEmail(email.value)) {
-      email.style.color = "inherit";
-    } else {
-      email.style.color = "rgb(255, 65, 99)";
-    }
-  });
-
   /* CV SECTION
   -------------------------------- */
 
@@ -166,6 +146,26 @@ window.onload = function () {
   items.forEach(function (item) {
     observer.observe(item);
   });
+
+  /* CONTACT SECTION
+  -------------------------------- */
+
+  // Set event Listener on form submit button
+  sendBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    sendEmail();
+  });
+
+  /** Event Listener on email input - check at each input
+   * display content in red while email doesn't match the regex
+   */
+  email.addEventListener("input", (e) => {
+    if (checkEmail(email.value)) {
+      email.style.color = "inherit";
+    } else {
+      email.style.color = "rgb(255, 65, 99)";
+    }
+  });
 };
 /* end of onload
 -------------------------------- */
@@ -187,20 +187,41 @@ function sendEmail() {
     document.getElementById("email-status").style.color = "rgb(255, 65, 99)";
     document.getElementById("email-status").innerHTML =
       "le format de l'email n'est pas valide";
+  } else if (document.getElementById("mailer").value.length < 3) {
+    document.getElementById("email-status").style.color = "rgb(255, 65, 99)";
+    document.getElementById("email-status").innerHTML =
+      "Merci de préciser votre nom (minimum 3 caractères)";
+  } else if (document.getElementById("message").value.length < 10) {
+    document.getElementById("email-status").style.color = "rgb(255, 65, 99)";
+    document.getElementById("email-status").innerHTML =
+      "Veuillez ajouter un message  - minimum 10 caractères";
   } else {
+    setMouseCursor("wait");
     emailjs.send("service_cg01usq", "template_d7rxcb1", templateParams).then(
       function (response) {
-        document.body.style.cursor = "wait";
+        document.getElementById("contact-form").reset();
+
         console.log("SUCCESS!", response.status, response.text);
+
+        document.getElementById("email-status").style.color =
+          "rgb(16, 221, 180)";
         document.getElementById("email-status").innerHTML =
           "Votre email a bien été envoyé. Merci !";
-        document.body.style.cursor = "inherit";
+        setMouseCursor("default");
       },
       function (error) {
         console.log("FAILED...", error);
       }
     );
   }
+}
+
+function setMouseCursor(cursor) {
+  document.body.style.cursor = cursor;
+  document.getElementById("mailer").style.cursor = cursor;
+  document.getElementById("email").style.cursor = cursor;
+  document.getElementById("message").style.cursor = cursor;
+  document.getElementById("send-btn").style.cursor = cursor;
 }
 
 /** CHECK EMAIL
