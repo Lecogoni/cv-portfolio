@@ -24,6 +24,16 @@
   h4 {
     font-size: 1.3rem;
   }
+  .fas {
+    font-weight: 900;
+    font-style: solid;
+    font-size: 1em;
+    color: $green-color;
+    display: block;
+    width: 1.6em;
+    float: left;
+    margin-right: 0.4em;
+  }
   &__item__title {
     // line-height: 1em;
     margin-bottom: 0.6em;
@@ -41,45 +51,44 @@
       color: $darker-grey-color;
     }
   }
-  .api:before {
-    @include can-do-logo;
-    content: "\f5fd";
-  }
-  .responsive:before {
-    @include can-do-logo;
-    content: "\f108";
-  }
-  .project:before {
-    @include can-do-logo;
-    content: "\f0ae";
-  }
-  .code:before {
-    @include can-do-logo;
-    content: "\f121";
-  }
-  .refering:before {
-    @include can-do-logo;
-    content: "\f002";
-  }
-  // NOT USE
-  .together:before {
-    @include can-do-logo;
-    content: "\f0c0";
-  }
-  .language:before {
-    @include can-do-logo;
-    content: "\f57c";
-  }
+  // .api:before {
+  //   @include can-do-logo;
+  //   content: "\f5fd";
+  // }
+  // .responsive:before {
+  //   @include can-do-logo;
+  //   content: "\f108";
+  // }
+  // .project:before {
+  //   @include can-do-logo;
+  //   content: "\f0ae";
+  // }
+  // .code:before {
+  //   @include can-do-logo;
+  //   content: "\f121";
+  // }
+  // .refering:before {
+  //   @include can-do-logo;
+  //   content: "\f002";
+  // }
+  // .together:before {
+  //   @include can-do-logo;
+  //   content: "\f0c0";
+  // }
+  // .language:before {
+  //   @include can-do-logo;
+  //   content: "\f57c";
+  // }
 
-  .versionning:before {
-    @include can-do-logo;
-    content: "\f126";
-  }
+  // // .versionning:before {
+  // //   @include can-do-logo;
+  // //   content: "\f126";
+  // // }
 
-  .backend:before {
-    @include can-do-logo;
-    content: "\f5fc";
-  }
+  // .backend:before {
+  //   @include can-do-logo;
+  //   content: "\f5fc";
+  // }
 }
 
 /* RESPONSIVE

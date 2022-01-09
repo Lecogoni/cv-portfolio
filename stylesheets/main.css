@@ -178,6 +178,15 @@ font-family: 'Titillium Web', sans-serif;
   animation-name: bounce; }
 .offer h4 {
   font-size: 1.3rem; }
+.offer .fas {
+  font-weight: 900;
+  font-style: solid;
+  font-size: 1em;
+  color: #10ddb4;
+  display: block;
+  width: 1.6em;
+  float: left;
+  margin-right: 0.4em; }
 .offer__item__title {
   margin-bottom: 0.6em;
   font-family: "Raleway", sans-serif;
@@ -191,105 +200,6 @@ font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     line-height: 1.6em;
     color: #545454; }
-.offer .api:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f5fd"; }
-.offer .responsive:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f108"; }
-.offer .project:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f0ae"; }
-.offer .code:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f121"; }
-.offer .refering:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f002"; }
-.offer .together:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f0c0"; }
-.offer .language:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f57c"; }
-.offer .versionning:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f126"; }
-.offer .backend:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: solid;
-  font-size: 1em;
-  color: #10ddb4;
-  display: block;
-  width: 1.6em;
-  float: left;
-  margin-right: 0.4em;
-  content: "\f5fc"; }
 
 /* RESPONSIVE
 ---------------------------------------------- */
