@@ -36,15 +36,15 @@ window.onload = function () {
    */
   portfoliosInfos.forEach((item) => {
     item.addEventListener("mouseenter", (e) => {
-      let title = item.querySelectorAll(".fa-arrow-circle-up")[0];
-      title.classList.add("rotate");
+      let arrowTitle = item.querySelectorAll(".fa-arrow-circle-up")[0];
+      arrowTitle.classList.add("rotate");
 
       let portfolio = item.querySelector(".portfolio__item__content");
       portfolio.style.top = 0 + "px";
     });
     item.addEventListener("mouseleave", (e) => {
-      let title = item.querySelectorAll(".fa-arrow-circle-up")[0];
-      title.classList.remove("rotate");
+      let arrowTitle = item.querySelectorAll(".fa-arrow-circle-up")[0];
+      arrowTitle.classList.remove("rotate");
 
       let portfolio = item.querySelector(".portfolio__item__content");
       portfolio.style.top = 445 + "px";
@@ -57,13 +57,14 @@ window.onload = function () {
   portfolioTitles.forEach((item) => {
     item.addEventListener("click", (e) => {
       let portfolioContent = item.closest("div.portfolio__item__content");
+      let arrowTitle = item.querySelectorAll(".fa-arrow-circle-up")[0];
 
       if (portfolioContent.style.top == "0px") {
         portfolioContent.style.top = 445 + "px";
-        item.classList.remove("rotate");
+        arrowTitle.classList.remove("rotate");
       } else {
         portfolioContent.style.top = 0 + "px";
-        item.classList.add("rotate");
+        arrowTitle.classList.add("rotate");
       }
     });
   });
