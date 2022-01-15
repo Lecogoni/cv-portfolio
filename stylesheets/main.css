@@ -335,7 +335,7 @@ a:visited {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .bg-img {
-    height: 540px;
+    height: 405px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -343,7 +343,7 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642246576/portfolio/bg-img/padel-w812_uqfegr.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642270709/portfolio/backpacker-test-812_fu9oxw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
     background-blend-mode: hard-light; } }
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
