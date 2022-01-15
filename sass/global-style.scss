@@ -486,7 +486,7 @@ a:visited {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .bg-img {
-    height: 405px;
+    height: 200px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -504,7 +504,7 @@ a:visited {
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .bg-img {
-    height: 540px;
+    height: 200px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -522,7 +522,7 @@ a:visited {
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .bg-img {
-    height: 540px;
+    height: 200px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
