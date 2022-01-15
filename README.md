@@ -19,7 +19,7 @@
   -Bootstrap
   -Js
 - EmailJs pour l'envoi d'email : https://www.emailjs.com
-  -AOS - Animate On Scroll Library https://michalsnik.github.io/aos/
+- AOS - Animate On Scroll Library https://michalsnik.github.io/aos/
 
 # Deploy
 
