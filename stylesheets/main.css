@@ -76,11 +76,11 @@ a:visited {
   background-size: cover; }
 
 .padel-back-img {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
   background-blend-mode: hard-light; }
 
 .trek-back-img {
-  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/trek_cox4vy.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
   background-blend-mode: hard-light; }
 
 /* RESPONSIVE - SET BACKGROUNG IMAGE
@@ -175,7 +175,7 @@ a:visited {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .bg-img {
-    height: 320px;
+    height: 232px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -183,12 +183,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642789158/portfolio/bg-img/padel-w480_drsvmf.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642789158/portfolio/bg-img/trek-w480_snamde.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .bg-img {
-    height: 320px;
+    height: 232px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -196,12 +200,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642789158/portfolio/bg-img/padel-w480_drsvmf.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642789158/portfolio/bg-img/trek-w480_snamde.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .bg-img {
-    height: 320px;
+    height: 232px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -209,13 +217,17 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642789158/portfolio/bg-img/padel-w480_drsvmf.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642789158/portfolio/bg-img/trek-w480_snamde.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .bg-img {
-    height: 375px;
+    height: 276px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -223,12 +235,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788988/portfolio/bg-img/padel-w568_kkqazm.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788988/portfolio/bg-img/trek-568_ngepfz.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .bg-img {
-    height: 375px;
+    height: 276px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -236,12 +252,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788988/portfolio/bg-img/padel-w568_kkqazm.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788988/portfolio/bg-img/trek-568_ngepfz.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .bg-img {
-    height: 375px;
+    height: 276px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -249,13 +269,17 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788988/portfolio/bg-img/padel-w568_kkqazm.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788988/portfolio/bg-img/trek-568_ngepfz.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .bg-img {
-    height: 445px;
+    height: 324px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -263,12 +287,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788781/portfolio/bg-img/padel-w667_g1imio.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788781/portfolio/bg-img/trek-w667_jvspsv.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .bg-img {
-    height: 445px;
+    height: 324px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -276,12 +304,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788781/portfolio/bg-img/padel-w667_g1imio.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788781/portfolio/bg-img/trek-w667_jvspsv.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .bg-img {
-    height: 445px;
+    height: 324px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -289,13 +321,17 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788781/portfolio/bg-img/padel-w667_g1imio.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788781/portfolio/bg-img/trek-w667_jvspsv.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .bg-img {
-    height: 490px;
+    height: 356px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -303,12 +339,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788627/portfolio/bg-img/padel-w736_q8g9ee.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788627/portfolio/bg-img/trek-w736_aj2wvd.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .bg-img {
-    height: 490px;
+    height: 356px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -316,12 +356,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788627/portfolio/bg-img/padel-w736_q8g9ee.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788627/portfolio/bg-img/trek-w736_aj2wvd.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .bg-img {
-    height: 490px;
+    height: 356px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -329,13 +373,17 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788627/portfolio/bg-img/padel-w736_q8g9ee.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788627/portfolio/bg-img/trek-w736_aj2wvd.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .bg-img {
-    height: 200px;
+    height: 394px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -343,12 +391,16 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642270709/portfolio/backpacker-test-812_fu9oxw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788479/portfolio/bg-img/padel-w812_stidvo.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788479/portfolio/bg-img/trek-w812_zvlgat.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .bg-img {
-    height: 200px;
+    height: 394px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -356,10 +408,32 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642270709/portfolio/backpacker-test-812_fu9oxw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788479/portfolio/bg-img/padel-w812_stidvo.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788479/portfolio/bg-img/trek-w812_zvlgat.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .bg-img {
+    height: 394px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; }
+
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788479/portfolio/bg-img/padel-w812_stidvo.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642788479/portfolio/bg-img/trek-w812_zvlgat.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
+    background-blend-mode: hard-light; } }
+/* ----------- iPad ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .bg-img {
     height: 200px;
     width: 100%;
@@ -369,7 +443,28 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642270709/portfolio/backpacker-test-812_fu9oxw.jpgg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786808/portfolio/bg-img/padel-w1024_oaohfd.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786910/portfolio/bg-img/trek-w1024_rdav2u.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
+    background-blend-mode: hard-light; } }
+/* Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .bg-img {
+    height: 200px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; }
+
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786808/portfolio/bg-img/padel-w1024_oaohfd.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786910/portfolio/bg-img/trek-w1024_rdav2u.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* HEADER
 ---------------------------------------------- */
