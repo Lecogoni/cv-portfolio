@@ -614,10 +614,12 @@ a:visited {
   overflow-y: hidden;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.16); }
   .portfolio__item__image {
+    border-radius: 10px;
     width: 100%; }
   .portfolio__item__content {
     background-color: white;
     box-sizing: border-box;
+    border-radius: 10px;
     height: 100%;
     width: 100%;
     z-index: 5;
@@ -632,6 +634,8 @@ a:visited {
   .portfolio__item__title {
     width: 100%;
     height: 55px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: #10ddb4;
     color: #22435d;
     text-align: center;
@@ -1290,14 +1294,14 @@ a:visited {
       background-size: 80%; } }
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
+    grid-template-columns: repeat(20, 20vh); }
     .moodboard__item {
       height: 130px; }
     .moodboard__item-double-hight {
       height: 265px; } }
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
+    grid-template-columns: repeat(20, 20vh); }
     .moodboard__item {
       height: 140px; }
     .moodboard__item-double-hight {
@@ -1392,6 +1396,11 @@ a:visited {
 .background-img-cv-details {
   height: auto;
   width: 80px;
+  padding-left: 1em; }
+
+.background-img-cv-details-horizontal {
+  height: auto;
+  width: 160px;
   padding-left: 1em; }
 
 /* Event Details Expererience Logo
@@ -1830,6 +1839,17 @@ a:visited {
     float: left;
     margin-right: 0.6em;
     padding-top: 0.4em; }
+  .contact form .form-control:focus {
+    outline: none; }
+  .contact form input:focus,
+  .contact form textarea:focus,
+  .contact form select:focus {
+    outline: none;
+    outline-width: 0; }
+  .contact form input:invalid {
+    border: 1px solid #ff4163; }
+  .contact form textarea:invalid {
+    border: 1px solid #ff4163; }
 
 .linkedin-contact {
   height: 35px;
