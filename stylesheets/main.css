@@ -1542,10 +1542,6 @@ a:visited {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   padding-top: 0.2em; }
-  .cv__title a {
-    color: #10ddb4; }
-  .cv__title a:hover {
-    filter: brightness(80%); }
 .cv .badge {
   margin-left: 1em;
   position: absolute; }
@@ -1571,6 +1567,14 @@ a:visited {
   transition: height 0.3s ease-in-out;
   color: #22435d;
   margin: 0.8em 0; }
+  .cv__details__btn {
+    font-size: 0.8em;
+    color: #22435d; }
+    .cv__details__btn .fas {
+      margin-right: 8px; }
+    .cv__details__btn:hover {
+      color: #10ddb4;
+      transition: 0.3s ease; }
   .cv__details__img__list {
     overflow-x: scroll;
     overflow-y: hidden;

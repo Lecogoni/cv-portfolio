@@ -12,12 +12,6 @@
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     padding-top: 0.2em;
-    a {
-      color: $green-color;
-    }
-    a:hover {
-      filter: brightness(80%);
-    }
   }
   .badge {
     margin-left: 1em;
@@ -51,6 +45,18 @@
     transition: height 0.3s ease-in-out;
     color: $dark-blue-color;
     margin: 0.8em 0;
+
+    &__btn {
+      .fas {
+        margin-right: 8px;
+      }
+      font-size: 0.8em;
+      color: $dark-blue-color;
+      &:hover {
+        color: $green-color;
+        transition: 0.3s ease;
+      }
+    }
 
     &__img__list {
       overflow-x: scroll;
