@@ -37,9 +37,11 @@
     }
     input:invalid {
       border: 1px solid $red-color;
+      color: 1px solid $red-color;
     }
     textarea:invalid {
       border: 1px solid $red-color;
+      color: 1px solid $red-color;
     }
   }
 }

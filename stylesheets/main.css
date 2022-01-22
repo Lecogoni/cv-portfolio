@@ -138,7 +138,11 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 @media only screen and (min-width: 1200px) {
   .bg-img {
@@ -153,7 +157,11 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 @media only screen and (min-width: 1400px) {
   .bg-img {
@@ -168,7 +176,11 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695426/portfolio/bg-img/padel_i4satl.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 /* ----------- WEBKIT APPLE DEVICE -  background-attachment: fixed DO NOT WORK ON IOS ----------- */
 /* ----------- iPhone 4 and 4S ----------- */
@@ -435,7 +447,7 @@ a:visited {
 /* Portrait */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .bg-img {
-    height: 200px;
+    height: 680px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -452,7 +464,7 @@ a:visited {
 /* Landscape */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .bg-img {
-    height: 200px;
+    height: 680px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1942,9 +1954,11 @@ a:visited {
     outline: none;
     outline-width: 0; }
   .contact form input:invalid {
-    border: 1px solid #ff4163; }
+    border: 1px solid #ff4163;
+    color: 1px solid #ff4163; }
   .contact form textarea:invalid {
-    border: 1px solid #ff4163; }
+    border: 1px solid #ff4163;
+    color: 1px solid #ff4163; }
 
 .linkedin-contact {
   height: 35px;
