@@ -47,7 +47,7 @@ window.onload = function () {
       arrowTitle.classList.remove("rotate");
 
       let portfolio = item.querySelector(".portfolio__item__content");
-      portfolio.style.top = 445 + "px";
+      portfolio.style.top = 450 + "px";
     });
   });
 
@@ -60,7 +60,7 @@ window.onload = function () {
       let arrowTitle = item.querySelectorAll(".fa-arrow-circle-up")[0];
 
       if (portfolioContent.style.top == "0px") {
-        portfolioContent.style.top = 445 + "px";
+        portfolioContent.style.top = 450 + "px";
         arrowTitle.classList.remove("rotate");
       } else {
         portfolioContent.style.top = 0 + "px";

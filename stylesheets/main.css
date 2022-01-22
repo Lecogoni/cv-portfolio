@@ -88,7 +88,7 @@ a:visited {
 /* ----------- NO WEBKIT----------- */
 @media only screen and (max-width: 575px) {
   .bg-img {
-    height: 510px;
+    height: 320px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -96,26 +96,21 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642246575/portfolio/bg-img/padel-w667_o8nai0.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; }
 
   .add h4 {
     font-size: 1.2em; } }
 @media only screen and (min-width: 576px) {
-  .bg-img {
-    height: 510px;
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover; }
+  .container {
+    max-width: 580px; }
 
-  .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1641147370/qu3u4zcpwrdek9r1db8c3w55sy0j.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
-    background-blend-mode: hard-light; } }
-@media only screen and (min-width: 768px) {
   .bg-img {
-    height: 510px;
+    height: 320px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -123,9 +118,39 @@ a:visited {
     background-size: cover; }
 
   .padel-back-img {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640945764/portfolio/bg-img/padel-sm_lx91jw.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
+    background-blend-mode: hard-light; } }
+@media only screen and (min-width: 690px) {
+  .container,
+  .container-sm {
+    max-width: 670px; } }
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 780px; }
+
+  .bg-img {
+    height: 530px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+
+  .padel-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4));
+    background-blend-mode: hard-light; }
+
+  .trek-back-img {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 @media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px; }
+
   .bg-img {
     height: 70vh;
     width: 100%;
@@ -145,6 +170,9 @@ a:visited {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 @media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px; }
+
   .bg-img {
     height: 70vh;
     width: 100%;
@@ -164,6 +192,9 @@ a:visited {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
     background-blend-mode: hard-light; } }
 @media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px; }
+
   .bg-img {
     height: 70vh;
     width: 100%;
@@ -523,11 +554,59 @@ a:visited {
 /* RESPONSIVE
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
+  .nico-logo {
+    height: 120px;
+    width: 620px;
+    background-size: 70%; }
+
+  .resume h1 {
+    font-size: 2.6rem; }
+
   .resume p {
     font-size: 1em; } }
 @media only screen and (min-width: 576px) {
+  .nico-logo {
+    height: 150px;
+    width: 620px;
+    background-size: 70%; }
+
+  .resume h1 {
+    font-size: 2.6rem; }
+
   .resume p {
     font-size: 1.2em; } }
+@media only screen and (min-width: 768px) {
+  .nico-logo {
+    height: 200px;
+    width: 620px;
+    background-size: 70%; }
+
+  .resume h1 {
+    font-size: 3.4rem; } }
+@media only screen and (min-width: 992px) {
+  .nico-logo {
+    height: 200px;
+    width: 620px;
+    background-size: 70%; }
+
+  .resume h1 {
+    font-size: 3.4rem; } }
+@media only screen and (min-width: 1200px) {
+  .nico-logo {
+    height: 230px;
+    width: 620px;
+    background-size: 80%; }
+
+  .resume h1 {
+    font-size: 3.8rem; } }
+@media only screen and (min-width: 1400px) {
+  .nico-logo {
+    height: 230px;
+    width: 620px;
+    background-size: 80%; }
+
+  .resume h1 {
+    font-size: 3.8rem; } }
 /* OFFER
 ---------------------------------------------- */
 .offer__item {
@@ -731,7 +810,7 @@ a:visited {
     width: 100%;
     z-index: 5;
     position: absolute;
-    top: 445px;
+    top: 450px;
     transition: all 0.4s ease-out;
     display: flex;
     flex-direction: column;
@@ -1025,58 +1104,65 @@ a:visited {
   @media only screen and (max-width: 575px) {
     .environment .code-wrapper {
       grid-template-columns: repeat(6, 1fr); }
-    .environment .code-item {
+    .environment .code__item {
       /* Dealing with single orphan */ }
-      .environment .code-item:last-child:nth-child(3n - 1) {
+      .environment .code__item:last-child:nth-child(3n - 1) {
         grid-column-end: -2; }
-      .environment .code-item:nth-last-child(2):nth-child(3n + 1) {
+      .environment .code__item:nth-last-child(2):nth-child(3n + 1) {
         grid-column-end: -4; }
-      .environment .code-item:last-child:nth-child(3n - 2) {
-        grid-column-end: 5; } }
+      .environment .code__item:last-child:nth-child(3n - 2) {
+        grid-column-end: -3; } }
   @media only screen and (min-width: 576px) {
     .environment .code-wrapper {
       grid-template-columns: repeat(6, 1fr); }
-    .environment .code-item {
+    .environment .code__item {
       /* Dealing with single orphan */ }
-      .environment .code-item:last-child:nth-child(3n - 1) {
+      .environment .code__item:last-child:nth-child(3n - 1) {
         grid-column-end: 0; }
-      .environment .code-item:nth-last-child(2):nth-child(3n + 1) {
+      .environment .code__item:nth-last-child(2):nth-child(3n + 1) {
         grid-column-end: 0; }
-      .environment .code-item:last-child:nth-child(3n - 2) {
+      .environment .code__item:last-child:nth-child(3n - 2) {
         grid-column-end: 5; } }
   @media only screen and (min-width: 768px) {
     .environment .code-wrapper {
-      grid-template-columns: repeat(8, 1fr); }
-    .environment .code-item {
+      grid-template-columns: repeat(6, 1fr); }
+    .environment .code__item {
       /* Dealing with single orphan */ }
-      .environment .code-item:last-child:nth-child(4n - 1) {
+      .environment .code__item:last-child(- 1) {
         grid-column-end: -2; }
-      .environment .code-item:nth-last-child(2):nth-child(4n + 1) {
+      .environment .code__item:last-child:nth-child(3n - 1) {
+        grid-column-end: -2; }
+      .environment .code__item:th-last-child(2) {
         grid-column-end: -5; }
-      .environment .code-item:last-child:nth-child(4n - 2) {
+      .environment .code__item:last-child:nth-child(3n - 2) {
         grid-column-end: -3; } }
+  @media only screen and (min-width: 992px) {
+    .environment .code-wrapper {
+      grid-template-columns: repeat(8, 1fr); }
+    .environment .code__item:nth-last-child(3) {
+      grid-column-end: -6; }
+    .environment .code__item:nth-last-child(2) {
+      grid-column-end: -4; }
+    .environment .code__item:last-child:nth-child(4n - 1) {
+      grid-column-end: -2; } }
   @media only screen and (min-width: 1200px) {
     .environment .code-wrapper {
       grid-template-columns: repeat(8, 1fr); }
-    .environment .code-item {
-      /* Dealing with single orphan */ }
-      .environment .code-item:last-child:nth-child(3n - 1) {
-        grid-column-end: 1; }
-      .environment .code-item:nth-last-child(2):nth-child(4n + 1) {
-        grid-column-end: -4; }
-      .environment .code-item:last-child:nth-child(4n - 2) {
-        grid-column-end: -2; } }
+    .environment .code__item:nth-last-child(3) {
+      grid-column-end: -6; }
+    .environment .code__item:nth-last-child(2) {
+      grid-column-end: -4; }
+    .environment .code__item:last-child:nth-child(4n - 1) {
+      grid-column-end: -2; } }
   @media only screen and (min-width: 1400px) {
     .environment .code-wrapper {
-      grid-template-columns: repeat(10, 1fr); }
-    .environment .code-item {
-      /* Dealing with single orphan */ }
-      .environment .code-item:last-child:nth-child(5n - 1) {
-        grid-column-end: 1; }
-      .environment .code-item:nth-last-child(2):nth-child(5n + 1) {
-        grid-column-end: -3; }
-      .environment .code-item:last-child:nth-child(5n - 2) {
-        grid-column-end: -1; } }
+      grid-template-columns: repeat(8, 1fr); }
+    .environment .code__item:nth-last-child(3) {
+      grid-column-end: -6; }
+    .environment .code__item:nth-last-child(2) {
+      grid-column-end: -4; }
+    .environment .code__item:last-child:nth-child(4n - 1) {
+      grid-column-end: -2; } }
 
 /* MOODBOARD
 ---------------------------------------------- */
@@ -1372,7 +1458,7 @@ a:visited {
       background-size: 60%; } }
 @media only screen and (min-width: 768px) {
   .moodboard {
-    grid-template-columns: repeat(20, 15vh); }
+    grid-template-columns: repeat(20, 10vh); }
     .moodboard__item {
       height: 120px; }
     .moodboard__item-double-hight {
@@ -1401,7 +1487,7 @@ a:visited {
       background-size: 80%; } }
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 13vh); }
+    grid-template-columns: repeat(20, 11vh); }
     .moodboard__item {
       height: 130px; }
     .moodboard__item-double-hight {
@@ -1416,7 +1502,7 @@ a:visited {
     background-size: 35%; } }
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(20, 13vh); }
+    grid-template-columns: repeat(20, 11vh); }
     .moodboard__item {
       height: 140px; }
     .moodboard__item-double-hight {
@@ -1782,7 +1868,7 @@ a:visited {
       background-position: left;
       background-repeat: no-repeat;
       background-size: contain;
-      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d l l l " "lego-body c c k i i i " "lego-foot e e h h h h  " "lego-foot j g m m m m "; }
+      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c i i i d " "lego-body c c k l l l " "lego-foot e e h h h h " "lego-foot j g m m m m "; }
 
   .item4 {
     padding-right: 1em; }
@@ -1834,7 +1920,7 @@ a:visited {
       background-position: left;
       background-repeat: no-repeat;
       background-size: contain;
-      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c d d l l " "lego-body c c p i i i " "lego-foot e e e h h h  " "lego-foot j g m m m k "; }
+      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c i i i d " "lego-body c c k l l l " "lego-foot e e h h h h " "lego-foot j g m m m m "; }
     .soft__skills .item4 {
       padding-right: 1em; }
     .soft__skills .item6 {
@@ -1848,7 +1934,7 @@ a:visited {
     line-height: 1.6em; }
     .soft__skills__container {
       width: 100%;
-      max-width: 620px;
+      max-width: 655px;
       padding-right: var(--bs-gutter-x, 0.75rem);
       padding-left: var(--bs-gutter-x, 0.75rem);
       margin-right: auto;

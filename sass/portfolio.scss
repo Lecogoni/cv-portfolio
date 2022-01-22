@@ -40,7 +40,7 @@
     width: 100%;
     z-index: 5;
     position: absolute;
-    top: 445px;
+    top: 450px;
     transition: all 0.4s ease-out;
     @include flex-column;
     justify-content: space-between;
@@ -132,8 +132,6 @@
   height: 100%;
   z-index: 2;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/renov-blog-edit_fnwylm.png);
-  // background-position: top;
-  // background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -141,8 +139,6 @@
   height: 100%;
   z-index: 2;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/cooking-challenge_f6tqhp.png);
-  // background-position: top;
-  // background-repeat: no-repeat;
   background-size: cover;
 }
 

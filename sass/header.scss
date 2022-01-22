@@ -54,6 +54,14 @@
 ---------------------------------------------- */
 
 @media only screen and (max-width: 575px) {
+  .nico-logo {
+    height: 120px;
+    width: 620px;
+    background-size: 70%;
+  }
+  .resume h1 {
+    font-size: 2.6rem;
+  }
   .resume {
     p {
       font-size: 1em;
@@ -63,6 +71,14 @@
 
 // Small devices (landscape phones, 576px and up)
 @media only screen and (min-width: 576px) {
+  .nico-logo {
+    height: 150px;
+    width: 620px;
+    background-size: 70%;
+  }
+  .resume h1 {
+    font-size: 2.6rem;
+  }
   .resume {
     p {
       font-size: 1.2em;
@@ -72,16 +88,48 @@
 
 // Medium devices (tablets, 768px and up)
 @media only screen and (min-width: 768px) {
+  .nico-logo {
+    height: 200px;
+    width: 620px;
+    background-size: 70%;
+  }
+  .resume h1 {
+    font-size: 3.4rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media only screen and (min-width: 992px) {
+  .nico-logo {
+    height: 200px;
+    width: 620px;
+    background-size: 70%;
+  }
+  .resume h1 {
+    font-size: 3.4rem;
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
+  .nico-logo {
+    height: 230px;
+    width: 620px;
+    background-size: 80%;
+  }
+  .resume h1 {
+    font-size: 3.8rem;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media only screen and (min-width: 1400px) {
+  .nico-logo {
+    height: 230px;
+    width: 620px;
+    background-size: 80%;
+  }
+  .resume h1 {
+    font-size: 3.8rem;
+  }
 }

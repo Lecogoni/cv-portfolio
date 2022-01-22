@@ -148,9 +148,9 @@
         "lego-head f a a a a a "
         "lego-head f a a a a a "
         "lego-head f b b b b b "
-        "lego-body c c d l l l "
-        "lego-body c c k i i i "
-        "lego-foot e e h h h h  "
+        "lego-body c c i i i d "
+        "lego-body c c k l l l "
+        "lego-foot e e h h h h "
         "lego-foot j g m m m m ";
     }
   }
@@ -216,10 +216,10 @@
         "lego-head f a a a a a "
         "lego-head f a a a a a "
         "lego-head f b b b b b "
-        "lego-body c c d d l l "
-        "lego-body c c p i i i "
-        "lego-foot e e e h h h  "
-        "lego-foot j g m m m k ";
+        "lego-body c c i i i d "
+        "lego-body c c k l l l "
+        "lego-foot e e h h h h "
+        "lego-foot j g m m m m ";
     }
     .item4 {
       padding-right: 1em;
@@ -240,7 +240,7 @@
     line-height: 1.6em;
     &__container {
       width: 100%;
-      max-width: 620px;
+      max-width: 655px;
       padding-right: var(--bs-gutter-x, 0.75rem);
       padding-left: var(--bs-gutter-x, 0.75rem);
       margin-right: auto;

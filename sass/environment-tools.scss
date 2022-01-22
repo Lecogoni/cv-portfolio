@@ -62,23 +62,11 @@
   /* RESPONSIVE
   ---------------------------------------------- */
 
-  // X-Small devices (portrait phones, less than 576px)
-  // No media query for `xs` since this is the default in Bootstrap
-
-  // $grid-breakpoints: (
-  //   xs: 0,
-  //   sm: 576px,
-  //   md: 768px,
-  //   lg: 992px,
-  //   xl: 1200px,
-  //   xxl: 1400px
-  // );
-
   @media only screen and (max-width: 575px) {
     .code-wrapper {
       grid-template-columns: repeat(6, 1fr);
     }
-    .code-item {
+    .code__item {
       &:last-child:nth-child(3n - 1) {
         grid-column-end: -2;
       }
@@ -90,7 +78,7 @@
       /* Dealing with single orphan */
 
       &:last-child:nth-child(3n - 2) {
-        grid-column-end: 5;
+        grid-column-end: -3;
       }
     }
   }
@@ -100,7 +88,7 @@
     .code-wrapper {
       grid-template-columns: repeat(6, 1fr);
     }
-    .code-item {
+    .code__item {
       &:last-child:nth-child(3n - 1) {
         grid-column-end: 0;
       }
@@ -120,19 +108,22 @@
   // Medium devices (tablets, 768px and up)
   @media only screen and (min-width: 768px) {
     .code-wrapper {
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(6, 1fr);
     }
-    .code-item {
-      &:last-child:nth-child(4n - 1) {
+    .code__item {
+      &:last-child(- 1) {
+        grid-column-end: -2;
+      }
+      &:last-child:nth-child(3n - 1) {
         grid-column-end: -2;
       }
 
-      &:nth-last-child(2):nth-child(4n + 1) {
+      &:th-last-child(2) {
         grid-column-end: -5;
       }
 
       /* Dealing with single orphan */
-      &:last-child:nth-child(4n - 2) {
+      &:last-child:nth-child(3n - 2) {
         grid-column-end: -3;
       }
     }
@@ -140,6 +131,22 @@
 
   // Large devices (desktops, 992px and up)
   @media only screen and (min-width: 992px) {
+    .code-wrapper {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    .code__item {
+      &:nth-last-child(3) {
+        grid-column-end: -6;
+      }
+
+      &:nth-last-child(2) {
+        grid-column-end: -4;
+      }
+
+      &:last-child:nth-child(4n - 1) {
+        grid-column-end: -2;
+      }
+    }
   }
 
   // X-Large devices (large desktops, 1200px and up)
@@ -147,17 +154,16 @@
     .code-wrapper {
       grid-template-columns: repeat(8, 1fr);
     }
-    .code-item {
-      &:last-child:nth-child(3n - 1) {
-        grid-column-end: 1;
+    .code__item {
+      &:nth-last-child(3) {
+        grid-column-end: -6;
       }
 
-      &:nth-last-child(2):nth-child(4n + 1) {
+      &:nth-last-child(2) {
         grid-column-end: -4;
       }
-      /* Dealing with single orphan */
 
-      &:last-child:nth-child(4n - 2) {
+      &:last-child:nth-child(4n - 1) {
         grid-column-end: -2;
       }
     }
@@ -166,20 +172,19 @@
   // XX-Large devices (larger desktops, 1400px and up)
   @media only screen and (min-width: 1400px) {
     .code-wrapper {
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(8, 1fr);
     }
-    .code-item {
-      &:last-child:nth-child(5n - 1) {
-        grid-column-end: 1;
+    .code__item {
+      &:nth-last-child(3) {
+        grid-column-end: -6;
       }
 
-      &:nth-last-child(2):nth-child(5n + 1) {
-        grid-column-end: -3;
+      &:nth-last-child(2) {
+        grid-column-end: -4;
       }
-      /* Dealing with single orphan */
 
-      &:last-child:nth-child(5n - 2) {
-        grid-column-end: -1;
+      &:last-child:nth-child(4n - 1) {
+        grid-column-end: -2;
       }
     }
   }
