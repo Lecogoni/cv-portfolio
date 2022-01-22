@@ -1723,9 +1723,13 @@ a:visited {
   .cv__title {
     font-size: 1em; }
   .cv__info {
-    font-size: 0.9em; }
-  .cv__date {
     font-size: 0.8em; }
+  .cv__date {
+    font-size: 0.8em;
+    padding-top: 0.6em;
+    justify-content: flex-end; }
+    .cv__date .fas {
+      margin-left: 0.6em; }
   .cv__details {
     font-size: 1em; }
   .cv__details {
@@ -1736,9 +1740,10 @@ a:visited {
   .cv__title {
     font-size: 1em; }
   .cv__info {
-    font-size: 0.9em; }
-  .cv__date {
     font-size: 0.8em; }
+  .cv__date {
+    font-size: 0.8em;
+    justify-content: space-between; }
   .cv__details {
     font-size: 0.9em; } }
 @media only screen and (min-width: 768px) {

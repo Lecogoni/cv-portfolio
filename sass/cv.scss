@@ -226,10 +226,15 @@
       font-size: 1em;
     }
     &__info {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
     &__date {
       font-size: 0.8em;
+      padding-top: 0.6em;
+      justify-content: flex-end;
+      .fas {
+        margin-left: 0.6em;
+      }
     }
     &__details {
       font-size: 1em;
@@ -249,10 +254,11 @@
       font-size: 1em;
     }
     &__info {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
     &__date {
       font-size: 0.8em;
+      justify-content: space-between;
     }
     &__details {
       font-size: 0.9em;
