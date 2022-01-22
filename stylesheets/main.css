@@ -1401,18 +1401,49 @@ a:visited {
       background-size: 80%; } }
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 20vh); }
+    grid-template-columns: repeat(20, 13vh); }
     .moodboard__item {
       height: 130px; }
     .moodboard__item-double-hight {
-      height: 265px; } }
+      height: 265px; }
+
+  .moodboard__pala {
+    grid-area: pala;
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/pala-padel_mtjkdl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 35%; } }
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(20, 20vh); }
+    grid-template-columns: repeat(20, 13vh); }
     .moodboard__item {
       height: 140px; }
     .moodboard__item-double-hight {
-      height: 285px; } }
+      height: 285px; }
+
+  .moodboard__pala {
+    grid-area: pala;
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/pala-padel_mtjkdl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 35%; } }
+@media only screen and (min-width: 1400px) {
+  .moodboard {
+    grid-template-columns: repeat(20, 13vh); }
+    .moodboard__item {
+      height: 140px; }
+    .moodboard__item-double-hight {
+      height: 285px; }
+
+  .moodboard__pala {
+    grid-area: pala;
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/pala-padel_mtjkdl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 35%; } }
 .cv__category {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -1955,10 +1986,10 @@ a:visited {
     outline-width: 0; }
   .contact form input:invalid {
     border: 1px solid #ff4163;
-    color: 1px solid #ff4163; }
+    color: #ff4163; }
   .contact form textarea:invalid {
     border: 1px solid #ff4163;
-    color: 1px solid #ff4163; }
+    color: #ff4163; }
 
 .linkedin-contact {
   height: 35px;
