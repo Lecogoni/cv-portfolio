@@ -34,10 +34,9 @@ font-family: 'Titillium Web', sans-serif;
 ---------------------------------------------- */
 body,
 html {
-  overflow-x: hidden; }
-
-html {
-  width: 100%; }
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh; }
 
 section {
   padding-top: 2em;
@@ -64,6 +63,17 @@ a:visited {
 
 /* BACKGROUND IMAGES
 ---------------------------------------------- */
+.fix {
+  position: fixed;
+  bottom: 0px;
+  z-index: -5;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.4), rgba(34, 64, 91, 0.4)); }
+
+.transparent {
+  opacity: 0;
+  width: 100%;
+  height: 60vh; }
+
 .bg-img {
   height: 70vh;
   width: 100%;
