@@ -1,10 +1,4 @@
 window.onload = function () {
-  console.log(document.getElementsByTagName("HTML")[0].outerHTML.length);
-  console.log(document.documentElement.outerHTML.length);
-
-  console.log(window.innerHeight);
-  console.log(window.innerWidth);
-
   /* INIT ZONE
   -------------------------------- */
 
