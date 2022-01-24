@@ -1,4 +1,10 @@
 window.onload = function () {
+  console.log(document.getElementsByTagName("HTML")[0].outerHTML.length);
+  console.log(document.documentElement.outerHTML.length);
+
+  console.log(window.innerHeight);
+  console.log(window.innerWidth);
+
   /* INIT ZONE
   -------------------------------- */
 
@@ -26,6 +32,9 @@ window.onload = function () {
   // Store div && div content corresponding to each Cv elemnent details
   const cvDivDetails = document.querySelectorAll(".cv__details");
   const cvDivContents = document.querySelectorAll(".cv__details__content");
+
+  // Store div = section soft-skills
+  const sectionSoftSkills = document.getElementById("soft-skills");
 
   /* PORTFOLIO SECTION
   -------------------------------- */
@@ -155,6 +164,16 @@ window.onload = function () {
       item.style.width = cvInfoIconPosition.right - cvTitlePosition.left + "px";
       item.style.marginLeft = cvTitlePosition.left + "px";
     });
+  });
+
+  window.addEventListener("scroll", (e) => {
+    let boundingSoftSkills = sectionSoftSkills.getBoundingClientRect();
+
+    if (boundingSoftSkills.top <= window.innerHeight) {
+      document.getElementById("trek").style.zIndex = "-8";
+    } else {
+      document.getElementById("trek").style.zIndex = "-12";
+    }
   });
 
   /** INTERSECTION OBSERVER

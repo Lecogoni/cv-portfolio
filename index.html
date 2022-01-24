@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="stylesheets/main.css">
   <title>Nicolas Giraud - Dev Full Stack</title>
 </head>
-<body class="">
+<body>
 
   <main>
 <!-- HEADER ----------------------------------------------------- -->
@@ -67,10 +67,11 @@
     </header>
 
 
-    <div class="fix">
-      <img src="https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg" alt="">
-    </div>
+<!-- BACKGROUND IMAGES ----------------------------------------------------- -->
 
+    <div class="bg-img padel-back-img" style="width: 100vh; z-index: -10;"></div>
+
+    <div id="trek" class="bg-img trek-back-img" style="width: 100vh; z-index: -12;"></div>
 
 <!-- OFFER ----------------------------------------------------- -->
     <section class="white-background">
@@ -227,11 +228,8 @@
     </section>
 
 <!-- TRANSPARENT DIV ----------------------------------------------------- -->
-    <div class="transparent"></div>
+    <div class="transparent-div"></div>
 
-<!-- BACKGROUND IMAGE PADEL ----------------------------------------------------- -->
-    <!-- <div class="bg-img padel-back-img"></div> -->
-    
 <!-- ENVIRONMENT TOOLS ----------------------------------------------------- -->
     <section class="light-grey-background">
       <div class="container environment">
@@ -368,7 +366,7 @@
     </section>
     
 <!-- SOFT SKILLS ----------------------------------------------------- -->
-    <section class="light-grey-background soft__skills">
+    <section id="soft-skills" class="light-grey-background soft__skills">
       <div class="container">
         <h2>Soft Skills</h2>
       </div>
@@ -400,8 +398,8 @@
       </div>
     </section>
 
-<!-- BACKGROUND IMAGE TREK ----------------------------------------------------- -->
-    <!-- <div class="bg-img trek-back-img"></div> -->
+<!-- TRANSPARENT DIV ----------------------------------------------------- -->
+<div class="transparent-div"></div>
 
 <!-- MOODBOARD ----------------------------------------------------- -->
     <section class="light-grey-background">
@@ -455,7 +453,7 @@
     </section>
 
 <!-- CV ----------------------------------------------------- -->
-    <section class="light-grey-background cv">
+    <section id="cv" class="light-grey-background cv">
 
       <div class="container">
         <h2>CV</h2>
