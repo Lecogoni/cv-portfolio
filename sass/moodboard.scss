@@ -228,7 +228,7 @@
 
 @media only screen and (max-width: 575px) {
   .moodboard {
-    grid-template-columns: repeat(20, 13vh);
+    grid-template-columns: repeat(20, 12vh);
     &__item {
       height: 90px;
     }
@@ -241,6 +241,39 @@
     &__item {
       height: 50px;
       width: 11vh;
+    }
+    .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+    .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      @include background-img-contain;
+    }
+    .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      @include background-img-contain;
+      background-size: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 575px) and (orientation: landscape) {
+  .moodboard {
+    grid-template-columns: repeat(20, 20vh);
+    &__item {
+      height: 90px;
+    }
+    &__item-double-hight {
+      height: 185px;
+    }
+  }
+  .moodboard__two-wheels {
+    height: 100%;
+    &__item {
+      height: 50px;
+      width: 20vh;
     }
     .moodboard__bike {
       background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
@@ -297,16 +330,52 @@
     }
   }
 }
+@media only screen and (min-width: 576px) and (orientation: landscape) {
+  .moodboard {
+    grid-template-columns: repeat(20, 20vh);
+    &__item {
+      height: 90px;
+    }
+    &__item-double-hight {
+      height: 185px;
+    }
+  }
+  .moodboard__two-wheels {
+    @include flex-column;
+    grid-area: two-wheels;
+    padding: 0.4em;
+    height: 100%;
+    &__item {
+      height: 45px;
+      width: 90px;
+    }
+    .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 60%;
+    }
+    .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      @include background-img-contain;
+    }
+    .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      @include background-img-contain;
+      background-size: 60%;
+    }
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @media only screen and (min-width: 768px) {
   .moodboard {
     grid-template-columns: repeat(20, 10vh);
     &__item {
-      height: 120px;
+      height: 130px;
     }
     &__item-double-hight {
-      height: 245px;
+      height: 265px;
     }
   }
   .moodboard__two-wheels {
