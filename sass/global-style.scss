@@ -127,7 +127,6 @@ a:visited {
   position: fixed;
   bottom: 0px;
   height: 100vh;
-  width: auto;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,7 +147,7 @@ a:visited {
 /* RESPONSIVE
   ---------------------------------------------- */
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) and (orientation: portrait) {
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786808/portfolio/bg-img/padel-w1024_oaohfd.jpg),
       linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
@@ -168,7 +167,7 @@ a:visited {
 }
 
 // Small devices (landscape phones, 576px and up)
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (orientation: portrait) {
   .container {
     max-width: 580px;
   }
@@ -186,7 +185,7 @@ a:visited {
   }
 }
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 690px) and (orientation: portrait) {
   .container,
   .container-sm {
     max-width: 670px;
@@ -194,7 +193,7 @@ a:visited {
 }
 
 // Medium devices (tablets, 768px and up)
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   .container {
     max-width: 780px;
   }
@@ -212,7 +211,7 @@ a:visited {
 }
 
 // Large devices (desktops, 992px and up)
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (orientation: portrait) {
   .container {
     max-width: 960px;
   }
@@ -230,7 +229,7 @@ a:visited {
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (orientation: portrait) {
   .container {
     max-width: 1140px;
   }
@@ -248,7 +247,7 @@ a:visited {
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) and (orientation: portrait) {
   .container {
     max-width: 1320px;
   }
