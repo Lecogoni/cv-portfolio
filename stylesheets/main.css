@@ -622,13 +622,15 @@ a:visited {
   height: 100%;
   z-index: 2;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/renov-blog-edit_fnwylm.png);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 .cooking-challenge {
   height: 100%;
   z-index: 2;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/cooking-challenge_f6tqhp.png);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 .rotate {
   transform: rotate(180deg); }
@@ -1174,17 +1176,46 @@ a:visited {
       background-size: 60%; } }
 @media only screen and (min-width: 768px) {
   .moodboard {
-    grid-template-columns: repeat(20, 10vh); }
+    grid-template-columns: repeat(20, 11vh); }
     .moodboard__item {
-      height: 130px; }
+      height: 110px; }
     .moodboard__item-double-hight {
-      height: 265px; }
+      height: 225px; }
 
   .moodboard__two-wheels {
     height: 100%; }
     .moodboard__two-wheels__item {
-      height: 70px;
-      width: 100px; }
+      height: 50px;
+      width: 75px; }
+    .moodboard__two-wheels .moodboard__bike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 70%; }
+    .moodboard__two-wheels .moodboard__scooter {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .moodboard__two-wheels .moodboard__motorbike {
+      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 80%; } }
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .moodboard {
+    grid-template-columns: repeat(20, 15vh); }
+    .moodboard__item {
+      height: 90px; }
+    .moodboard__item-double-hight {
+      height: 185px; }
+
+  .moodboard__two-wheels {
+    height: 100%; }
+    .moodboard__two-wheels__item {
+      height: 50px;
+      width: 75px; }
     .moodboard__two-wheels .moodboard__bike {
       background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
       background-position: bottom;
@@ -1285,12 +1316,19 @@ a:visited {
   margin: 0.8em 0; }
   .cv__details__btn {
     font-size: 0.8em;
+    padding: 0.2em 1.4em;
+    background-color: #10ddb4;
+    border-radius: 1em;
     color: #22435d; }
     .cv__details__btn .fas {
       margin-right: 8px; }
     .cv__details__btn:hover {
-      color: #10ddb4;
-      transition: 0.3s ease; }
+      color: white;
+      -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+      transition: 0.3s ease;
+      -webkit-transition: all 0.3s; }
   .cv__details__img__list {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -1435,7 +1473,8 @@ a:visited {
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
   .cv__category {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    color: #10ddb4; }
   .cv__title {
     font-size: 1em; }
   .cv__info {
