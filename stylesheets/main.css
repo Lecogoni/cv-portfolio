@@ -89,6 +89,9 @@ a:visited {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
   background-blend-mode: hard-light; }
 
+.display-none {
+  display: none; }
+
 /* RESPONSIVE
   ---------------------------------------------- */
 @media only screen and (max-width: 575px) and (orientation: portrait) {
