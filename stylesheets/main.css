@@ -441,17 +441,41 @@ a:visited {
 
 /* PORTFOLIO
 ---------------------------------------------- */
+/* WIP 
+---------------------------------------------- */
+.my-bloc {
+  background-color: orange;
+  width: 100vw;
+  overflow-x: scroll;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(20, 3fr); }
+
+.card-bloc {
+  margin: 10px;
+  border: 1px solid black;
+  width: calc(100vw / 2);
+  height: calc(300px);
+  margin-right: 10px; }
+
+.card-bloc:first-child {
+  background-color: green;
+  margin-left: 15px; }
+
+.card-bloc:last-child {
+  background-color: green;
+  margin-right: 35px; }
+
+/*  
+---------------------------------------------- */
 .portfolio__container {
+  display: flex;
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto; }
+  overflow-x: scroll; }
 
 .portfolio__item {
   border-radius: 10px;
-  margin-bottom: 1em;
-  height: 500px;
+  margin: 0 0.4em 0 0.4em;
   overflow-y: hidden;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.16); }
   .portfolio__item__image {
@@ -599,6 +623,45 @@ a:visited {
       width: 1.4em;
       float: left;
       content: "\f0c1"; }
+    .portfolio__item__techno .library:before {
+      font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
+      font-weight: 900;
+      font-style: solid;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f02d"; }
+    .portfolio__item__techno .block:before {
+      font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
+      font-weight: 900;
+      font-style: solid;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f1b3"; }
+    .portfolio__item__techno .compil:before {
+      font-family: "Font Awesome 5 Free";
+      src: url("fonts/fontawesome/fontawesome-webfont.eot");
+      font-weight: 900;
+      font-style: solid;
+      font-size: 0.8em;
+      padding-top: 2px;
+      margin-right: 0.4em;
+      color: #10ddb4;
+      display: block;
+      width: 1.4em;
+      float: left;
+      content: "\f550"; }
   .portfolio__item__description {
     font-size: 1em;
     color: #545454;
@@ -641,42 +704,34 @@ a:visited {
 /* RESPONSIVE
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
-  .portfolio__container {
-    padding-right: var(--bs-gutter-x, 2rem);
-    padding-left: var(--bs-gutter-x, 2rem); }
-
-  .portfolio__item__title {
+  .portfolio__item {
     width: 100%;
-    height: 50px;
-    background-color: #10ddb4;
-    color: #22435d;
-    text-align: center;
-    padding: 0.7em; }
-  .portfolio__item__techno span {
-    font-size: 0.8em;
-    margin: 0 0.4em 0.6em 0.4em;
-    font-weight: 300; }
-  .portfolio__item__description {
-    font-size: 0.8em;
-    padding: 0 2.6em; }
-  .portfolio__item__btn__wrapper {
-    width: 90%; }
-  .portfolio__item__btn {
-    font-size: 0.8em;
-    padding: 0.2em 1.4em;
-    background-color: #10ddb4;
-    border-radius: 1em;
-    color: #22435d; } }
-@media only screen and (min-width: 576px) {
-  .portfolio__container {
-    max-width: 80%;
-    padding-right: var(--bs-gutter-x, 3rem);
-    padding-left: var(--bs-gutter-x, 3rem); } }
+    height: 300px; }
+    .portfolio__item__title {
+      width: 100%;
+      height: 50px;
+      background-color: #10ddb4;
+      color: #22435d;
+      text-align: center;
+      padding: 0.7em; }
+    .portfolio__item__techno span {
+      font-size: 0.8em;
+      margin: 0 0.4em 0.6em 0.4em;
+      font-weight: 300; }
+    .portfolio__item__description {
+      font-size: 0.8em;
+      padding: 0 2.6em; }
+    .portfolio__item__btn__wrapper {
+      width: 90%; }
+    .portfolio__item__btn {
+      font-size: 0.8em;
+      padding: 0.2em 1.4em;
+      background-color: #10ddb4;
+      border-radius: 1em;
+      color: #22435d; } }
 @media only screen and (min-width: 768px) {
   .portfolio__container {
-    max-width: 100%;
-    padding-right: var(--bs-gutter-x, 3rem);
-    padding-left: var(--bs-gutter-x, 3rem); }
+    max-width: 100%; }
 
   .portfolio__item__techno span {
     font-size: 0.9em;
