@@ -74,9 +74,12 @@ a:visited {
 .add {
   text-align: center;
 }
-.add h4 {
+.add h5 {
   color: rgb(255, 255, 255);
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.6em;
 }
 
 /* BACKGROUND IMAGES
@@ -461,6 +464,12 @@ a:visited {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.main-techno .node {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321226/portfolio/logo/node-green_fzz5ry.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .main-techno .symfony {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/symphony_fjcfnz.png);
   background-position: center;
@@ -475,6 +484,12 @@ a:visited {
 }
 .main-techno .git {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/git_ykzhwv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .jira {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321022/portfolio/logo/jira_ka6a3t.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -942,6 +957,18 @@ a:visited {
 }
 .environment .jira {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/jira_qbp4oq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .figma {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321432/portfolio/logo/figma_shtu1u.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .react {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321681/portfolio/logo/react_chc25h.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
