@@ -29,3 +29,14 @@
 ### Cmd avant de travailler sur le projet
 
 - run sass : `sass --watch sass/main.scss:stylesheets/main.css`
+
+
+# Create a docker image / container
+
+docker run -dit --name my-app -p 8009:80 httpd
+apt update
+apt install git 
+-> se loogger / git add remote origine https ...
+git fetch --all 
+apt install npm 
+npm install -g sass

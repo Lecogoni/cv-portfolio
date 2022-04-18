@@ -58,6 +58,14 @@
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/jira_qbp4oq.png);
     @include background-img-contain;
   }
+  .figma {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321432/portfolio/logo/figma_shtu1u.png);
+    @include background-img-contain;
+  }
+  .react {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321681/portfolio/logo/react_chc25h.png);
+    @include background-img-contain;
+  }
 
   /* RESPONSIVE
   ---------------------------------------------- */
