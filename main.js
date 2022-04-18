@@ -27,8 +27,9 @@ window.onload = function () {
   const cvDivDetails = document.querySelectorAll(".cv__details");
   const cvDivContents = document.querySelectorAll(".cv__details__content");
 
-  // Store div = section soft-skills
+  // Store section soft-skills and section moobboard - use to modify bg-img
   const sectionSoftSkills = document.getElementById("soft-skills");
+  const sectionMoodboard = document.getElementById("moodboard");
 
   /* PORTFOLIO SECTION
   -------------------------------- */
@@ -160,6 +161,10 @@ window.onload = function () {
     });
   });
 
+  /** USE TI CHANGE BACKGROUND IMAGE
+   * When SoftSkills section top is higher than the bottom of the page change the Z-index of the second bg-img to get it first and reverse
+   * When Moodboard section top is higher than the top of the page add class display none on the 2 gb - img so there not visible when scroll the bottom of a page
+   */
   window.addEventListener("scroll", (e) => {
     let boundingSoftSkills = sectionSoftSkills.getBoundingClientRect();
 
@@ -167,6 +172,17 @@ window.onload = function () {
       document.getElementById("trek").style.zIndex = "-8";
     } else {
       document.getElementById("trek").style.zIndex = "-12";
+    }
+
+    let boundingMoodboard = sectionMoodboard.getBoundingClientRect();
+
+    if (boundingMoodboard.top <= 0) {
+      console.log("touch the top");
+      document.getElementById("padel").classList.add("display-none");
+      document.getElementById("trek").classList.add("display-none");
+    } else {
+      document.getElementById("padel").classList.remove("display-none");
+      document.getElementById("trek").classList.remove("display-none");
     }
   });
 
