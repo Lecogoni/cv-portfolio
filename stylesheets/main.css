@@ -16,62 +16,76 @@ font-family: 'Titillium Web', sans-serif;
 /* SET BACKGROUNDS COLOR WITH VARIABLES
 ---------------------------------------------- */
 .dark-blue-background {
-  background: #22435d; }
+  background: rgb(34, 67, 93);
+}
 
 .green-background {
-  background: #10ddb4; }
+  background: rgb(16, 221, 180);
+}
 
 .white-background {
-  background: white; }
+  background: rgb(255, 255, 255);
+}
 
 .red-background {
-  background: #ff4163; }
+  background: rgb(255, 65, 99);
+}
 
 .light-grey-background {
-  background: #f2f2f2; }
+  background: rgb(242, 242, 242);
+}
 
 /* GENERAL
 ---------------------------------------------- */
 body,
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 body {
-  min-height: 100%; }
+  min-height: 100%;
+}
 
 section {
   padding-top: 2em;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+}
 
 h2 {
   margin-bottom: 2em;
   font-family: "Raleway", sans-serif;
   font-size: 2em;
   font-weight: 700;
-  color: #22435d; }
+  color: rgb(34, 67, 93);
+}
 
 a,
 a:hover,
 a:visited {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .add {
-  text-align: center; }
-  .add h4 {
-    color: white;
-    font-family: "Titillium Web", sans-serif; }
+  text-align: center;
+}
+.add h4 {
+  color: rgb(255, 255, 255);
+  font-family: "Titillium Web", sans-serif;
+}
 
 /* BACKGROUND IMAGES
 ---------------------------------------------- */
 .transparent-div {
   opacity: 0;
   width: 100%;
-  height: 70vh; }
+  height: 70vh;
+}
 
 .bg-img {
   position: fixed;
@@ -79,88 +93,117 @@ a:visited {
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .padel-back-img {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-  background-blend-mode: hard-light; }
+  background-blend-mode: hard-light;
+}
 
 .trek-back-img {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-  background-blend-mode: hard-light; }
+  background-blend-mode: hard-light;
+}
 
 /* RESPONSIVE
   ---------------------------------------------- */
 @media only screen and (max-width: 575px) and (orientation: portrait) {
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786808/portfolio/bg-img/padel-w1024_oaohfd.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; }
+    background-blend-mode: hard-light;
+  }
 
   .trek-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786910/portfolio/bg-img/trek-w1024_rdav2u.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; }
+    background-blend-mode: hard-light;
+  }
 
   .add h4 {
-    font-size: 1.2em; } }
+    font-size: 1.2em;
+  }
+}
 @media only screen and (min-width: 576px) and (orientation: portrait) {
   .container {
-    max-width: 580px; }
+    max-width: 580px;
+  }
 
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; }
+    background-blend-mode: hard-light;
+  }
 
   .trek-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786808/portfolio/bg-img/padel-w1024_oaohfd.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; } }
+    background-blend-mode: hard-light;
+  }
+}
 @media only screen and (min-width: 690px) and (orientation: portrait) {
   .container,
-  .container-sm {
-    max-width: 670px; } }
+.container-sm {
+    max-width: 670px;
+  }
+}
 @media only screen and (min-width: 768px) and (orientation: portrait) {
   .container {
-    max-width: 780px; }
+    max-width: 780px;
+  }
 
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; }
+    background-blend-mode: hard-light;
+  }
 
   .trek-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; } }
+    background-blend-mode: hard-light;
+  }
+}
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   .container {
-    max-width: 960px; }
+    max-width: 960px;
+  }
 
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; }
+    background-blend-mode: hard-light;
+  }
 
   .trek-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; } }
+    background-blend-mode: hard-light;
+  }
+}
 @media only screen and (min-width: 1200px) and (orientation: portrait) {
   .container {
-    max-width: 1140px; }
+    max-width: 1140px;
+  }
 
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; }
+    background-blend-mode: hard-light;
+  }
 
   .trek-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; } }
+    background-blend-mode: hard-light;
+  }
+}
 @media only screen and (min-width: 1400px) and (orientation: portrait) {
   .container {
-    max-width: 1320px; }
+    max-width: 1320px;
+  }
 
   .padel-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786533/portfolio/bg-img/padel-fullscreen_ojgps3.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; }
+    background-blend-mode: hard-light;
+  }
 
   .trek-back-img {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1642786610/portfolio/bg-img/trek-fullscreen_ipaguq.jpg), linear-gradient(rgba(34, 64, 91, 0.5), rgba(34, 64, 91, 0.5));
-    background-blend-mode: hard-light; } }
+    background-blend-mode: hard-light;
+  }
+}
 /* HEADER
 ---------------------------------------------- */
 .nico-logo {
@@ -169,31 +212,37 @@ a:visited {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695397/portfolio/nico-logo-V2_skd77j.png);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 70%; }
+  background-size: 70%;
+}
 
 .resume {
-  color: white;
+  color: rgb(255, 255, 255);
   padding-top: 2em;
-  padding-bottom: 2em; }
-  .resume h1 {
-    font-size: 3.4rem;
-    font-family: "Lato", sans-serif;
-    margin-bottom: 1.2em; }
-    .resume h1:before {
-      content: "#";
-      font-family: "Lato", sans-serif;
-      font-size: 2rem;
-      font-weight: 500;
-      color: #10ddb4;
-      filter: brightness(95%); }
-  .resume p {
-    font-family: Lato;
-    font-size: 1.2em;
-    line-height: 1.6em;
-    text-align: justify;
-    margin-bottom: 1.2em; }
-  .resume p:last-child {
-    margin-bottom: 0; }
+  padding-bottom: 2em;
+}
+.resume h1 {
+  font-size: 3.4rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1.2em;
+}
+.resume h1:before {
+  content: "#";
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(16, 221, 180);
+  filter: brightness(95%);
+}
+.resume p {
+  font-family: Lato;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  text-align: justify;
+  margin-bottom: 1.2em;
+}
+.resume p:last-child {
+  margin-bottom: 0;
+}
 
 .gitlab-link {
   height: 60px;
@@ -201,7 +250,8 @@ a:visited {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695355/portfolio/gitlab-icon_s4sfkh.png);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}
 
 /* RESPONSIVE
 ---------------------------------------------- */
@@ -209,232 +259,313 @@ a:visited {
   .nico-logo {
     height: 120px;
     width: 620px;
-    background-size: 70%; }
+    background-size: 70%;
+  }
 
   .resume h1 {
-    font-size: 2.6rem; }
+    font-size: 2.6rem;
+  }
 
   .resume p {
-    font-size: 1em; } }
+    font-size: 1em;
+  }
+}
 @media only screen and (min-width: 576px) {
   .nico-logo {
     height: 150px;
     width: 620px;
-    background-size: 70%; }
+    background-size: 70%;
+  }
 
   .resume h1 {
-    font-size: 2.6rem; }
+    font-size: 2.6rem;
+  }
 
   .resume p {
-    font-size: 1.2em; } }
+    font-size: 1.2em;
+  }
+}
 @media only screen and (min-width: 768px) {
   .nico-logo {
     height: 200px;
     width: 620px;
-    background-size: 70%; }
+    background-size: 70%;
+  }
 
   .resume h1 {
-    font-size: 3.4rem; } }
+    font-size: 3.4rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .nico-logo {
     height: 200px;
     width: 620px;
-    background-size: 70%; }
+    background-size: 70%;
+  }
 
   .resume h1 {
-    font-size: 3.4rem; } }
+    font-size: 3.4rem;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .nico-logo {
     height: 230px;
     width: 620px;
-    background-size: 80%; }
+    background-size: 80%;
+  }
 
   .resume h1 {
-    font-size: 3.8rem; } }
+    font-size: 3.8rem;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .nico-logo {
     height: 230px;
     width: 620px;
-    background-size: 80%; }
+    background-size: 80%;
+  }
 
   .resume h1 {
-    font-size: 3.8rem; } }
+    font-size: 3.8rem;
+  }
+}
 /* OFFER
 ---------------------------------------------- */
 .offer__item {
-  text-align: center; }
+  text-align: center;
+}
 .offer .bouncing-row {
   animation-duration: 1s;
-  animation-name: bounce; }
+  animation-name: bounce;
+}
 .offer h4 {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+}
 .offer .fas {
   font-weight: 900;
   font-style: solid;
   font-size: 1em;
-  color: #10ddb4;
+  color: rgb(16, 221, 180);
   display: block;
   width: 1.6em;
   float: left;
-  margin-right: 0.4em; }
+  margin-right: 0.4em;
+}
 .offer__item__title {
   margin-bottom: 0.6em;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color: #22435d; }
+  color: rgb(34, 67, 93);
+}
 .offer__description {
   margin-bottom: 1.6em;
-  padding: 0 0.4em; }
-  .offer__description p {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.6em;
-    color: #545454; }
+  padding: 0 0.4em;
+}
+.offer__description p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #545454;
+}
 
 /* RESPONSIVE
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
   .offer h4 {
-    font-size: 1.1rem; }
-  .offer__description p {
-    font-size: 0.9em; } }
-@media only screen and (min-width: 576px) {
-  .offer h4 {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+  }
   .offer__description p {
     font-size: 0.9em;
-    line-height: 1.6em; } }
+  }
+}
+@media only screen and (min-width: 576px) {
+  .offer h4 {
+    font-size: 1.1rem;
+  }
+  .offer__description p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+}
 @media only screen and (min-width: 768px) {
   .offer h4 {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+  }
   .offer__description p {
     font-size: 1em;
-    line-height: 1.6em; } }
+    line-height: 1.6em;
+  }
+}
 /* CODE TECHNO ICON PART
 ---------------------------------------------- */
 .main-techno {
   /* RESPONSIVE
-  ---------------------------------------------- */ }
+  ---------------------------------------------- */
+}
+.main-techno .code__wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.2rem;
+}
+.main-techno .code__item {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.main-techno .code__item__icon {
+  height: 65px;
+}
+.main-techno .code__item__name {
+  color: #545454;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  margin-top: 0.8em;
+}
+.main-techno .js {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/javaScript_zaymwu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .angular {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/angular_udhhva.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .ruby {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/ruby_jsz7od.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .php {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/php_lseqju.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .docker {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/docker_khotlw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .rails {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/rails_tlnrgk.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .symfony {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/symphony_fjcfnz.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .typescript {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/typescript_dtcmic.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .git {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/git_ykzhwv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-techno .wordpress {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693702/portfolio/logo/wordpress_vj40pp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width: 575px) {
   .main-techno .code__wrapper {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 0.2rem; }
+  }
   .main-techno .code__item {
-    grid-column: span 2;
-    text-align: center;
-    margin-bottom: 2em; }
-    .main-techno .code__item__icon {
-      height: 65px; }
-    .main-techno .code__item__name {
-      color: #545454;
-      font-family: "Raleway", sans-serif;
-      font-size: 0.8em;
-      margin-top: 0.8em; }
-  .main-techno .js {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/javaScript_zaymwu.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .angular {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/angular_udhhva.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .ruby {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/ruby_jsz7od.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .php {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/php_lseqju.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .docker {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/docker_khotlw.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .rails {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/rails_tlnrgk.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .symfony {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/symphony_fjcfnz.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .typescript {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/typescript_dtcmic.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .git {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/git_ykzhwv.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .main-techno .wordpress {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693702/portfolio/logo/wordpress_vj40pp.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  @media only screen and (max-width: 575px) {
-    .main-techno .code__wrapper {
-      grid-template-columns: repeat(6, 1fr); }
-    .main-techno .code__item {
-      /* Dealing with single orphan */ }
-      .main-techno .code__item:last-child:nth-child(3n - 1) {
-        grid-column-end: -2; }
-      .main-techno .code__item:nth-last-child(2):nth-child(3n + 1) {
-        grid-column-end: -4; }
-      .main-techno .code__item:last-child:nth-child(3n - 2) {
-        grid-column-end: 5; } }
-  @media only screen and (min-width: 576px) {
-    .main-techno .code__wrapper {
-      grid-template-columns: repeat(6, 1fr); }
-    .main-techno .code__item {
-      /* Dealing with single orphan */ }
-      .main-techno .code__item:last-child:nth-child(3n - 1) {
-        grid-column-end: 0; }
-      .main-techno .code__item:nth-last-child(2):nth-child(3n + 1) {
-        grid-column-end: 0; }
-      .main-techno .code__item:last-child:nth-child(3n - 2) {
-        grid-column-end: 5; } }
-  @media only screen and (min-width: 768px) {
-    .main-techno .code__wrapper {
-      grid-template-columns: repeat(8, 1fr); }
-    .main-techno .code__item {
-      /* Dealing with single orphan */ }
-      .main-techno .code__item:last-child:nth-child(4n - 1) {
-        grid-column-end: -2; }
-      .main-techno .code__item:nth-last-child(2):nth-child(4n + 1) {
-        grid-column-end: -5; }
-      .main-techno .code__item:last-child:nth-child(4n - 2) {
-        grid-column-end: -3; } }
-  @media only screen and (min-width: 1200px) {
-    .main-techno .code__wrapper {
-      grid-template-columns: repeat(10, 1fr); }
-    .main-techno .code__item {
-      /* Dealing with single orphan */ }
-      .main-techno .code__item:last-child:nth-child(3n - 1) {
-        grid-column-end: 1; }
-      .main-techno .code__item:nth-last-child(2):nth-child(4n + 1) {
-        grid-column-end: -3; }
-      .main-techno .code__item:last-child:nth-child(4n - 2) {
-        grid-column-end: -1; } }
-  @media only screen and (min-width: 1400px) {
-    .main-techno .code__wrapper {
-      grid-template-columns: repeat(10, 1fr); }
-    .main-techno .code__item {
-      /* Dealing with single orphan */ }
-      .main-techno .code__item:last-child:nth-child(5n - 1) {
-        grid-column-end: 1; }
-      .main-techno .code__item:nth-last-child(2):nth-child(5n + 1) {
-        grid-column-end: -3; }
-      .main-techno .code__item:last-child:nth-child(5n - 2) {
-        grid-column-end: -1; } }
+    /* Dealing with single orphan */
+  }
+  .main-techno .code__item:last-child:nth-child(3n-1) {
+    grid-column-end: -2;
+  }
+  .main-techno .code__item:nth-last-child(2):nth-child(3n+1) {
+    grid-column-end: -4;
+  }
+  .main-techno .code__item:last-child:nth-child(3n-2) {
+    grid-column-end: 5;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main-techno .code__wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .main-techno .code__item {
+    /* Dealing with single orphan */
+  }
+  .main-techno .code__item:last-child:nth-child(3n-1) {
+    grid-column-end: 0;
+  }
+  .main-techno .code__item:nth-last-child(2):nth-child(3n+1) {
+    grid-column-end: 0;
+  }
+  .main-techno .code__item:last-child:nth-child(3n-2) {
+    grid-column-end: 5;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-techno .code__wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .main-techno .code__item {
+    /* Dealing with single orphan */
+  }
+  .main-techno .code__item:last-child:nth-child(4n-1) {
+    grid-column-end: -2;
+  }
+  .main-techno .code__item:nth-last-child(2):nth-child(4n+1) {
+    grid-column-end: -5;
+  }
+  .main-techno .code__item:last-child:nth-child(4n-2) {
+    grid-column-end: -3;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-techno .code__wrapper {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .main-techno .code__item {
+    /* Dealing with single orphan */
+  }
+  .main-techno .code__item:last-child:nth-child(3n-1) {
+    grid-column-end: 1;
+  }
+  .main-techno .code__item:nth-last-child(2):nth-child(4n+1) {
+    grid-column-end: -3;
+  }
+  .main-techno .code__item:last-child:nth-child(4n-2) {
+    grid-column-end: -1;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main-techno .code__wrapper {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .main-techno .code__item {
+    /* Dealing with single orphan */
+  }
+  .main-techno .code__item:last-child:nth-child(5n-1) {
+    grid-column-end: 1;
+  }
+  .main-techno .code__item:nth-last-child(2):nth-child(5n+1) {
+    grid-column-end: -3;
+  }
+  .main-techno .code__item:last-child:nth-child(5n-2) {
+    grid-column-end: -1;
+  }
+}
 
 /* PORTFOLIO
 ---------------------------------------------- */
@@ -443,380 +574,470 @@ a:visited {
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+}
 
 .portfolio__item {
   border-radius: 10px;
   margin-bottom: 1em;
   height: 500px;
   overflow-y: hidden;
-  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.16); }
-  .portfolio__item__image {
-    border-radius: 10px;
-    width: 100%; }
-  .portfolio__item__content {
-    background-color: white;
-    box-sizing: border-box;
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 450px;
-    transition: all 0.4s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: space-between; }
-  .portfolio__item__title {
-    width: 100%;
-    height: 55px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #10ddb4;
-    color: #22435d;
-    text-align: center;
-    padding: 0.7em; }
-    .portfolio__item__title .fa-arrow-circle-up {
-      font-size: 0.8em;
-      margin: 0.2em 0.6em 0 0.4em; }
-  .portfolio__item__techno {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .portfolio__item__techno span {
-      font-size: 1em;
-      margin: 0 0.4em 0.6em 0.4em;
-      font-weight: 300; }
-    .portfolio__item__techno .framework:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f120"; }
-    .portfolio__item__techno .database:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f1c0"; }
-    .portfolio__item__techno .authentification:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f084"; }
-    .portfolio__item__techno .mailing:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f0e0"; }
-    .portfolio__item__techno .server:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f233"; }
-    .portfolio__item__techno .img-server:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f302"; }
-    .portfolio__item__techno .design:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f1fc"; }
-    .portfolio__item__techno .api:before {
-      font-family: "Font Awesome 5 Free";
-      src: url("fonts/fontawesome/fontawesome-webfont.eot");
-      font-weight: 900;
-      font-style: solid;
-      font-size: 0.8em;
-      padding-top: 2px;
-      margin-right: 0.4em;
-      color: #10ddb4;
-      display: block;
-      width: 1.4em;
-      float: left;
-      content: "\f0c1"; }
-  .portfolio__item__description {
-    font-size: 1em;
-    color: #545454;
-    text-align: center;
-    word-break: keep-all;
-    padding: 0 2.6em; }
-  .portfolio__item__btn__wrapper {
-    width: 70%; }
-  .portfolio__item__btn {
-    font-size: 1em;
-    padding: 0.2em 1.4em;
-    background-color: #10ddb4;
-    border-radius: 1em;
-    color: #22435d; }
-    .portfolio__item__btn:hover {
-      color: white;
-      -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
-      box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
-      transition: 0.3s ease;
-      -webkit-transition: all 0.3s; }
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.16);
+}
+.portfolio__item__image {
+  border-radius: 10px;
+  width: 100%;
+}
+.portfolio__item__content {
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 450px;
+  transition: all 0.4s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio__item__title {
+  width: 100%;
+  height: 55px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(16, 221, 180);
+  color: rgb(34, 67, 93);
+  text-align: center;
+  padding: 0.7em;
+}
+.portfolio__item__title .fa-arrow-circle-up {
+  font-size: 0.8em;
+  margin: 0.2em 0.6em 0 0.4em;
+}
+.portfolio__item__techno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio__item__techno span {
+  font-size: 1em;
+  margin: 0 0.4em 0.6em 0.4em;
+  font-weight: 300;
+}
+.portfolio__item__techno .framework:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f120";
+}
+.portfolio__item__techno .database:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f1c0";
+}
+.portfolio__item__techno .authentification:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f084";
+}
+.portfolio__item__techno .mailing:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f0e0";
+}
+.portfolio__item__techno .server:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f233";
+}
+.portfolio__item__techno .img-server:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f302";
+}
+.portfolio__item__techno .design:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f1fc";
+}
+.portfolio__item__techno .api:before {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/fontawesome/fontawesome-webfont.eot");
+  font-weight: 900;
+  font-style: solid;
+  font-size: 0.8em;
+  padding-top: 2px;
+  margin-right: 0.4em;
+  color: rgb(16, 221, 180);
+  display: block;
+  width: 1.4em;
+  float: left;
+  content: "\f0c1";
+}
+.portfolio__item__description {
+  font-size: 1em;
+  color: #545454;
+  text-align: center;
+  word-break: keep-all;
+  padding: 0 2.6em;
+}
+.portfolio__item__btn__wrapper {
+  width: 70%;
+}
+.portfolio__item__btn {
+  font-size: 1em;
+  padding: 0.2em 1.4em;
+  background-color: rgb(16, 221, 180);
+  border-radius: 1em;
+  color: rgb(34, 67, 93);
+}
+.portfolio__item__btn:hover {
+  color: rgb(255, 255, 255);
+  -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+  -webkit-transition: all 0.3s;
+}
 
 .renov-blog {
   height: 100%;
   z-index: 2;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/renov-blog-edit_fnwylm.png);
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
 
 .cooking-challenge {
   height: 100%;
   z-index: 2;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640697318/portfolio/portfolio-img/cooking-challenge_f6tqhp.png);
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
 
 .rotate {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+}
 
 /* RESPONSIVE
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
   .portfolio__container {
     padding-right: var(--bs-gutter-x, 2rem);
-    padding-left: var(--bs-gutter-x, 2rem); }
+    padding-left: var(--bs-gutter-x, 2rem);
+  }
 
   .portfolio__item__title {
     width: 100%;
     height: 50px;
-    background-color: #10ddb4;
-    color: #22435d;
+    background-color: rgb(16, 221, 180);
+    color: rgb(34, 67, 93);
     text-align: center;
-    padding: 0.7em; }
+    padding: 0.7em;
+  }
   .portfolio__item__techno span {
     font-size: 0.8em;
     margin: 0 0.4em 0.6em 0.4em;
-    font-weight: 300; }
+    font-weight: 300;
+  }
   .portfolio__item__description {
     font-size: 0.8em;
-    padding: 0 2.6em; }
+    padding: 0 2.6em;
+  }
   .portfolio__item__btn__wrapper {
-    width: 90%; }
+    width: 90%;
+  }
   .portfolio__item__btn {
     font-size: 0.8em;
     padding: 0.2em 1.4em;
-    background-color: #10ddb4;
+    background-color: rgb(16, 221, 180);
     border-radius: 1em;
-    color: #22435d; } }
+    color: rgb(34, 67, 93);
+  }
+}
 @media only screen and (min-width: 576px) {
   .portfolio__container {
     max-width: 80%;
     padding-right: var(--bs-gutter-x, 3rem);
-    padding-left: var(--bs-gutter-x, 3rem); } }
+    padding-left: var(--bs-gutter-x, 3rem);
+  }
+}
 @media only screen and (min-width: 768px) {
   .portfolio__container {
     max-width: 100%;
     padding-right: var(--bs-gutter-x, 3rem);
-    padding-left: var(--bs-gutter-x, 3rem); }
+    padding-left: var(--bs-gutter-x, 3rem);
+  }
 
   .portfolio__item__techno span {
     font-size: 0.9em;
-    margin: 0 0.4em 0.6em 0.4em; }
+    margin: 0 0.4em 0.6em 0.4em;
+  }
   .portfolio__item__description {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+  }
   .portfolio__item__btn__wrapper {
-    width: 90%; } }
+    width: 90%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .portfolio__item__description {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .portfolio__item__btn__wrapper {
-    width: 70%; } }
+    width: 70%;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .portfolio__item__btn__wrapper {
-    width: 60%; } }
+    width: 60%;
+  }
+}
 /* CODE TECHNO ICON PART
 ---------------------------------------------- */
 .environment {
   /* RESPONSIVE
-  ---------------------------------------------- */ }
+  ---------------------------------------------- */
+}
+.environment .code-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.2rem;
+}
+.environment .code__item {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.environment .code__item__icon {
+  height: 65px;
+}
+.environment .code__item__name {
+  color: #545454;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  margin-top: 0.8em;
+}
+.environment .sass {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/sass_u22y7s.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .bootstrap {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bootstrap_iyvaoi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .tailwind {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/tailwind_uw6szw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .photoshop {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/photoshop_flu324.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .trello {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/trello_ltgt5y.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .illustrator {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/illustrator_y3ccg7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .bulma {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bulma_cusvx0.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .indesign {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/indesign_u1fchr.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.environment .jira {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/jira_qbp4oq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width: 575px) {
   .environment .code-wrapper {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 0.2rem; }
+  }
   .environment .code__item {
-    grid-column: span 2;
-    text-align: center;
-    margin-bottom: 2em; }
-    .environment .code__item__icon {
-      height: 65px; }
-    .environment .code__item__name {
-      color: #545454;
-      font-family: "Raleway", sans-serif;
-      font-size: 0.8em;
-      margin-top: 0.8em; }
-  .environment .sass {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/sass_u22y7s.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .bootstrap {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bootstrap_iyvaoi.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .tailwind {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/tailwind_uw6szw.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .photoshop {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/photoshop_flu324.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .trello {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/trello_ltgt5y.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .illustrator {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/illustrator_y3ccg7.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .bulma {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/bulma_cusvx0.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .indesign {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/indesign_u1fchr.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .environment .jira {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/jira_qbp4oq.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  @media only screen and (max-width: 575px) {
-    .environment .code-wrapper {
-      grid-template-columns: repeat(6, 1fr); }
-    .environment .code__item {
-      /* Dealing with single orphan */ }
-      .environment .code__item:last-child:nth-child(3n - 1) {
-        grid-column-end: -2; }
-      .environment .code__item:nth-last-child(2):nth-child(3n + 1) {
-        grid-column-end: -4; }
-      .environment .code__item:last-child:nth-child(3n - 2) {
-        grid-column-end: -3; } }
-  @media only screen and (min-width: 576px) {
-    .environment .code-wrapper {
-      grid-template-columns: repeat(6, 1fr); }
-    .environment .code__item {
-      /* Dealing with single orphan */ }
-      .environment .code__item:last-child:nth-child(3n - 1) {
-        grid-column-end: 0; }
-      .environment .code__item:nth-last-child(2):nth-child(3n + 1) {
-        grid-column-end: 0; }
-      .environment .code__item:last-child:nth-child(3n - 2) {
-        grid-column-end: 5; } }
-  @media only screen and (min-width: 768px) {
-    .environment .code-wrapper {
-      grid-template-columns: repeat(6, 1fr); }
-    .environment .code__item {
-      /* Dealing with single orphan */ }
-      .environment .code__item:last-child(- 1) {
-        grid-column-end: -2; }
-      .environment .code__item:last-child:nth-child(3n - 1) {
-        grid-column-end: -2; }
-      .environment .code__item:th-last-child(2) {
-        grid-column-end: -5; }
-      .environment .code__item:last-child:nth-child(3n - 2) {
-        grid-column-end: -3; } }
-  @media only screen and (min-width: 992px) {
-    .environment .code-wrapper {
-      grid-template-columns: repeat(8, 1fr); }
-    .environment .code__item:nth-last-child(3) {
-      grid-column-end: -6; }
-    .environment .code__item:nth-last-child(2) {
-      grid-column-end: -4; }
-    .environment .code__item:last-child:nth-child(4n - 1) {
-      grid-column-end: -2; } }
-  @media only screen and (min-width: 1200px) {
-    .environment .code-wrapper {
-      grid-template-columns: repeat(8, 1fr); }
-    .environment .code__item:nth-last-child(3) {
-      grid-column-end: -6; }
-    .environment .code__item:nth-last-child(2) {
-      grid-column-end: -4; }
-    .environment .code__item:last-child:nth-child(4n - 1) {
-      grid-column-end: -2; } }
-  @media only screen and (min-width: 1400px) {
-    .environment .code-wrapper {
-      grid-template-columns: repeat(8, 1fr); }
-    .environment .code__item:nth-last-child(3) {
-      grid-column-end: -6; }
-    .environment .code__item:nth-last-child(2) {
-      grid-column-end: -4; }
-    .environment .code__item:last-child:nth-child(4n - 1) {
-      grid-column-end: -2; } }
+    /* Dealing with single orphan */
+  }
+  .environment .code__item:last-child:nth-child(3n-1) {
+    grid-column-end: -2;
+  }
+  .environment .code__item:nth-last-child(2):nth-child(3n+1) {
+    grid-column-end: -4;
+  }
+  .environment .code__item:last-child:nth-child(3n-2) {
+    grid-column-end: -3;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .environment .code-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .environment .code__item {
+    /* Dealing with single orphan */
+  }
+  .environment .code__item:last-child:nth-child(3n-1) {
+    grid-column-end: 0;
+  }
+  .environment .code__item:nth-last-child(2):nth-child(3n+1) {
+    grid-column-end: 0;
+  }
+  .environment .code__item:last-child:nth-child(3n-2) {
+    grid-column-end: 5;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .environment .code-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .environment .code__item {
+    /* Dealing with single orphan */
+  }
+  .environment .code__item:last-child(- 1) {
+    grid-column-end: -2;
+  }
+  .environment .code__item:last-child:nth-child(3n-1) {
+    grid-column-end: -2;
+  }
+  .environment .code__item:th-last-child(2) {
+    grid-column-end: -5;
+  }
+  .environment .code__item:last-child:nth-child(3n-2) {
+    grid-column-end: -3;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .environment .code-wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .environment .code__item:nth-last-child(3) {
+    grid-column-end: -6;
+  }
+  .environment .code__item:nth-last-child(2) {
+    grid-column-end: -4;
+  }
+  .environment .code__item:last-child:nth-child(4n-1) {
+    grid-column-end: -2;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .environment .code-wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .environment .code__item:nth-last-child(3) {
+    grid-column-end: -6;
+  }
+  .environment .code__item:nth-last-child(2) {
+    grid-column-end: -4;
+  }
+  .environment .code__item:last-child:nth-child(4n-1) {
+    grid-column-end: -2;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .environment .code-wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .environment .code__item:nth-last-child(3) {
+    grid-column-end: -6;
+  }
+  .environment .code__item:nth-last-child(2) {
+    grid-column-end: -4;
+  }
+  .environment .code__item:last-child:nth-child(4n-1) {
+    grid-column-end: -2;
+  }
+}
 
 /* MOODBOARD
 ---------------------------------------------- */
@@ -827,19 +1048,22 @@ a:visited {
   gap: 5px;
   grid-template-columns: repeat(20, 10vh);
   margin-bottom: 0.4em;
-  grid-template-areas: "guinness guinness asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock" "tennis-ball tennis-ball backpack backpack  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling"; }
-  .moodboard__item {
-    flex: 0 0 auto;
-    border: 1px solid #eeeeee;
-    border-radius: 8px;
-    height: 140px;
-    background-color: #eeeeee; }
-  .moodboard__item-double-hight {
-    flex: 0 0 auto;
-    border: 1px solid #eeeeee;
-    border-radius: 8px;
-    background-color: #eeeeee;
-    height: 285px; }
+  grid-template-areas: "guinness guinness asian asian  lego lego   monkey emoji emoji two-wheels travel travel travel audio audio louise keyboard keyboard keyboard  rock" "tennis-ball tennis-ball backpack backpack  lego lego  best-app best-app best-app two-wheels picture picture  pala pala  school school tape recycling recycling  recycling";
+}
+.moodboard__item {
+  flex: 0 0 auto;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 8px;
+  height: 140px;
+  background-color: rgb(238, 238, 238);
+}
+.moodboard__item-double-hight {
+  flex: 0 0 auto;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 8px;
+  background-color: rgb(238, 238, 238);
+  height: 285px;
+}
 
 .moodboard__profile-picture {
   grid-area: picture;
@@ -848,14 +1072,16 @@ a:visited {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__apple-keyboard {
   grid-area: keyboard;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/keyboard_mchblv.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__travel {
   grid-area: travel;
@@ -863,7 +1089,8 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__lego {
   grid-area: lego;
@@ -872,7 +1099,8 @@ a:visited {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  background-size: contain; }
+  background-size: contain;
+}
 
 .moodboard__pala {
   grid-area: pala;
@@ -880,21 +1108,24 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 45%; }
+  background-size: 45%;
+}
 
 .moodboard__emoji {
   grid-area: emoji;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/emoji_qy5arf.png);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}
 
 .moodboard__backpack {
   grid-area: backpack;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858978/portfolio/moodboard/backpack_vy1soq.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__guinness {
   grid-area: guinness;
@@ -902,35 +1133,40 @@ a:visited {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0 8px 8px 0; }
+  border-radius: 0 8px 8px 0;
+}
 
 .moodboard__travel-plan {
   grid-area: travel-plan;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858979/portfolio/moodboard/travel-plan_bamtwp.png);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}
 
 .moodboard__tennis-ball {
   grid-area: tennis-ball;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640858996/portfolio/moodboard/tennis-balls_orcaf0.png);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 30%; }
+  background-size: 30%;
+}
 
 .moodboard__asian {
   grid-area: asian;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/asian-food_vlirzh.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__monkey {
   grid-area: monkey;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/monkey-star_oxdu9q.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__audio {
   grid-area: audio;
@@ -938,7 +1174,8 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 40%; }
+  background-size: 40%;
+}
 
 .moodboard__tape {
   grid-area: tape;
@@ -946,7 +1183,8 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__school {
   grid-area: school;
@@ -954,7 +1192,8 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__rock {
   grid-area: rock;
@@ -962,7 +1201,8 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__louise {
   grid-area: louise;
@@ -970,14 +1210,16 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .moodboard__recycling {
   grid-area: recycling;
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/ecologique_qdiqph.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}
 
 .moodboard__two-wheels {
   display: flex;
@@ -986,131 +1228,163 @@ a:visited {
   align-items: center;
   grid-area: two-wheels;
   padding: 0.4em;
-  height: 100%; }
-  .moodboard__two-wheels__item {
-    height: 70px;
-    width: 100px; }
-  .moodboard__two-wheels .moodboard__bike {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 70%; }
-  .moodboard__two-wheels .moodboard__scooter {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-  .moodboard__two-wheels .moodboard__motorbike {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 80%; }
+  height: 100%;
+}
+.moodboard__two-wheels__item {
+  height: 70px;
+  width: 100px;
+}
+.moodboard__two-wheels .moodboard__bike {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+.moodboard__two-wheels .moodboard__scooter {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.moodboard__two-wheels .moodboard__motorbike {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 80%;
+}
 
 .moodboard__best-app {
   grid-area: best-app;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
-  .moodboard__best-app .moodboard__medium {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/medium-app_qbbpcf.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 50%; }
-  .moodboard__best-app .moodboard__boncoin {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/leboncoin-logo_km7glf.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 50%; }
-  .moodboard__best-app .moodboard__mapsme {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/maps-me_v34gjm.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 50%; }
-  .moodboard__best-app .moodboard__huffpost {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/huffpost_fx4arc.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 50%; }
-  .moodboard__best-app .moodboard__wallet {
-    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/wallet_awhlq6.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 50%; }
+  align-items: center;
+}
+.moodboard__best-app .moodboard__medium {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/medium-app_qbbpcf.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 50%;
+}
+.moodboard__best-app .moodboard__boncoin {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/leboncoin-logo_km7glf.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 50%;
+}
+.moodboard__best-app .moodboard__mapsme {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694163/portfolio/moodboard/maps-me_v34gjm.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 50%;
+}
+.moodboard__best-app .moodboard__huffpost {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/huffpost_fx4arc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 50%;
+}
+.moodboard__best-app .moodboard__wallet {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/wallet_awhlq6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 50%;
+}
 
 /* RESPONSIVE
 ---------------------------------------------- */
 @media only screen and (max-width: 575px) {
   .moodboard {
-    grid-template-columns: repeat(20, 12vh); }
-    .moodboard__item {
-      height: 90px; }
-    .moodboard__item-double-hight {
-      height: 185px; }
+    grid-template-columns: repeat(20, 12vh);
+  }
+  .moodboard__item {
+    height: 90px;
+  }
+  .moodboard__item-double-hight {
+    height: 185px;
+  }
 
   .moodboard__two-wheels {
-    height: 100%; }
-    .moodboard__two-wheels__item {
-      height: 50px;
-      width: 11vh; }
-    .moodboard__two-wheels .moodboard__bike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 70%; }
-    .moodboard__two-wheels .moodboard__scooter {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .moodboard__two-wheels .moodboard__motorbike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 80%; } }
+    height: 100%;
+  }
+  .moodboard__two-wheels__item {
+    height: 50px;
+    width: 11vh;
+  }
+  .moodboard__two-wheels .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .moodboard__two-wheels .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .moodboard__two-wheels .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+  }
+}
 @media only screen and (max-width: 575px) and (orientation: landscape) {
   .moodboard {
-    grid-template-columns: repeat(20, 20vh); }
-    .moodboard__item {
-      height: 90px; }
-    .moodboard__item-double-hight {
-      height: 185px; }
+    grid-template-columns: repeat(20, 20vh);
+  }
+  .moodboard__item {
+    height: 90px;
+  }
+  .moodboard__item-double-hight {
+    height: 185px;
+  }
 
   .moodboard__two-wheels {
-    height: 100%; }
-    .moodboard__two-wheels__item {
-      height: 50px;
-      width: 20vh; }
-    .moodboard__two-wheels .moodboard__bike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 70%; }
-    .moodboard__two-wheels .moodboard__scooter {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .moodboard__two-wheels .moodboard__motorbike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 80%; } }
+    height: 100%;
+  }
+  .moodboard__two-wheels__item {
+    height: 50px;
+    width: 20vh;
+  }
+  .moodboard__two-wheels .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .moodboard__two-wheels .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .moodboard__two-wheels .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+  }
+}
 @media only screen and (min-width: 576px) {
   .moodboard {
-    grid-template-columns: repeat(20, 9vh); }
-    .moodboard__item {
-      height: 110px; }
-    .moodboard__item-double-hight {
-      height: 225px; }
+    grid-template-columns: repeat(20, 9vh);
+  }
+  .moodboard__item {
+    height: 110px;
+  }
+  .moodboard__item-double-hight {
+    height: 225px;
+  }
 
   .moodboard__two-wheels {
     display: flex;
@@ -1119,33 +1393,42 @@ a:visited {
     align-items: center;
     grid-area: two-wheels;
     padding: 0.4em;
-    height: 100%; }
-    .moodboard__two-wheels__item {
-      height: 45px;
-      width: 100px; }
-    .moodboard__two-wheels .moodboard__bike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 60%; }
-    .moodboard__two-wheels .moodboard__scooter {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .moodboard__two-wheels .moodboard__motorbike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 60%; } }
+    height: 100%;
+  }
+  .moodboard__two-wheels__item {
+    height: 45px;
+    width: 100px;
+  }
+  .moodboard__two-wheels .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+  .moodboard__two-wheels .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .moodboard__two-wheels .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 60%;
+  }
+}
 @media only screen and (min-width: 576px) and (orientation: landscape) {
   .moodboard {
-    grid-template-columns: repeat(20, 20vh); }
-    .moodboard__item {
-      height: 90px; }
-    .moodboard__item-double-hight {
-      height: 185px; }
+    grid-template-columns: repeat(20, 20vh);
+  }
+  .moodboard__item {
+    height: 90px;
+  }
+  .moodboard__item-double-hight {
+    height: 185px;
+  }
 
   .moodboard__two-wheels {
     display: flex;
@@ -1154,91 +1437,118 @@ a:visited {
     align-items: center;
     grid-area: two-wheels;
     padding: 0.4em;
-    height: 100%; }
-    .moodboard__two-wheels__item {
-      height: 45px;
-      width: 90px; }
-    .moodboard__two-wheels .moodboard__bike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 60%; }
-    .moodboard__two-wheels .moodboard__scooter {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .moodboard__two-wheels .moodboard__motorbike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 60%; } }
+    height: 100%;
+  }
+  .moodboard__two-wheels__item {
+    height: 45px;
+    width: 90px;
+  }
+  .moodboard__two-wheels .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+  .moodboard__two-wheels .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .moodboard__two-wheels .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 60%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
-    .moodboard__item {
-      height: 110px; }
-    .moodboard__item-double-hight {
-      height: 225px; }
+    grid-template-columns: repeat(20, 11vh);
+  }
+  .moodboard__item {
+    height: 110px;
+  }
+  .moodboard__item-double-hight {
+    height: 225px;
+  }
 
   .moodboard__two-wheels {
-    height: 100%; }
-    .moodboard__two-wheels__item {
-      height: 50px;
-      width: 75px; }
-    .moodboard__two-wheels .moodboard__bike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 70%; }
-    .moodboard__two-wheels .moodboard__scooter {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .moodboard__two-wheels .moodboard__motorbike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 80%; } }
+    height: 100%;
+  }
+  .moodboard__two-wheels__item {
+    height: 50px;
+    width: 75px;
+  }
+  .moodboard__two-wheels .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .moodboard__two-wheels .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .moodboard__two-wheels .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+  }
+}
 @media only screen and (min-width: 768px) and (orientation: landscape) {
   .moodboard {
-    grid-template-columns: repeat(20, 15vh); }
-    .moodboard__item {
-      height: 90px; }
-    .moodboard__item-double-hight {
-      height: 185px; }
+    grid-template-columns: repeat(20, 15vh);
+  }
+  .moodboard__item {
+    height: 90px;
+  }
+  .moodboard__item-double-hight {
+    height: 185px;
+  }
 
   .moodboard__two-wheels {
-    height: 100%; }
-    .moodboard__two-wheels__item {
-      height: 50px;
-      width: 75px; }
-    .moodboard__two-wheels .moodboard__bike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 70%; }
-    .moodboard__two-wheels .moodboard__scooter {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .moodboard__two-wheels .moodboard__motorbike {
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 80%; } }
+    height: 100%;
+  }
+  .moodboard__two-wheels__item {
+    height: 50px;
+    width: 75px;
+  }
+  .moodboard__two-wheels .moodboard__bike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/vtt-bike_gonsux.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .moodboard__two-wheels .moodboard__scooter {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694162/portfolio/moodboard/e-scooter_ypgihq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .moodboard__two-wheels .moodboard__motorbike {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640694164/portfolio/moodboard/motorcycle_am8vuo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
-    .moodboard__item {
-      height: 130px; }
-    .moodboard__item-double-hight {
-      height: 265px; }
+    grid-template-columns: repeat(20, 11vh);
+  }
+  .moodboard__item {
+    height: 130px;
+  }
+  .moodboard__item-double-hight {
+    height: 265px;
+  }
 
   .moodboard__pala {
     grid-area: pala;
@@ -1246,14 +1556,19 @@ a:visited {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: 35%; } }
+    background-size: 35%;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .moodboard {
-    grid-template-columns: repeat(20, 11vh); }
-    .moodboard__item {
-      height: 140px; }
-    .moodboard__item-double-hight {
-      height: 285px; }
+    grid-template-columns: repeat(20, 11vh);
+  }
+  .moodboard__item {
+    height: 140px;
+  }
+  .moodboard__item-double-hight {
+    height: 285px;
+  }
 
   .moodboard__pala {
     grid-area: pala;
@@ -1261,14 +1576,19 @@ a:visited {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: 35%; } }
+    background-size: 35%;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .moodboard {
-    grid-template-columns: repeat(20, 13vh); }
-    .moodboard__item {
-      height: 140px; }
-    .moodboard__item-double-hight {
-      height: 285px; }
+    grid-template-columns: repeat(20, 13vh);
+  }
+  .moodboard__item {
+    height: 140px;
+  }
+  .moodboard__item-double-hight {
+    height: 285px;
+  }
 
   .moodboard__pala {
     grid-area: pala;
@@ -1276,95 +1596,118 @@ a:visited {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: 35%; } }
+    background-size: 35%;
+  }
+}
 .cv__category {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.3em;
-  color: #22435d;
-  margin-bottom: 0; }
+  color: rgb(34, 67, 93);
+  margin-bottom: 0;
+}
 .cv__title {
-  color: #22435d;
+  color: rgb(34, 67, 93);
   font-size: 1.1em;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  padding-top: 0.2em; }
+  padding-top: 0.2em;
+}
 .cv .badge {
   margin-left: 1em;
-  position: absolute; }
+  position: absolute;
+}
 .cv .fa-info-circle {
-  color: #10ddb4; }
-  .cv .fa-info-circle:hover {
-    cursor: pointer;
-    filter: brightness(90%); }
+  color: rgb(16, 221, 180);
+}
+.cv .fa-info-circle:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
 .cv__info {
   font-size: 1em;
-  color: #545454; }
+  color: #545454;
+}
 .cv__date {
   font-size: 0.9em;
-  color: #545454; }
-  .cv__date .fa-calendar-alt {
-    font-weight: 200;
-    font-size: 0.8em;
-    color: #545454;
-    width: 1.4em;
-    margin: 0em 0.1em 0 0.4em; }
+  color: #545454;
+}
+.cv__date .fa-calendar-alt {
+  font-weight: 200;
+  font-size: 0.8em;
+  color: #545454;
+  width: 1.4em;
+  margin: 0em 0.1em 0 0.4em;
+}
 .cv__details {
-  background-color: #ececec;
+  background-color: rgb(236, 236, 236);
   transition: height 0.3s ease-in-out;
-  color: #22435d;
-  margin: 0.8em 0; }
-  .cv__details__btn {
-    font-size: 0.8em;
-    padding: 0.2em 1.4em;
-    background-color: #10ddb4;
-    border-radius: 1em;
-    color: #22435d; }
-    .cv__details__btn .fas {
-      margin-right: 8px; }
-    .cv__details__btn:hover {
-      color: white;
-      -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
-      box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
-      transition: 0.3s ease;
-      -webkit-transition: all 0.3s; }
-  .cv__details__img__list {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    margin: 0.8em 0 1.2em 0; }
-    .cv__details__img__list::-webkit-scrollbar {
-      display: none; }
+  color: rgb(34, 67, 93);
+  margin: 0.8em 0;
+}
+.cv__details__btn {
+  font-size: 0.8em;
+  padding: 0.2em 1.4em;
+  background-color: rgb(16, 221, 180);
+  border-radius: 1em;
+  color: rgb(34, 67, 93);
+}
+.cv__details__btn .fas {
+  margin-right: 8px;
+}
+.cv__details__btn:hover {
+  color: rgb(255, 255, 255);
+  -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+  -webkit-transition: all 0.3s;
+}
+.cv__details__img__list {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0.8em 0 1.2em 0;
+}
+.cv__details__img__list::-webkit-scrollbar {
+  display: none;
+}
 .cv__details__content {
   margin-left: 0;
   width: 0;
   padding: 1em 0;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-  z-index: -5; }
-  .cv__details__content ul {
-    padding-left: 0; }
-  .cv__details__content li {
-    font-size: 0.9em;
-    line-height: 1.8em; }
-    .cv__details__content li:before {
-      content: "• "; }
+  z-index: -5;
+}
+.cv__details__content ul {
+  padding-left: 0;
+}
+.cv__details__content li {
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+.cv__details__content li:before {
+  content: "• ";
+}
 
 .hide {
   opacity: 0;
-  transform: translateY(30px); }
+  transform: translateY(30px);
+}
 
 .reveal {
   opacity: 1;
   transform: translateY(0px);
-  transition: 1s; }
+  transition: 1s;
+}
 
 .fadeOpacity {
   opacity: 1;
-  z-index: 0; }
+  z-index: 0;
+}
 
 .cv__details__img__events {
   list-style: none;
@@ -1373,17 +1716,20 @@ a:visited {
   margin: auto;
   min-height: 40px;
   min-width: 100px;
-  margin-right: 1em; }
+  margin-right: 1em;
+}
 
 .background-img-cv-details {
   height: auto;
   width: 80px;
-  padding-left: 1em; }
+  padding-left: 1em;
+}
 
 .background-img-cv-details-horizontal {
   height: auto;
   width: 160px;
-  padding-left: 1em; }
+  padding-left: 1em;
+}
 
 /* Event Details Expererience Logo
 
@@ -1474,70 +1820,300 @@ a:visited {
 @media only screen and (max-width: 575px) {
   .cv__category {
     margin-bottom: 1em;
-    color: #10ddb4; }
+    color: rgb(16, 221, 180);
+  }
   .cv__title {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .cv__info {
-    font-size: 0.8em; }
+    font-size: 0.8em;
+  }
   .cv__date {
     font-size: 0.8em;
     padding-top: 0.6em;
-    justify-content: flex-end; }
-    .cv__date .fas {
-      margin-left: 0.6em; }
+    justify-content: flex-end;
+  }
+  .cv__date .fas {
+    margin-left: 0.6em;
+  }
   .cv__details {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .cv__details {
-    font-size: 0.9em; } }
+    font-size: 0.9em;
+  }
+}
 @media only screen and (min-width: 576px) {
   .cv__category {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+  }
   .cv__title {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .cv__info {
-    font-size: 0.8em; }
+    font-size: 0.8em;
+  }
   .cv__date {
     font-size: 0.8em;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
   .cv__details {
-    font-size: 0.9em; } }
+    font-size: 0.9em;
+  }
+}
 @media only screen and (min-width: 768px) {
   .cv__category {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+  }
   .cv__title {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .cv__info {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+  }
   .cv__date {
-    font-size: 0.8em; }
+    font-size: 0.8em;
+  }
   .cv__details {
-    font-size: 1em; } }
+    font-size: 1em;
+  }
+}
 @media only screen and (min-width: 992px) {
   .cv__category {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+  }
   .cv__title {
-    font-size: 1.1em; }
+    font-size: 1.1em;
+  }
   .cv__info {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .cv__date {
-    font-size: 0.9em; } }
+    font-size: 0.9em;
+  }
+}
 /* SOFT SKILLS SCSS
 ---------------------------------------------- */
 .soft__skills {
-  color: #22435d;
+  color: rgb(34, 67, 93);
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   font-weight: 500;
-  line-height: 2.4em; }
-  .soft__skills-highlight {
-    color: #10ddb4;
-    filter: brightness(95%); }
+  line-height: 2.4em;
+}
+.soft__skills-highlight {
+  color: rgb(16, 221, 180);
+  filter: brightness(95%);
+}
+.soft__skills__container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.soft__skills__wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 0.2em;
+  height: 700px;
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego_twxhyc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j ";
+}
+
+.item1 {
+  grid-area: lego-head;
+}
+
+.item2 {
+  grid-area: lego-body;
+}
+
+.item3 {
+  grid-area: lego-foot;
+}
+
+.item4 {
+  grid-area: a;
+  align-self: center;
+  text-align: right;
+}
+
+.item5 {
+  grid-area: b;
+  align-self: center;
+}
+
+.item6 {
+  grid-area: c;
+}
+
+.item7 {
+  grid-area: d;
+}
+
+.item8 {
+  grid-area: e;
+}
+
+.item9 {
+  grid-area: f;
+}
+
+.item10 {
+  grid-area: g;
+}
+
+.item11 {
+  grid-area: h;
+  align-self: center;
+  text-align: right;
+}
+
+.item12 {
+  grid-area: i;
+}
+
+.item13 {
+  grid-area: j;
+  align-self: center;
+  text-align: right;
+}
+
+.item14 {
+  grid-area: k;
+}
+
+.item15 {
+  grid-area: l;
+  align-self: center;
+  text-align: right;
+}
+
+.item16 {
+  grid-area: m;
+  align-self: end;
+  text-align: left;
+}
+
+/* RESPONSIVE
+---------------------------------------------- */
+@media only screen and (max-width: 575px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
   .soft__skills__container {
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .soft__skills__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 5px;
+    height: 500px;
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c i i i d " "lego-body c c k l l l " "lego-foot e e h h h h " "lego-foot j g m m m m ";
+  }
+
+  .item4 {
+    padding-right: 1em;
+  }
+
+  .item5 {
+    grid-area: b;
+    align-self: center;
+    padding-bottom: 1.6em;
+  }
+
+  .item6 {
+    text-align: left;
+  }
+
+  .item8 {
+    padding-right: 1em;
+    text-align: left;
+  }
+
+  .item11 {
+    grid-area: h;
+    align-self: center;
+    text-align: left;
+  }
+
+  .item12 {
+    grid-area: i;
+    align-self: center;
+    text-align: right;
+  }
+
+  .item16 {
+    grid-area: m;
+    align-self: end;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  .soft__skills__container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .soft__skills__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 5px;
+    height: 500px;
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c i i i d " "lego-body c c k l l l " "lego-foot e e h h h h " "lego-foot j g m m m m ";
+  }
+  .soft__skills .item4 {
+    padding-right: 1em;
+  }
+  .soft__skills .item6 {
+    text-align: left;
+  }
+  .soft__skills .item8 {
+    padding-right: 1em;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .soft__skills {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  .soft__skills__container {
+    width: 100%;
+    max-width: 655px;
+    padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+  }
   .soft__skills__wrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -1548,298 +2124,172 @@ a:visited {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
-
-.item1 {
-  grid-area: lego-head; }
-
-.item2 {
-  grid-area: lego-body; }
-
-.item3 {
-  grid-area: lego-foot; }
-
-.item4 {
-  grid-area: a;
-  align-self: center;
-  text-align: right; }
-
-.item5 {
-  grid-area: b;
-  align-self: center; }
-
-.item6 {
-  grid-area: c; }
-
-.item7 {
-  grid-area: d; }
-
-.item8 {
-  grid-area: e; }
-
-.item9 {
-  grid-area: f; }
-
-.item10 {
-  grid-area: g; }
-
-.item11 {
-  grid-area: h;
-  align-self: center;
-  text-align: right; }
-
-.item12 {
-  grid-area: i; }
-
-.item13 {
-  grid-area: j;
-  align-self: center;
-  text-align: right; }
-
-.item14 {
-  grid-area: k; }
-
-.item15 {
-  grid-area: l;
-  align-self: center;
-  text-align: right; }
-
-.item16 {
-  grid-area: m;
-  align-self: end;
-  text-align: left; }
-
-/* RESPONSIVE
----------------------------------------------- */
-@media only screen and (max-width: 575px) {
-  .soft__skills {
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 1.6em; }
-    .soft__skills__container {
-      width: 100%;
-      padding-right: var(--bs-gutter-x, 0.75rem);
-      padding-left: 0;
-      margin-right: auto;
-      margin-left: 0; }
-    .soft__skills__wrapper {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      grid-gap: 5px;
-      height: 500px;
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
-      background-position: left;
-      background-repeat: no-repeat;
-      background-size: contain;
-      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c i i i d " "lego-body c c k l l l " "lego-foot e e h h h h " "lego-foot j g m m m m "; }
-
-  .item4 {
-    padding-right: 1em; }
-
-  .item5 {
-    grid-area: b;
-    align-self: center;
-    padding-bottom: 1.6em; }
-
-  .item6 {
-    text-align: left; }
-
-  .item8 {
-    padding-right: 1em;
-    text-align: left; }
-
-  .item11 {
-    grid-area: h;
-    align-self: center;
-    text-align: left; }
-
-  .item12 {
-    grid-area: i;
-    align-self: center;
-    text-align: right; }
-
-  .item16 {
-    grid-area: m;
-    align-self: end;
-    text-align: right; } }
-@media only screen and (min-width: 576px) {
-  .soft__skills {
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 1.6em; }
-    .soft__skills__container {
-      width: 100%;
-      padding-right: var(--bs-gutter-x, 0.75rem);
-      padding-left: 0;
-      margin-right: auto;
-      margin-left: 0; }
-    .soft__skills__wrapper {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      grid-gap: 5px;
-      height: 500px;
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego-half_znqlgq.png);
-      background-position: left;
-      background-repeat: no-repeat;
-      background-size: contain;
-      grid-template-areas: "lego-head f a a a a a " "lego-head f a a a a a " "lego-head f b b b b b " "lego-body c c i i i d " "lego-body c c k l l l " "lego-foot e e h h h h " "lego-foot j g m m m m "; }
-    .soft__skills .item4 {
-      padding-right: 1em; }
-    .soft__skills .item6 {
-      text-align: left; }
-    .soft__skills .item8 {
-      padding-right: 1em; } }
-@media only screen and (min-width: 640px) {
-  .soft__skills {
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 1.6em; }
-    .soft__skills__container {
-      width: 100%;
-      max-width: 655px;
-      padding-right: var(--bs-gutter-x, 0.75rem);
-      padding-left: var(--bs-gutter-x, 0.75rem);
-      margin-right: auto;
-      margin-left: auto; }
-    .soft__skills__wrapper {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      grid-gap: 0.2em;
-      height: 700px;
-      background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695388/portfolio/nico-Lego_twxhyc.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j ";
+  }
 
   .item5 {
     grid-area: b;
     align-self: start;
-    padding-right: 3em; }
+    padding-right: 3em;
+  }
 
   .item6 {
-    text-align: right; }
+    text-align: right;
+  }
 
   .item7 {
     grid-area: d;
-    align-self: start; }
+    align-self: start;
+  }
 
   .item11 {
     grid-area: h;
     align-self: center;
-    text-align: right; }
+    text-align: right;
+  }
 
   .item12 {
-    grid-area: i; }
+    grid-area: i;
+  }
 
   .item15 {
     grid-area: l;
     align-self: end;
-    text-align: right; }
+    text-align: right;
+  }
 
   .item16 {
     grid-area: m;
     align-self: start;
-    text-align: right; } }
+    text-align: right;
+  }
+}
 @media only screen and (min-width: 768px) {
   .soft__skills__container {
     width: 100%;
-    max-width: 720px; }
+    max-width: 720px;
+  }
   .soft__skills__wrapper {
-    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j "; }
+    grid-template-areas: "f f f lego-head a a a " "b b b lego-head a a a  " "b b b lego-head k h h " "i i i lego-body c c c " "d d g lego-body l l l " "m m g lego-foot e e e " "m m g lego-foot j j j ";
+  }
 
   .item5 {
-    padding-right: 2.8em; }
+    padding-right: 2.8em;
+  }
 
   .item7 {
     text-align: center;
-    padding-right: 1em; }
+    padding-right: 1em;
+  }
 
   .item15 {
     grid-area: l;
     align-self: center;
-    text-align: right; }
+    text-align: right;
+  }
 
   .item16 {
     grid-area: m;
     align-self: start;
-    text-align: right; } }
+    text-align: right;
+  }
+}
 @media only screen and (min-width: 820px) {
   .soft__skills {
     font-size: 1.2em;
     font-weight: 500;
-    line-height: 1.6em; }
-    .soft__skills__container {
-      width: 100%;
-      max-width: 800px; }
+    line-height: 1.6em;
+  }
+  .soft__skills__container {
+    width: 100%;
+    max-width: 800px;
+  }
 
   .item5 {
-    padding-right: 1.6em; }
+    padding-right: 1.6em;
+  }
 
   .item6 {
-    text-align: left; }
+    text-align: left;
+  }
 
   .item7 {
     text-align: center;
-    padding-right: 0em; }
+    padding-right: 0em;
+  }
 
   .item16 {
     grid-area: m;
     align-self: start;
-    text-align: right; } }
+    text-align: right;
+  }
+}
 @media only screen and (min-width: 992px) {
   .item16 {
     grid-area: m;
     align-self: start;
-    text-align: right; } }
+    text-align: right;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .item16 {
     grid-area: m;
     align-self: start;
-    text-align: right; } }
+    text-align: right;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .item16 {
     grid-area: m;
     align-self: start;
-    text-align: right; } }
+    text-align: right;
+  }
+}
 .contact {
-  padding-bottom: 2em; }
-  .contact h2 {
-    color: #10ddb4; }
-  .contact .my-contact {
-    color: white;
-    height: 100%; }
-  .contact .email-state {
-    color: #10ddb4;
-    font-size: 0.9em;
-    line-height: 1.8em; }
-  .contact button[type="submit"]:hover {
-    filter: brightness(80%); }
-  .contact .fa-paper-plane {
-    font-size: 0.9em;
-    font-weight: 400;
-    color: #22435d;
-    display: block;
-    width: 1.4em;
-    float: left;
-    margin-right: 0.6em;
-    padding-top: 0.4em; }
-  .contact form .form-control:focus {
-    outline: none; }
-  .contact form input:focus,
-  .contact form textarea:focus,
-  .contact form select:focus {
-    outline: none;
-    outline-width: 0; }
-  .contact form input:invalid {
-    border: 1px solid #ff4163;
-    color: #ff4163; }
-  .contact form textarea:invalid {
-    border: 1px solid #ff4163;
-    color: #ff4163; }
+  padding-bottom: 2em;
+}
+.contact h2 {
+  color: rgb(16, 221, 180);
+}
+.contact .my-contact {
+  color: rgb(255, 255, 255);
+  height: 100%;
+}
+.contact .email-state {
+  color: rgb(16, 221, 180);
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+.contact button[type=submit]:hover {
+  filter: brightness(80%);
+}
+.contact .fa-paper-plane {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: rgb(34, 67, 93);
+  display: block;
+  width: 1.4em;
+  float: left;
+  margin-right: 0.6em;
+  padding-top: 0.4em;
+}
+.contact form .form-control:focus {
+  outline: none;
+}
+.contact form input:focus,
+.contact form textarea:focus,
+.contact form select:focus {
+  outline: none;
+  outline-width: 0;
+}
+.contact form input:invalid {
+  border: 1px solid rgb(255, 65, 99);
+  color: rgb(255, 65, 99);
+}
+.contact form textarea:invalid {
+  border: 1px solid rgb(255, 65, 99);
+  color: rgb(255, 65, 99);
+}
 
 .linkedin-contact {
   height: 35px;
@@ -1848,7 +2298,8 @@ a:visited {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695354/portfolio/LinkedIn_sdbklf.png);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}
 
 .gitlab-contact {
   height: 35px;
@@ -1856,6 +2307,7 @@ a:visited {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640695355/portfolio/gitlab-icon_s4sfkh.png);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}
 
 /*# sourceMappingURL=main.css.map */
