@@ -53,6 +53,11 @@
     @include background-img-contain;
   }
 
+  .node {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321226/portfolio/logo/node-green_fzz5ry.png);
+    @include background-img-contain;
+  }
+
   .symfony {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693701/portfolio/logo/symphony_fjcfnz.png);
     @include background-img-contain;
@@ -65,6 +70,11 @@
 
   .git {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693700/portfolio/logo/git_ykzhwv.png);
+    @include background-img-contain;
+  }
+
+  .jira {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650321022/portfolio/logo/jira_ka6a3t.png);
     @include background-img-contain;
   }
 
