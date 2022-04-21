@@ -78,6 +78,11 @@
     @include background-img-contain;
   }
 
+  .atlassian {
+    background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650566592/portfolio/logo/atlassian_fhazlo.png);
+    @include background-img-contain;
+  }
+
   .wordpress {
     background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693702/portfolio/logo/wordpress_vj40pp.png);
     @include background-img-contain;

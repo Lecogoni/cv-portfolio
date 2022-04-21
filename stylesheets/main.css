@@ -494,6 +494,12 @@ a:visited {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.main-techno .atlassian {
+  background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1650566592/portfolio/logo/atlassian_fhazlo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .main-techno .wordpress {
   background-image: url(https://res.cloudinary.com/drv58qoek/image/upload/v1640693702/portfolio/logo/wordpress_vj40pp.png);
   background-position: center;
